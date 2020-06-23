@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $color-grey-light-1;
+    color: $color-primary-contrast;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: $color-white;
+    font-family: Helvetica;
+    font-size: 3.4rem;
+}
+
+input {
+    color: $color-primary-contrast;
+    background-color: transparent;
+    border-color: rgba($color-primary-contrast, .3);
+    border-width: .1rem;
+    border-style: none none solid none;
+    font-size: 2.4rem;
+    padding-top: .4rem;
+    width: 100%;
+    &:focus {
+        outline: none; } }
+
+// main {
+//     position: relative;
+// }

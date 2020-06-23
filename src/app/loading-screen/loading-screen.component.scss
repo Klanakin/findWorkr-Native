@@ -1,0 +1,30 @@
+@import '../../sass/abstract/variables';
+
+.container {
+    background-color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+
+    .forgot-pwd {
+        color: $color-primary-contrast; } }
+
+.splash {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 0;
+
+    a {
+        text-decoration: none; }
+    p {
+        color: $color-white;
+        font-family: 'Baloo Thambi 2', Helvetica, sans-serif;
+        font-size: 5.5rem;
+        font-weight: bold;
+        text-shadow: 0 2rem 2rem rgba(#00559F, 0.5); } }
