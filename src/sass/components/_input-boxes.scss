@@ -8,16 +8,4 @@
     padding-top: .4rem;
     width: 100%;
     &:focus {
-        outline: none; } 
-    
-    &__box {
-        &--password {
-            position: relative;
-            &::before {
-                background-color: red;
-                content: url(/assets/img/show-password.svg);
-                bottom: 0;
-                right:0;
-                height: 4rem;
-                width: 4rem;
-                position: absolute; } } } }
+        outline: none; } }

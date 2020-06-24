@@ -22,17 +22,17 @@
             color: $color-primary;
             font-size: 3.4rem;
             font-weight: bold;
-            text-transform: uppercase; }
-        .btn__arrow--left {
-            a {
-                div::after {
-                    content: url(/assets/img/arrow-left-solid.png);
-                    position: absolute;
-                    pointer-events: all;
-                    height: 4rem;
-                    width: 4rem;
-                    top: 4rem;
-                    left: 1.5rem; } } } }
+            text-transform: uppercase; } }
+        // .btn__arrow--left {
+        //     a {
+        //         span::after {
+        //             content: url(/assets/img/arrow-left-solid.png);
+        //             position: absolute;
+        //             pointer-events: all;
+        //             height: 4rem;
+        //             width: 4rem;
+        //             top: 4rem;
+        //             left: 1.5rem; } } } }
     .login__input {
         display: flex;
         flex-direction: column;
@@ -41,20 +41,11 @@
 
         height: 50%;
         // padding: 0 4.5rem;
-        width: 28.5rem; 
+        width: 28.5rem;
+        
         &--label {
             align-self: flex-start;
             text-transform: uppercase; }
-        &--password {
-            position: relative;
-            &::before {
-                background-color: red;
-                content: url(/assets/img/show-password.svg);
-                bottom: 0;
-                right:0;
-                height: 4rem;
-                width: 4rem;
-                position: absolute; } }
             
     // .sign-in__option {
     //     display: flex;
@@ -65,8 +56,40 @@
     //     height: 50%;
     //     padding: 0 4.5rem;
     //     width: 100%;
-        .sign-up {
-            color: $color-primary-contrast;
-            font-size: 1.2rem;
-            margin-bottom: 6.3rem;
-            text-decoration: none; } } }
+        .terms-conditions {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            margin-top: 9rem;
+
+            &__tick {
+                margin-right: $margin-right-xxs; }
+            &__agree {
+                color: $color-primary-contrast;
+                font-size: 1.2rem;
+                text-decoration: none; } } } }
+
+
+.pseudo-link__icon--hide-password {
+    position: relative;
+    width: 100%;
+    a {
+        span::after {
+            position: absolute;
+            top: -6rem;
+            right: 0;
+            content: url(/assets/img/show-password.svg); } } }
+
+.pseudo-link__icon--arrow-left {
+    // position: relative; <-- relative positioning apllied to the parent element
+    a {
+        span::after {
+            content: url(/assets/img/arrow-left-solid.png);
+            position: absolute;
+            pointer-events: all;
+            height: 4rem;
+            width: 4rem;
+            top: 4rem;
+            left: 1.5rem; } } }
+           

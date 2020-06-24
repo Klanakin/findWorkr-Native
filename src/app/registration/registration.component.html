@@ -1,20 +1,23 @@
 <div class="stage">
     <div class="heading">
-        <div class="btn__arrow--left">
-            <a [routerLink]="['/start-screen']"><div></div></a>
+        <div class="pseudo-link__icon--arrow-left">
+            <a [routerLink]="['/login-email']"><span></span></a>
         </div>
-        <div class="heading__login"><p>Regitration</p></div></div>
+        <div class="heading__login"><p>Registration</p></div></div>
     <div class="login__input">
+        <label class="login__input--label">Phone number or Email*</label>
+        <input type="text" class="input util-margin-bottom-m">
         <label class="login__input--label">Username*</label>
-        <input type="text" class="input login__input--id util-margin-bottom-m">
-        <label class="login__input--label until-margin-top-m">Your Password*</label>
-        <input type="password" class="input login__input--password util-margin-bottom-m">
-        <label class="login__input--label until-margin-top-m">Email*</label>
-        <input type="password" class="input login__input--password">
+        <input type="text" class="input util-margin-bottom-m">
+        <label class="login__input--label">Your Password*</label>
+        <input type="password" class="input util-margin-bottom-m">
+        <div class="pseudo-link__icon--hide-password"><a href="#"><span></span></a></div>
     <!-- <div class="sign-in__option"> -->
-        <div style="margin-top: 11rem;">
-            <a href="#" class="btn btn__capsule-blue btn__capsule-blue--login">Sign in</a></div>
-        <div class="util-margin-s">
-            <a href="#" class="sign-up">Don't have an account? Sign up</a></div>
-    </div>
+        <div class="terms-conditions">
+            <input type="checkbox" checked="checked" class="terms-conditions__tick">
+            <div>
+                <a href="#" class="terms-conditions__agree">I agree to the 
+                <span style="text-decoration: underline;">terms and conditions</span>*</a></div></div>
+        <div class="util-margin-vertical-l">
+            <a href="#" class="btn btn__capsule-blue btn__capsule-blue--login">Sign up</a></div></div>
 </div>
