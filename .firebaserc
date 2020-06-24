@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "findworkr-native": {
+      "hosting": {
+        "findWorkr-Native": [
+          "findworkr-native"
+        ]
+      }
+    }
+  }
+}

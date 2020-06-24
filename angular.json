@@ -121,8 +121,13 @@
               "devServerTarget": "findWorkr-Native:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "findWorkr-Native"
 }

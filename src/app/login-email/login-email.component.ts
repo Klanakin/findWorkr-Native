@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login-email.component.scss']
 })
 export class LoginEmailComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit(): void {
   }
 
 }
+
+
+

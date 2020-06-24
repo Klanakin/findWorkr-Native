@@ -25,7 +25,7 @@
             text-transform: uppercase; }
         .btn__arrow--left {
             a {
-                div:after {
+                div::after {
                     content: url(/assets/img/arrow-left-solid.png);
                     position: absolute;
                     pointer-events: all;
@@ -45,6 +45,17 @@
         &--label {
             align-self: flex-start;
             text-transform: uppercase; }
+        &--password {
+            position: relative;
+            &::before {
+                background-color: red;
+                content: url(/assets/img/show-password.svg);
+                bottom: 0;
+                right:0;
+                height: 4rem;
+                width: 4rem;
+                position: absolute; } }
+            
     // .sign-in__option {
     //     display: flex;
     //     flex-direction: column;

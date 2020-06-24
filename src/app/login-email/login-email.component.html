@@ -1,14 +1,18 @@
 <div class="stage">
+
     <div class="heading">
         <div class="btn__arrow--left">
-            <a [routerLink]="['/start-screen']"><div></div></a>
-        </div>
-        <div class="heading__login"><p>Login</p></div></div>
+            <a [routerLink]="['/start-screen']">
+                <div></div></a></div>
+        <div class="heading__login"><p>Login</p></div>
+    </div>
+
+
     <div class="login__input">
         <label class="login__input--label">Your Phone or Email</label>
-        <input type="text" class="login__input--id util-margin-bottom-m">
+        <input type="text" class="input login__input--id util-margin-bottom-m">
         <label class="login__input--label until-margin-top-m">Your Password</label>
-        <input type="password" class="login__input--password">
+        <input type="password" class="input login__input--password">
     <!-- <div class="sign-in__option"> -->
         <div style="margin-top: 11rem;">
             <a href="#" class="btn btn__capsule-blue btn__capsule-blue--login">Sign in</a></div>
@@ -20,7 +24,8 @@
         <div class="util-margin-top-s">
             <a href="#" class="btn btn__capsule-white btn__capsule-white--google 
                 util-margin-horizontal-s" id="btn-google">Continue with Google</a></div>
-        <div class="util-margin-top-s">
+        <div class="util-margin-vertical-m">
             <a [routerLink]="['/register']" class="sign-up">Don't have an account? Sign up</a></div>
     </div>
+
 </div>

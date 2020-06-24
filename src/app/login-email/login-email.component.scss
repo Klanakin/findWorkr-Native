@@ -21,11 +21,11 @@
         &__login {
             color: $color-primary;
             font-size: 3.4rem;
-            font-weight: bold;
-            text-transform: uppercase; }
+            font-weight: bold; }
+            text-transform: uppercase;
         .btn__arrow--left {
             a {
-                div:after {
+                div::after {
                     content: url(/assets/img/arrow-left-solid.png);
                     position: absolute;
                     pointer-events: all;
@@ -33,6 +33,22 @@
                     width: 4rem;
                     top: 4rem;
                     left: 1.5rem; } } } }
+
+        // Applying FontAwesome this way is currently not possible with Angular
+        // .btn__arrow--left {
+        //     a {
+        //         div:after {
+        //             background-color: red;
+        //             content: '\f007';
+        //             font-family: "Font Awesome 5 Free";
+        //             content: '';
+        //             font-weight: 900;
+        //             position: absolute;
+        //             pointer-events: all;
+        //             height: 4rem;
+        //             width: 4rem;
+        //             top: 4rem;
+        //             left: 1.5rem; } } } }
     .login__input {
         display: flex;
         flex-direction: column;
