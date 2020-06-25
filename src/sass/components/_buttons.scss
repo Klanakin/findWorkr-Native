@@ -27,6 +27,30 @@
             color: $color-white;
             font-size: 2.3rem; } }
 
+    &__capsule-grey {
+        background-color: $color-primary-contrast;
+        box-shadow: .3rem .3rem .6rem rgba($color-primary-contrast, $alpha: 0.5);
+        padding: 2rem;
+        outline: none;
+        text-align: center;
+        text-transform: uppercase;
+        width: 28.5rem;
+        height: 6rem;
+        &:link,
+            &:visited {
+                transition: all .2s; }
+            &:hover, &:focus {
+                box-shadow: .3rem .3rem .8rem rgba($color-primary-contrast, $alpha: 0.5);
+                transform: translateY(-.4rem); }
+            &:active {
+                box-shadow: .2rem .2rem .4rem rgba($color-primary-contrast, $alpha: 0.8);
+                transform: translateY(0);
+                transition: all .2s; }
+        &--inactive {
+            color: $color-grey-light-3;
+            font-size: 2.3rem;
+            pointer-events: none; } }
+
     &__capsule-white {
         background-color: $color-white;
         box-shadow: .3rem .3rem .6rem rgba($color-primary, $alpha: 0.5);

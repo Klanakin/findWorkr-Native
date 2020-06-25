@@ -1,23 +1,34 @@
 <div class="stage">
     <div class="heading">
         <div class="pseudo-link__icon--arrow-left">
-            <a [routerLink]="['/login-email']"><span></span></a>
+            <a [routerLink]="['/login-screen']"><span></span></a>
         </div>
         <div class="heading__login"><p>Registration</p></div></div>
     <div class="login__input">
         <label class="login__input--label">Phone number or Email*</label>
-        <input type="text" class="input util-margin-bottom-m">
+        <input (input)="hasInput()"
+                type="text" class="input util-margin-bottom-m">
         <label class="login__input--label">Username*</label>
-        <input type="text" class="input util-margin-bottom-m">
-        <label class="login__input--label">Your Password*</label>
-        <input type="password" class="input util-margin-bottom-m">
-        <div class="pseudo-link__icon--hide-password"><a href="#"><span></span></a></div>
-    <!-- <div class="sign-in__option"> -->
+        <input (input)="hasInput()"
+                type="text" class="input util-margin-bottom-m">
+        <label class="login__input--label">Password*</label>
+        <input (input)="hasInput()"
+                type="password" id="registration-password" class="input">
+        <div *ngIf="!visibility" class="pseudo-link__icon--show-password">
+            <a routerLink="/registration-page" (click)="togglePasswordVisibility()">
+                <span></span></a></div>
+        <div *ngIf="visibility" class="pseudo-link__icon--hide-password">
+            <a routerLink="/registration-page" (click)="togglePasswordVisibility()">
+                <span></span></a></div>
+        <div style="font-size: 1.1rem; color: #ccc; align-self: flex-end;"  class="util-margin-top-xxs util-margin-bottom-m">* required field</div>
         <div class="terms-conditions">
-            <input type="checkbox" checked="checked" class="terms-conditions__tick">
-            <div>
-                <a href="#" class="terms-conditions__agree">I agree to the 
+            <input (input)="hasInput()"
+                    type="checkbox" class="terms-conditions__tick">
+            <div><span class="terms-conditions__agree">I agree to the </span>
+                <a href="#" class="terms-conditions__agree"> 
                 <span style="text-decoration: underline;">terms and conditions</span>*</a></div></div>
-        <div class="util-margin-vertical-l">
+        <div *ngIf="!formCompleted" class="util-margin-vertical-l">
+            <a href="#" class="btn btn__capsule-grey btn__capsule-grey--inactive">Sign up</a></div>
+        <div *ngIf="formCompleted" class="util-margin-vertical-l">
             <a href="#" class="btn btn__capsule-blue btn__capsule-blue--login">Sign up</a></div></div>
 </div>

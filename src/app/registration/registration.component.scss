@@ -77,9 +77,19 @@
     a {
         span::after {
             position: absolute;
-            top: -6rem;
+            top: -2rem;
             right: 0;
-            content: url(/assets/img/show-password.svg); } } }
+            content: url(/assets/img/hide-password-light.svg); } } }
+
+.pseudo-link__icon--show-password {
+    position: relative;
+    width: 100%;
+    a {
+        span::after {
+            position: absolute;
+            top: -2rem;
+            right: 0;
+            content: url(/assets/img/show-password-light.svg); } } }
 
 .pseudo-link__icon--arrow-left {
     // position: relative; <-- relative positioning apllied to the parent element
