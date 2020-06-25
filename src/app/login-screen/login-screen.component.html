@@ -16,16 +16,16 @@
         <input (input)="hasInput()"
                 type="password" class="input login__input--password">
         <div *ngIf="!formCompleted" style="margin-top: 11rem;">
-            <a href="#" class="btn btn__capsule-grey btn__capsule-grey--inactive">Sign in</a></div>
+            <a [routerLink]="['/under-construction']" class="btn btn__capsule-grey btn__capsule-grey--inactive">Sign in</a></div>
         <div *ngIf="formCompleted" style="margin-top: 11rem;">
-            <a href="#" class="btn btn__capsule-blue btn__capsule-blue--login">Sign in</a></div>
+            <a [routerLink]="['/under-construction']" class="btn btn__capsule-blue btn__capsule-blue--login">Sign in</a></div>
         <div class="util-margin-vertical-l">
             <p>OR</p></div>
         <div>
-            <a href="#" class="btn btn__capsule-white btn__capsule-white--facebook"
+            <a [routerLink]="['/under-construction']" class="btn btn__capsule-white btn__capsule-white--facebook"
                 id="btn-facebook">Continue with Facebook</a></div>
         <div class="util-margin-top-s">
-            <a href="#" class="btn btn__capsule-white btn__capsule-white--google 
+            <a [routerLink]="['/under-construction']" class="btn btn__capsule-white btn__capsule-white--google 
                 util-margin-horizontal-s" id="btn-google">Continue with Google</a></div>
         <div class="util-margin-vertical-m">
             <a [routerLink]="['/registration-page']" class="sign-up">Don't have an account? <span style="text-decoration: underline;">Sign up</span></a></div>

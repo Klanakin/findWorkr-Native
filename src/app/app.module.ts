@@ -8,6 +8,7 @@ import { LoginEmailComponent } from './login-screen/login-screen.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RegistrationComponent } from './registration/registration.component';
 import { SelectAccountTypeComponent } from './select-account-type/select-account-type.component';
+import { UnderConstructionComponent } from './under-construction/under-construction.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SelectAccountTypeComponent } from './select-account-type/select-account
     LoadingScreenComponent,
     LoginEmailComponent,
     RegistrationComponent,
-    SelectAccountTypeComponent
+    SelectAccountTypeComponent,
+    UnderConstructionComponent
   ],
   imports: [
     AppRoutingModule,
