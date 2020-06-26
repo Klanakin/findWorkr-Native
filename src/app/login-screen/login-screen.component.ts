@@ -8,6 +8,9 @@ import { UserInputControl } from '../user-input-control';
 })
 export class LoginEmailComponent implements OnInit {
   formCompleted: boolean = false;
+  popupVisible: boolean = false;
+  credentialPlatform: string = "";
+
   constructor() {}
 
   ngOnInit(): void {}
@@ -22,6 +25,15 @@ export class LoginEmailComponent implements OnInit {
   hasInput() {
     let form = new UserInputControl(this.isFulfilled());
     this.formCompleted = form.activateButton();
+  }
+
+  openPopup(credentialPlatform: string): void {
+    this.credentialPlatform = credentialPlatform;
+    this.popupVisible = true;
+  }
+
+  closePopup(): void {
+    this.popupVisible = false;
   }
 }
 
