@@ -32,28 +32,29 @@
 <div *ngIf="popupVisible" class="popup">
     <div *ngIf="credentialPlatform === 'facebook'" class="popup__content">
         <a (click)="closePopup()" [routerLink]="['/login-screen']" class="popup__close">&times;</a>
-        <div >
-            <img src="/assets/img/facebook-color-original-square-transparent.svg" alt="facebook-logo"></div>
+        <div> 
+            <img src="/assets/img/facebook-color-original-square-transparent.svg" alt="facebook-logo" class="facebook--logo"></div>
         <div>
-            <img src="/assets/img/Cool-Male-Avatars-03_34322@3x.png" alt="facebook-avatar" class="facebook-avatar"></div>
-        <div>
+            <img src="/assets/img/Cool-Male-Avatars-03_34322@3x.png" alt="facebook-avatar" class="facebook--avatar"></div>
+            <p class="facebook--name">Adam</p>
+        <div class="facebook--terms">
             <p>Findworkr.com will have access to name, email address and other public info.</p></div>
+        <div class="facebook--edit-profile">
+            <a [routerLink]="['/login-screen']">Edit the info you provide</a></div>
         <div>
-            <a [routerLink]="['/under-construction']">Edit the info you provide</a></div>
-        <div>
-            <button>Continue as Adam</button></div>
-        <div>
-            <a [routerLink]="['/under-construction']">Findworkr.com's Privacy Policy and Terms</a></div>
+            <a [routerLink]="['/under-construction']" class="btn facebook--login-button">Continue as Adam</a></div>
+        <div class="facebook--privacy-policy">
+            <p>Findworkr.com's <a [routerLink]="['/login-screen']">Privacy Policy and Terms</a></p></div>
     </div>        
 
     <div  *ngIf="credentialPlatform === 'google'" class="popup__content">
         <a (click)="closePopup()" [routerLink]="['/login-screen']" class="popup__close">&times;</a>
         <div>
-            <img src="/assets/img/google-color-original-square-transparent.svg" alt="google-logo"></div>
+            <img src="/assets/img/google-color-original.svg" alt="google-logo"></div>
         <div><h3>Choose an account</h3></div>
         <div><p>To continue to Freelancer - Findworkr</p></div>
         <div>
-            <img src="/assets/img/Cool-Male-Avatars-03_34322@3x.png" alt="facebook-avatar" class="facebook-avatar"></div>
+            <img src="/assets/img/Cool-Male-Avatars-03_34322@3x.png" alt="google-avatar" class="google-avatar"></div>
         <hr>
         <div>
             <p>Add another account</p></div>

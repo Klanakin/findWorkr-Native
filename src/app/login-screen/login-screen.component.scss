@@ -6,16 +6,51 @@
     &__content {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-content: center;
-    
-        .facebook-avatar {
-            height: 8rem;
-            width: 8rem;
-        }
-    }
-}
+        justify-content: flex-start;
+        align-items: center;
 
+        color: $color-black;
+        font-size: 1.2rem;
+        padding: 1rem;
+        position: relative;
+
+        .facebook {
+            &--logo {
+                position: absolute;
+                top: 1rem;
+                left: 1rem; }
+            &--avatar {
+                height: 8rem;
+                width: 8rem;
+                margin-top: $margin-top-l; }
+            &--name {
+                font-size: 1.8rem;
+                font-weight: bold; 
+                margin-bottom: $margin-bottom-xs; }
+            &--terms {
+                width: 22rem;
+                text-align: center;
+                margin-bottom: $margin-bottom-xxs; }
+            &--edit-profile {
+                margin-bottom: $margin-bottom-s;
+                a {
+                    text-decoration: none; } }
+            &--login-button {
+                background-color: #5290CE;
+                border-color: $color-primary-contrast;
+                border-radius: .6rem;
+                color: $color-white;
+                font-size: 1.6rem;
+                margin-bottom: $margin-bottom-xs;
+                padding: 1.9rem;
+                text-align: center;
+                text-decoration: none; 
+            
+                width: 28rem;
+                height: 5.6rem; }
+            &--privacy-policy {
+                a {
+                    text-decoration: none; } } } } }
 
 .stage {
     display: flex;
