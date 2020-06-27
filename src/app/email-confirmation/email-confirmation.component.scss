@@ -1,0 +1,60 @@
+@import '../../sass/abstract/variables';
+
+.stage {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100vh;
+    width: 100%;
+
+    .heading {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+
+        margin-bottom: $margin-bottom-m;
+        padding: 3.4rem 4.5rem 0 4.5rem;
+        width: 100%; }
+
+    .registration {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 80%;
+        // padding: 0 4.5rem;
+        width: 20rem;
+        
+        &__confirm {
+            &--envelope {
+                flex-grow: 1;
+                width: 11rem; }       
+            &--sent {
+                color: $color-primary-contrast;
+                flex-grow: 1;
+                font-size: 1.2rem; }       
+            &--activation {
+                color: $color-primary;
+                flex-grow: 10;
+                font-size: 2rem; }
+            &--other-account {
+                color: $color-primary-contrast;
+                flex-grow: 1;
+                font-size: 1.4rem; } } } }
+
+.pseudo-link__icon--arrow-left {
+    // position: relative; <-- relative positioning apllied to the parent element
+    a {
+        span::after {
+            content: url(/assets/img/arrow-left-solid.svg);
+            position: absolute;
+            pointer-events: all;
+            height: 2rem;
+            width: 2rem;
+            top: 4rem;
+            left: 1.5rem; } } }
+           

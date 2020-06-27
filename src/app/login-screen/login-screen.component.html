@@ -14,7 +14,7 @@
         <input (input)="hasInput()"
                 type="password" class="input login__input--password">
         <div *ngIf="!formCompleted" style="margin-top: 11rem;">
-            <a [routerLink]="['/under-construction']" class="btn btn__capsule-grey btn__capsule-grey--inactive">Sign in</a></div>
+            <div class="btn btn__capsule-grey btn__capsule-grey--inactive">Sign in</div></div>
         <div *ngIf="formCompleted" style="margin-top: 11rem;">
             <a [routerLink]="['/under-construction']" class="btn btn__capsule-blue btn__capsule-blue--login">Sign in</a></div>
         <div class="util-margin-vertical-l">
@@ -62,7 +62,8 @@
         <hr>
         <div class="google--add-account">
             <img src="/assets/img/user-plus.svg" alt="add-account" class="google--add">
-            <div class="google--name"> Add another account</div></div>
+            <a [routerLink]="['/login-screen']">
+                <div class="google--name"> Add another account</div></a></div>
         <hr>
         <div>
             <p class="google--privacy-policy">To continue, google will share your name, email address, and profile picture with freelancer - Findwork. Before using this app, review it’s <a [routerLink]="['/login-screen']">privacy policy and terms of service</a>.</p></div>

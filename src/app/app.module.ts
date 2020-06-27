@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { RegistrationComponent } from './registration/registration.component';
 import { SelectAccountTypeComponent } from './select-account-type/select-account-type.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
+import { EmailConfirmationComponent } from './email-confirmation/email-confirmation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { UnderConstructionComponent } from './under-construction/under-construct
     LoginEmailComponent,
     RegistrationComponent,
     SelectAccountTypeComponent,
-    UnderConstructionComponent
+    UnderConstructionComponent,
+    EmailConfirmationComponent
   ],
   imports: [
     AppRoutingModule,

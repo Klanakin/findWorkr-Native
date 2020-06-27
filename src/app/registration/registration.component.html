@@ -25,10 +25,10 @@
             <input (input)="hasInput()"
                     type="checkbox" class="terms-conditions__tick">
             <div><span class="terms-conditions__agree">I agree to the </span>
-                <a [routerLink]="['/under-construction']" class="terms-conditions__agree"> 
+                <a [routerLink]="['/registration-page']" class="terms-conditions__agree"> 
                 <span style="text-decoration: underline;">terms and conditions</span>*</a></div></div>
         <div *ngIf="!formCompleted" class="util-margin-vertical-l">
             <a [routerLink]="['/under-construction']" class="btn btn__capsule-grey btn__capsule-grey--inactive">Sign up</a></div>
         <div *ngIf="formCompleted" class="util-margin-vertical-l">
-            <a [routerLink]="['/under-construction']" class="btn btn__capsule-blue btn__capsule-blue--login">Sign up</a></div></div>
+            <a [routerLink]="['/email-confirmation']" class="btn btn__capsule-blue btn__capsule-blue--login">Sign up</a></div></div>
 </div>
