@@ -32,7 +32,7 @@
         &__confirm {
             &--envelope {
                 flex-grow: 1;
-                width: 11rem; }       
+                width: 8rem; }       
             &--sent {
                 color: $color-primary-contrast;
                 flex-grow: 1;
@@ -40,7 +40,10 @@
             &--activation {
                 color: $color-primary;
                 flex-grow: 10;
-                font-size: 2rem; }
+                font-size: 2rem;
+                a {
+                    color: $color-primary;
+                    text-decoration: none; } }
             &--other-account {
                 color: $color-primary-contrast;
                 flex-grow: 1;
