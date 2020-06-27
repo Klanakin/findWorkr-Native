@@ -26,11 +26,11 @@
         .btn__arrow--left {
             a {
                 div::after {
-                    content: url(/assets/img/arrow-left-solid.png);
+                    content: url(/assets/img/arrow-left-solid.svg);
                     position: absolute;
                     pointer-events: all;
-                    height: 4rem;
-                    width: 4rem;
+                    height: 2rem;
+                    width: 2rem;
                     top: 4rem;
                     left: 1.5rem; } } } }
 

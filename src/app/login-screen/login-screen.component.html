@@ -50,16 +50,21 @@
     <div  *ngIf="credentialPlatform === 'google'" class="popup__content">
         <a (click)="closePopup()" [routerLink]="['/login-screen']" class="popup__close">&times;</a>
         <div>
-            <img src="/assets/img/google-color-original.svg" alt="google-logo"></div>
-        <div><h3>Choose an account</h3></div>
-        <div><p>To continue to Freelancer - Findworkr</p></div>
-        <div>
-            <img src="/assets/img/Cool-Male-Avatars-03_34322@3x.png" alt="google-avatar" class="google-avatar"></div>
+            <img src="/assets/img/google-color-original.svg" alt="google-logo" class="google--logo"></div>
+        <div><p class="google--choose-account">Choose an account</p></div>
+        <div><p class="google--continue">To continue to Freelancer - Findworkr</p></div>
+        <div class="google--user-account">
+            <img src="/assets/img/Cool-Male-Avatars-03_34322@3x.png" alt="google-avatar" class="google--avatar">
+            <a [routerLink]="['/login-screen']"><ul style="list-style-type:none;">
+                <li><div class="google--name">Adam Cray</div></li>
+                <li>adamcray@gmail.com</li>
+            </ul></a></div>
+        <hr>
+        <div class="google--add-account">
+            <img src="/assets/img/user-plus.svg" alt="add-account" class="google--add">
+            <div class="google--name"> Add another account</div></div>
         <hr>
         <div>
-            <p>Add another account</p></div>
-        <hr>
-        <div>
-            <p>To continue, google will share your name, email address, and profile picture with freelancer - Findwork. Before using this app, review it’s privacy policy and terms of service.</p></div>
+            <p class="google--privacy-policy">To continue, google will share your name, email address, and profile picture with freelancer - Findwork. Before using this app, review it’s <a [routerLink]="['/login-screen']">privacy policy and terms of service</a>.</p></div>
     </div>        
 </div>

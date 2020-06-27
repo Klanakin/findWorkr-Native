@@ -27,6 +27,19 @@ h1 {
     font-size: 3.4rem;
 }
 
-// main {
-//     position: relative;
-// }
+@media only screen and (min-width: 320px) {
+    html {
+        font-size: 40%; } }
+
+@media only screen and (min-width: 360px) {
+    html {
+        font-size: 50%; } }
+
+@media only screen and (min-width: 375px) {
+    html {
+        font-size: 62.5%; } }
+
+// @media only screen and (min-width: 768px) { // optimized for tablet or larger devices
+//     html {
+//         font-size: 70%; } }
+
