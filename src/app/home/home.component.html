@@ -1,41 +1,53 @@
 <div class="stage">
-    <div class="heading">
+    <div class="heading util-margin-bottom-xxs">
         <div class="heading__home">
             <p>Home</p>
         </div>
         <div class="heading__search-box">
             <input type="text" placeholder="Search">
-            <a [routerLink]="['/home']">
+            <a [routerLink]="['/navigation/home']">
             <fa-icon 
                 [icon]="faSearch"
                 class="heading__search-box--icon"></fa-icon></a>
         </div>
     </div>
-    <div class="contents">
+    <div class="contents util-center">
         <div class="popular-services">
             <h3>Popular Services</h3>
             <div class="popular-services__card-box">
-                <div class="card card__logo-design"></div>
-                <div class="card card__logo-animation"></div>
-                <div class="card card__business-cards"></div>
-                <div class="card card__influencer-marketing"></div>
+                <div class="card card__logo-design">
+                    <img src="../../assets/img/preview/card__logo-design@3x.png" alt="Logo design">
+                    <h4>Logo Design</h4></div>
+                <div class="card card__logo-animation">
+                    <img src="../../assets/img/preview/card__logo-animation@3x.png" alt="Logo animation design">
+                    <h4>Logo Animation</h4></div>
+                <div class="card card__business-cards">
+                    <img src="../../assets/img/preview/card__business-card@3x.png" alt="Business card and stationery design">
+                    <h4>Business Cards & Stationery</h4></div>
+                <div class="card card__influencer-marketing">
+                    <img src="../../assets/img/preview/card__influencer-marketing@3x.png" alt="Influencer marketing strategies">
+                    <h4>Influencer Marketing</h4></div>
             </div>
+            <div class="see-all"><a [routerLink]="['/navigation/home']">See all</a></div>
         </div>
-        <div class="recents-more">
+        <div class="recently-viewed">
             <h3>Recently Viewed and More</h3>
-            <div class="recents-more__card-box">
-                <div class="card card__logo-animation"></div>
-                <div class="card card__influencer-marketing"></div>
+            <div class="recently-viewed__card-box">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
             </div>
+            <div class="see-all"><a [routerLink]="['/navigation/home']">See all</a></div>
         </div>
     </div>
     <nav class="navbar">
         <div class="menu">
-            <a [routerLink]="['/home']" src="" class="menu__home">home</a>
-            <a [routerLink]="['/home']" src="" class="menu__search">search</a>
-            <a [routerLink]="['/home']" src="" class="menu__inbox">inbox</a>
-            <a [routerLink]="['/home']" src="" class="menu__notification">notification</a>
-            <a [routerLink]="['/home']" src="" class="menu__my-profile">my profile</a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__home">home</a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__search">search</a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__inbox">inbox</a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__notification">notification</a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__my-profile">my profile</a>
         </div>
     </nav>
 </div>

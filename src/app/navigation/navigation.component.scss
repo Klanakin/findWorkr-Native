@@ -1,0 +1,26 @@
+@import '../../sass/abstract/variables';
+
+.navbar {
+    background-color: $color-primary-contrast;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    .menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        background-color: $color-white;
+        max-width: 768px;
+        height: 5.7rem;
+        margin: 0 auto;
+        // &__home {}
+        // &__search {}
+        // &__inbox {}
+        // &__notification {}
+        // &__my-profile {}
+    }
+}

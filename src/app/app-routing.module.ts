@@ -8,6 +8,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { EmailConfirmationComponent } from './email-confirmation/email-confirmation.component';
 import { HomeComponent} from './home/home.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 const routes: Routes = [
   { path: '', component: LoadingScreenComponent },
@@ -16,8 +17,10 @@ const routes: Routes = [
   { path: 'registration-page', component: RegistrationComponent },
   { path: 'under-construction', component: UnderConstructionComponent },
   { path: 'email-confirmation', component: EmailConfirmationComponent },
-  { path: 'home', component: HomeComponent }
-
+  { path: 'navigation', component: NavigationComponent,
+    children: [
+      { path: 'home', component: HomeComponent }
+    ]}
 ];
 
 @NgModule({

@@ -1,51 +1,82 @@
 @import '../../sass/abstract/variables';
 
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    background-color: $color-white;
+    // border-color: $color-grey-light-2;
+    // border-color: rgba($color-primary-contrast, $alpha: 0.2);
+    border-radius: .6rem;
+    border-bottom-left-radius: 1.2rem;
+    border-bottom-right-radius: 1.2rem;
+    border-style: none;
+    // border-width: .1rem;
+    box-shadow: 0 .3rem .6rem rgba($color-primary-contrast, $alpha: 0.2);
+    overflow: hidden;
+    margin-bottom: $margin-bottom-xs;
+    text-align: center;
+
+    width: 16rem;
+    height: 18.7rem;
+    img {
+        border-color: white;
+        border-bottom-left-radius: 1.2rem;
+        border-bottom-right-radius: 1.2rem;
+        border-style: solid;
+        border-width: .1rem;
+        
+        width: 16rem;
+        height: 13rem; }
+    h4 {
+        font-size: 1.6rem;
+        font-weight: 300;
+        margin: 0; } }
+
 .stage {
     background-color: $color-grey-light-1;
-    padding: 4rem 1.6rem 1.2rem 1.6rem;
+    padding: 4rem 1.6rem 7.4rem 1.6rem;
 
     .heading {
         display: flex;
         flex-direction: column;
         align-items: center;
 
+        width: 100%;
         &__home {
-            color: $color-primary-contrast;
-            font-size: 2.2rem;
+            color: $color-primary;
+            font-size: 3rem;
             font-weight: 500;
-            margin-bottom: $margin-bottom-s;
-        }
+            margin-bottom: $margin-bottom-s; }
         &__search-box {
             position: relative;
+            max-width: 60rem;
+            width: 100%;
             input {
                 background-color: $color-white;
-                border-color: rgba($color-primary-contrast, $alpha: .3);
-                border-radius: 2rem;
+                border-color: $color-grey-light-2;
+                // border-color: rgba($color-primary-contrast, $alpha: .3);
+                border-radius: 1rem;
                 border-style: solid;
                 border-width: .1rem;
-                box-shadow: 0 .5rem .6rem rgba($color: #000000, $alpha: .2);
+                box-shadow: 0 .3rem .6rem rgba($color-primary-contrast, $alpha: 0.2);
                 color: $color-primary-contrast;
                 display: inline-block;
                 font-size: 2rem;
                 overflow: hidden;
                 padding: .7rem 4rem .7rem 1rem;
                 
-
-                width: 34.6rem;
-                height: 4.4rem;
-
+                width: 100%;
+                height: 4rem;
                 &:focus {
                     outline: none; }
-
                 &::placeholder {
-                    color: rgba($color-primary-contrast, $alpha: .8);
-                }
-            }
+                    color: rgba($color-primary-contrast, $alpha: .8); } }
             a {
                 color: $color-primary-contrast;
-                text-decoration: none;
-            }
-
+                text-decoration: none; }
             &--icon {
                 font-size: 2rem;
                 position: absolute;
@@ -53,32 +84,45 @@
                 right: 1rem;
 
                 width: 2.3rem;
-                height: 2.3rem;
-            }
-        }
-    }
+                height: 2.3rem; } } }
     .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        max-width: 1000px;
         h3 {
             font-size: 2rem;
             font-weight: 400;
-            margin: 1.8rem auto 0 auto;
-        }
+            margin: 1.8rem auto 1rem auto; }
         .popular-services {
+            // background-color: red;
+            flex-grow: 1;
             &__card-box {
-                .card {
-                    &__logo-design {
-                    
-                        width: 16.7rem;
-                        height: 18.7rem;
-                    }
-                }
-            }
-        }
-    }
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between; }
+            .see-all {
+                text-align: right;
+                a {
+                    color: $color-primary; } } }
+        .recently-viewed {
+            // background-color: blue;
+            flex-grow: 2;
+            &__card-box {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between; }
+            .see-all {
+                text-align: right;
+                a {
+                    color: $color-primary; } } } }
     .navbar {
         background-color: $color-primary-contrast;
         position: fixed;
-        bottom: .6rem;
+        bottom: 0;
         left: 0;
 
         width: 100%;

@@ -12,6 +12,7 @@ import { SelectAccountTypeComponent } from './select-account-type/select-account
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { EmailConfirmationComponent } from './email-confirmation/email-confirmation.component';
 import { HomeComponent } from './home/home.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomeComponent } from './home/home.component';
     SelectAccountTypeComponent,
     UnderConstructionComponent,
     EmailConfirmationComponent,
-    HomeComponent
+    HomeComponent,
+    NavigationComponent
   ],
   imports: [
     AppRoutingModule,
