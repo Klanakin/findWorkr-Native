@@ -39,15 +39,15 @@
                 font-size: 1.2rem; }       
             &--activation {
                 color: $color-primary;
-                flex-grow: 10;
+                flex-grow: 4;
                 font-size: 2rem;
                 a {
                     color: $color-primary;
                     text-decoration: none; } }
             &--other-account {
                 color: $color-primary-contrast;
-                flex-grow: 1;
-                font-size: 1.4rem; } } } }
+                flex-grow: 1.5;
+                font-size: 1.2rem; } } } }
 
 .pseudo-link__icon--arrow-left {
     // position: relative; <-- relative positioning apllied to the parent element

@@ -7,6 +7,7 @@ import { StartScreenComponent } from './start-screen/start-screen.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { EmailConfirmationComponent } from './email-confirmation/email-confirmation.component';
+import { HomeComponent} from './home/home.component';
 
 const routes: Routes = [
   { path: '', component: LoadingScreenComponent },
@@ -14,7 +15,8 @@ const routes: Routes = [
   { path: 'start-screen', component: StartScreenComponent },
   { path: 'registration-page', component: RegistrationComponent },
   { path: 'under-construction', component: UnderConstructionComponent },
-  { path: 'email-confirmation', component: EmailConfirmationComponent }
+  { path: 'email-confirmation', component: EmailConfirmationComponent },
+  { path: 'home', component: HomeComponent }
 
 ];
 

@@ -1,0 +1,41 @@
+<div class="stage">
+    <div class="heading">
+        <div class="heading__home">
+            <p>Home</p>
+        </div>
+        <div class="heading__search-box">
+            <input type="text" placeholder="Search">
+            <a [routerLink]="['/home']">
+            <fa-icon 
+                [icon]="faSearch"
+                class="heading__search-box--icon"></fa-icon></a>
+        </div>
+    </div>
+    <div class="contents">
+        <div class="popular-services">
+            <h3>Popular Services</h3>
+            <div class="popular-services__card-box">
+                <div class="card card__logo-design"></div>
+                <div class="card card__logo-animation"></div>
+                <div class="card card__business-cards"></div>
+                <div class="card card__influencer-marketing"></div>
+            </div>
+        </div>
+        <div class="recents-more">
+            <h3>Recently Viewed and More</h3>
+            <div class="recents-more__card-box">
+                <div class="card card__logo-animation"></div>
+                <div class="card card__influencer-marketing"></div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="menu">
+            <a [routerLink]="['/home']" src="" class="menu__home">home</a>
+            <a [routerLink]="['/home']" src="" class="menu__search">search</a>
+            <a [routerLink]="['/home']" src="" class="menu__inbox">inbox</a>
+            <a [routerLink]="['/home']" src="" class="menu__notification">notification</a>
+            <a [routerLink]="['/home']" src="" class="menu__my-profile">my profile</a>
+        </div>
+    </nav>
+</div>

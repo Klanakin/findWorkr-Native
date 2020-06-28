@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppComponent } from './app.component';
 import { StartScreenComponent } from './start-screen/start-screen.component';
@@ -10,6 +11,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { SelectAccountTypeComponent } from './select-account-type/select-account-type.component';
 import { UnderConstructionComponent } from './under-construction/under-construction.component';
 import { EmailConfirmationComponent } from './email-confirmation/email-confirmation.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,13 @@ import { EmailConfirmationComponent } from './email-confirmation/email-confirmat
     RegistrationComponent,
     SelectAccountTypeComponent,
     UnderConstructionComponent,
-    EmailConfirmationComponent
+    EmailConfirmationComponent,
+    HomeComponent
   ],
   imports: [
     AppRoutingModule,
     BrowserModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
