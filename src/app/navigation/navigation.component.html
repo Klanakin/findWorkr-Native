@@ -1,12 +1,17 @@
 <router-outlet></router-outlet>
 <nav class="navbar">
     <div class="menu">
-        <a [routerLink]="['/navigation/home']" src="" class="menu__home">home</a>
-        <a [routerLink]="['/navigation/home']" src="" class="menu__search">search</a>
-        <a [routerLink]="['/navigation/home']" src="" class="menu__inbox">inbox</a>
-        <a [routerLink]="['/navigation/home']" src="" class="menu__notification">notification</a>
-        <a [routerLink]="['/navigation/home']" src="" class="menu__my-profile">my profile</a>
-        </div>
+        <a [routerLink]="['/navigation/home']" src="" class="menu__home">
+            <fa-icon [icon]="faHome" class="menu__home--icon"></fa-icon></a>
+        <a [routerLink]="['/navigation/home']" src="" class="menu__search">
+            <fa-icon [icon]="faSearch" class="menu__search--icon"></fa-icon></a>
+        <a [routerLink]="['/navigation/home']" src="" class="menu__inbox">
+            <fa-icon [icon]="faEnvelope" class="menu__inbox--icon"></fa-icon></a>
+        <a [routerLink]="['/navigation/home']" src="" class="menu__notification">
+            <fa-icon [icon]="faBell" class="menu__notification--icon"></fa-icon></a>
+        <a [routerLink]="['/navigation/home']" src="" class="menu__my-profile">
+            <fa-icon [icon]="faUser" class="menu__my-profile--icon"></fa-icon></a>
+    </div>
 </nav>
 
 

@@ -1,11 +1,10 @@
 @import '../../sass/abstract/variables';
 
 .navbar {
-    background-color: $color-primary-contrast;
+    background-color: $color-white;
     position: fixed;
     bottom: 0;
     left: 0;
-
     width: 100%;
     .menu {
         display: flex;
@@ -13,14 +12,19 @@
         justify-content: space-evenly;
         align-items: center;
 
-        background-color: $color-white;
         max-width: 768px;
-        height: 5.7rem;
+        height: 6rem;
         margin: 0 auto;
-        // &__home {}
-        // &__search {}
-        // &__inbox {}
-        // &__notification {}
-        // &__my-profile {}
-    }
-}
+        a {
+            font-size: 2.2rem;
+            &:link,
+            &:visited {
+                color: $color-primary-contrast; }
+
+            &:hover,
+            &:focus {
+                color: $color-primary; }
+            
+            &:active {
+                color: $color-primary; } }
+} }

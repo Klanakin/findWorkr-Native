@@ -12,9 +12,9 @@
         </div>
     </div>
     <div class="contents util-center">
-        <div class="popular-services">
-            <h3>Popular Services</h3>
+        <div class="popular-services">         
             <div class="popular-services__card-box">
+                <h3>Popular Services</h3>
                 <div class="card card__logo-design">
                     <img src="../../assets/img/preview/card__logo-design@3x.png" alt="Logo design">
                     <h4>Logo Design</h4></div>
@@ -27,27 +27,32 @@
                 <div class="card card__influencer-marketing">
                     <img src="../../assets/img/preview/card__influencer-marketing@3x.png" alt="Influencer marketing strategies">
                     <h4>Influencer Marketing</h4></div>
-            </div>
-            <div class="see-all"><a [routerLink]="['/navigation/home']">See all</a></div>
+                <div class="see-all"><a [routerLink]="['/navigation/home']">See all</a></div>
+            </div>          
         </div>
         <div class="recently-viewed">
-            <h3>Recently Viewed and More</h3>
             <div class="recently-viewed__card-box">
+                <h3>Recently Viewed and More</h3>
                 <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
                 <div class="card"></div>
+                <div class="see-all"><a [routerLink]="['/navigation/home']">See all</a></div>
             </div>
-            <div class="see-all"><a [routerLink]="['/navigation/home']">See all</a></div>
         </div>
     </div>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="menu">
-            <a [routerLink]="['/navigation/home']" src="" class="menu__home">home</a>
-            <a [routerLink]="['/navigation/home']" src="" class="menu__search">search</a>
-            <a [routerLink]="['/navigation/home']" src="" class="menu__inbox">inbox</a>
-            <a [routerLink]="['/navigation/home']" src="" class="menu__notification">notification</a>
-            <a [routerLink]="['/navigation/home']" src="" class="menu__my-profile">my profile</a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__home">
+                <fa-icon [icon]="faHome"></fa-icon></a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__search">
+                <fa-icon [icon]="faSearch"></fa-icon></a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__inbox">
+                <fa-icon [icon]="faEnvelope"></fa-icon></a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__notification">
+                <fa-icon [icon]="faBell"></fa-icon></a>
+            <a [routerLink]="['/navigation/home']" src="" class="menu__my-profile">
+                <fa-icon [icon]="faUser"></fa-icon></a>
         </div>
-    </nav>
+    </nav> -->
 </div>
