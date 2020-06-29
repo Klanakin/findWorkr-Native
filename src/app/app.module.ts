@@ -13,6 +13,10 @@ import { UnderConstructionComponent } from './under-construction/under-construct
 import { EmailConfirmationComponent } from './email-confirmation/email-confirmation.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { NotificationsComponent } from './notifications/notifications.component';
+import { InboxComponent } from './inbox/inbox.component';
+import { ProfileComponent } from './profile/profile.component';
+import { ClassificationComponent } from './classification/classification.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { NavigationComponent } from './navigation/navigation.component';
     UnderConstructionComponent,
     EmailConfirmationComponent,
     HomeComponent,
-    NavigationComponent
+    NavigationComponent,
+    NotificationsComponent,
+    InboxComponent,
+    ProfileComponent,
+    ClassificationComponent
   ],
   imports: [
     AppRoutingModule,

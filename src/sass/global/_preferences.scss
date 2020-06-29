@@ -27,6 +27,9 @@ h1 {
     font-size: 3.4rem;
 }
 
+
+// OPTIMIZED FOR: portrait view
+//
 @media only screen
     and (orientation: portrait)
     and (max-width: 359px) {
@@ -59,12 +62,43 @@ h1 {
 @media only screen
     and (orientation: portrait) 
     and (min-width: 768px)
-    and (max-width: 1023px) {
+    and (max-width: 999px) {
         html {
             font-size: 62.5%; } }
 @media only screen
     and (orientation: portrait) 
-    and (min-width: 1024px) {
+    and (min-width: 1000px) {
+        html {
+            font-size: 62.5%; } }
+
+// OPTIMIZED FOR: landscape view
+//
+@media only screen
+    and (orientation: landscape)
+    and (max-width: 567px) {
+        html {
+            font-size: 40%; } }
+@media only screen
+    and (orientation: landscape)
+    and (min-width: 568px)
+    and (max-width: 639px) {
+        html {
+            font-size: 50%; } }
+@media only screen
+    and (orientation: landscape)
+    and (min-width: 640px)
+    and (max-width: 730px) {
+        html {
+            font-size: 62.5%; } }
+@media only screen
+    and (orientation: landscape)
+    and (min-width: 731px)
+    and (max-width: 999px) {
+        html {
+            font-size: 62.5%; } }
+@media only screen
+    and (orientation: landscape)
+    and (min-width: 1000px) {
         html {
             font-size: 62.5%; } }
 

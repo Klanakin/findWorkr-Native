@@ -1,0 +1,134 @@
+// OPTIMIZED FOR: portrait view
+//
+@media only screen
+    and (orientation: portrait)
+    and (max-width: 359px) {
+        .stage {
+            padding: 3rem 3rem 9rem 3rem; }
+        .card {
+        width: 20rem;
+        height: 24rem;
+            &__preview {
+                height: 16rem; }
+            &__title {
+                height: 8rem; } } }
+@media only screen
+    and (orientation: portrait)
+    and (min-width: 360px)
+    and (max-width: 374px) {
+        .stage {
+            padding: 3rem 3rem 9rem 3rem; }
+        .card {
+        width: 18rem;
+        height: 21rem;
+            &__preview {
+                height: 15rem; }
+            &__title {
+                height: 6rem; } } }
+@media only screen
+    and (orientation: portrait) 
+    and (min-width: 375px)
+    and (max-width: 410px) {
+        .stage {
+            padding: 1.6rem 1.6rem 7.6rem 1.6rem; }
+        .card {
+        width: 16rem;
+        height: 19rem;
+            &__preview {
+                height: 13rem; }
+            &__title {
+                height: 6rem; } } }
+@media only screen 
+    and (orientation: portrait) 
+    and (min-width: 411px)
+    and (max-width: 567px) {
+        .stage {
+            padding: 3rem 3rem 9rem 3rem; }
+        .card {
+        width: 16rem;
+        height: 19rem;
+            &__preview {
+                height: 13rem; }
+            &__title {
+                height: 6rem; } } }
+@media only screen
+    and (orientation: portrait) 
+    and (min-width: 568px)
+    and (max-width: 767px) {
+        .stage {
+            padding: 3rem 3rem 9rem 3rem; }
+        .card {
+        width: 14rem;
+        height: 17rem;
+            &__preview {
+                height: 12rem; }
+            &__title {
+                height: 5rem; } } }
+@media only screen
+    and (orientation: portrait) 
+    and (min-width: 768px)
+    and (max-width: 1023px) {
+        .stage {
+            padding: 5rem 5rem 11rem 5rem; }
+        .card {
+        width: 20rem;
+        height: 24rem;
+            &__preview {
+                height: 17rem; }
+            &__title {
+                height: 7rem; } } }
+@media only screen
+    and (orientation: portrait) 
+    and (min-width: 1024px) {
+        .stage {
+            padding: 5rem 5rem 11rem 5rem; }
+        .card {
+        width: 22rem;
+        height: 26rem;
+            &__preview {
+                height: 18rem; }    
+            &__title {
+                height: 8rem; } 
+            h4 {
+                padding: 0 2rem; } } }
+
+// OPTIMIZED FOR: landscape view
+//
+@media only screen
+    and (orientation: landscape)
+    and (min-width: 567px) {
+        .stage {
+            padding: 3rem 3rem 9rem 3rem; }
+        .card {
+        width: 20rem;
+        height: 24rem;
+            &__preview {
+                height: 16rem; }
+            &__title {
+                height: 8rem; } } }
+@media only screen
+    and (orientation: landscape) 
+    and (min-width: 568px)
+    and (max-width: 767px) {
+        .stage {
+            padding: 3rem 3rem 9rem 3rem; }
+        .card {
+        width: 14rem;
+        height: 17rem;
+            &__preview {
+                height: 12rem; }
+            &__title {
+                height: 5rem; } } }
+@media only screen
+    and (orientation: landscape) 
+    and (min-width: 768px)
+    and (max-width: 1023px) {
+        .stage {
+            padding: 6rem 6rem 12rem 6rem; }
+        .card {
+        width: 20rem;
+        height: 24rem;
+            &__preview {
+                height: 17rem; }
+            &__title {
+                height: 7rem; } } }

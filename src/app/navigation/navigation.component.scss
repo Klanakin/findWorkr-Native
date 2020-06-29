@@ -22,13 +22,11 @@
             &:visited {
                 color: $color-primary-contrast; }
             &:hover {
-                background-color: $color-grey-light-2;
-                color: $color-primary; }
+                background-color: $color-grey-light-2; }
             &:focus {
                 background-color: $color-white;
                 color: $color-primary;
-            }
-            
+                outline: none; }
             &:active {
                 background-color: $color-white;
                 color: $color-primary; } }
@@ -37,7 +35,6 @@
             flex-direction: row;
             align-items: center;
             justify-content: center;
-            transition: all .3s;
 
             width: 6rem;
             height: 6rem; } } }
