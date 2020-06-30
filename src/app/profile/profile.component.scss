@@ -23,10 +23,11 @@
     .contents {
         .card-box {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-    
-            height: 80vh;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            padding-bottom: 5rem;
             p {
                 color: $color-primary-contrast;
                 font-size: 1.6rem; }
@@ -37,25 +38,75 @@
                     border-radius: .8rem;
                     box-shadow: .3rem .3rem .6rem rgba($color-primary-contrast, $alpha: .2);
                     padding: 3rem 2rem 2rem 2rem;
-    
-                    max-width: 60rem;
-                    width: 100%;
+
                     &:not(:first-child) {
                         margin-top: $margin-top-xxs; }
-                    
-                    &:last-child {
-                        margin-bottom: $margin-bottom-xxl; }
     
                     &--user {
+                        flex-basis: 100%;
                         img {
-    
                             transform: translateX(-1rem);
                             width: 8rem;
                             height: 8rem; } }
-    
+                    &--my-findworkr {
+                        flex-basis: 100%; }
+                    &--selling {
+                        flex-basis: 100%; }
+                    &--buying {
+                        flex-basis: 100%; }
+                    &--general {
+                        flex-basis: 100%; }
                     ul {
                         list-style-type: none;
                         li:not(:first-child) {
                             margin: 1rem 0; }
     
 } } } } } }
+
+@media only screen
+    // and (orientation: portrait)
+    and (min-width: 567px) {
+
+        .stage .contents .card-box {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            padding-bottom: 5rem;
+            p {
+                color: $color-primary-contrast;
+                font-size: 1.6rem; }
+    
+            .profile {
+                &__card {
+                    background-color: $color-white;
+                    border-radius: .8rem;
+                    box-shadow: .3rem .3rem .6rem rgba($color-primary-contrast, $alpha: .2);
+                    padding: 3rem 2rem 2rem 2rem;
+
+                    &:not(:first-child) {
+                        margin-top: $margin-top-xxs; }
+                    
+                    // &:last-child {
+                    //     margin-bottom: $margin-bottom-xxl; }
+    
+                    &--user {
+                        flex-basis: 100%;
+                        img {
+                            transform: translateX(-1rem);
+                            width: 8rem;
+                            height: 8rem; } }
+                    &--my-findworkr {
+                        flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
+                    &--selling {
+                        flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
+                    &--buying {
+                        flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
+                    &--general {
+                        flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
+                    ul {
+                        list-style-type: none;
+                        li:not(:first-child) {
+                            margin: 1rem 0; } }
+} } } }
