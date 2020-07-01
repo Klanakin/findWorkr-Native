@@ -10,15 +10,24 @@
 
         width: 100%;
         &__title {
-            align-self: flex-end;
+            display: flex;
+            // align-items: baseline;
+            flex-direction: row;
+            justify-content: flex-end;
 
             color: $color-primary-contrast;
             font-size: 3rem;
             font-weight: 500;
-            margin-bottom: $margin-bottom-s; }
-            &__icon {
-                font-size: 2rem;
-                margin-bottom: $margin-bottom-s; } }
+            margin-bottom: $margin-bottom-xs;
+            width: 100%; 
+            .findworkr-logo {
+                transform: translateX(1.8rem); } }
+        &__icon {
+            font-size: 2rem; } }
+            // &--menu {
+            //     color: $color-primary-contrast;
+            //     font-size: 3rem;
+            //     margin-left: $margin-left-xxs; } } }
 
     .contents {
         .card-box {
@@ -29,7 +38,7 @@
 
             padding-bottom: 5rem;
             p {
-                color: $color-primary-contrast;
+                color: $color-primary;
                 font-size: 1.6rem; }
     
             .profile {
@@ -44,6 +53,9 @@
     
                     &--user {
                         flex-basis: 100%;
+
+                        color: $color-primary;
+                        font-weight: 300;
                         img {
                             transform: translateX(-1rem);
                             width: 8rem;
@@ -55,7 +67,11 @@
                     &--buying {
                         flex-basis: 100%; }
                     &--general {
-                        flex-basis: 100%; }
+                        flex-basis: 100%; 
+                        ul li:nth-child(2) {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between; } }
                     ul {
                         list-style-type: none;
                         li:not(:first-child) {
@@ -75,7 +91,7 @@
 
             padding-bottom: 5rem;
             p {
-                color: $color-primary-contrast;
+                color: $color-primary;
                 font-size: 1.6rem; }
     
             .profile {
@@ -93,6 +109,8 @@
     
                     &--user {
                         flex-basis: 100%;
+
+                        color: $color-primary;
                         img {
                             transform: translateX(-1rem);
                             width: 8rem;

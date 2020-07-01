@@ -2,7 +2,11 @@
 <div class="stage">
     <div class="heading">
         <div class="heading__title">
+            <a [routerLink]="['/navigation/home']" class="findworkr-logo util-center"><p >findWorkr</p></a>
             <fa-icon [icon]="faCog" class="heading__icon"></fa-icon>
+            <!-- <a [routerLink]="['/navigation/profile']" class="heading__icon--menu">
+                <fa-icon [icon]="faBars"></fa-icon>
+            </a> -->
         </div>
     </div>
     <div class="contents">
@@ -38,11 +42,17 @@
             <div class="profile__card profile__card--general">
                 <ul>
                     <li><h3>General</h3></li>
-                    <li>Online status</li>
+                    <li>
+                        <span>Online status</span>
+                        <label class="switch">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
                     <li>Payments</li>
                     <li>Invite friends</li>
                     <li>Support</li>
-                </ul>
+                </ul>        
             </div>
         </div>
     </div>

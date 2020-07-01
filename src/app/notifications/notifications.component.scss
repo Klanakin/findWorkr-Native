@@ -24,10 +24,17 @@
         box-shadow: .3rem .3rem .6rem rgba($color-primary-contrast, $alpha: 0.2);
         border-radius: .8rem;
 
-        height: 80vh;
+        height: 75vh;
         p {
             color: $color-primary-contrast;
             font-size: 1.6rem; }
         &__icon {
-            font-size: 11rem;
+            font-size: 8rem;
             margin-bottom: $margin-bottom-s; } } }
+
+@media  (orientation: landscape)
+    and (max-height: 414px) {
+    .stage .content {
+        height: 70vh;
+    }
+}

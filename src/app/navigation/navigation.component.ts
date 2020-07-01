@@ -1,10 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+
 import {
   faBell, 
   faEnvelope,
   faHome,
   faSearch,
-  faUser
+  faUser,
+  faCaretRight,
+  faBars,
+  faAngleDoubleRight,
+  faAngleDoubleDown
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -18,10 +24,16 @@ export class NavigationComponent implements OnInit {
   faHome = faHome;
   faSearch = faSearch;
   faUser = faUser;
+  faCaretRight = faCaretRight;
+  faBars = faBars;
+  faAngleDoubleRight = faAngleDoubleRight;
+  faAngleDoubleDown = faAngleDoubleDown;
   
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  closeMenu() {
+    window.alert("This button activates toggleMenuBar()");
   }
-
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
 import { faCog } from '@fortawesome/free-solid-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-profile',
@@ -8,9 +10,11 @@ import { faCog } from '@fortawesome/free-solid-svg-icons';
 })
 export class ProfileComponent implements OnInit {
   faCog = faCog;
-  constructor() { }
+  faBars = faBars;
+  status: boolean;
 
-  ngOnInit(): void {
-  }
+  constructor() {}
+
+  ngOnInit(): void {}
 
 }

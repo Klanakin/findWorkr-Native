@@ -1,18 +1,29 @@
 <router-outlet></router-outlet>
-<nav class="navbar">
-    <div class="menu">
-        <a [routerLink]="['/navigation/home']">
-                <div class="menu__icon"><fa-icon [icon]="faHome" class="menu__icon--home"></fa-icon></div></a>
-        <a [routerLink]="['/navigation/classification']">
-                <div class="menu__icon"><fa-icon [icon]="faSearch" class="menu__icon--search"></fa-icon></div></a>
-        <a [routerLink]="['/navigation/inbox']">
-                <div class="menu__icon"><fa-icon [icon]="faEnvelope" class="menu__icon--inbox"></fa-icon></div></a>
-        <a [routerLink]="['/navigation/notifications']">
-                <div class="menu__icon"><fa-icon [icon]="faBell" class="menu__icon--notifications"></fa-icon></div></a>
-        <a [routerLink]="['/navigation/profile']">
-                <div class="menu__icon"><fa-icon [icon]="faUser" class="menu__icon--my-profile"></fa-icon></div></a>
-    </div>
-</nav>
-
-
-
+<div class="container">
+	<div class="navigation">
+		<input type="checkbox" class="navigation__checkbox" id="nav-toggle" checked>
+		<label for="nav-toggle" class="navigation__button" id="hamburger"><fa-icon [icon]="faBars"></fa-icon></label>
+		<div class="navigation__background">
+			<nav class="navbar">
+				<div class="menu">
+					<!-- <a [routerLink]="['/navigation']" (click)="closeMenu()" class="menu__hamburger">
+						<div class="menu__icon"><fa-icon [icon]="faBars" class="menu__icon--hamburger"></fa-icon></div></a> -->
+					<a [routerLink]="['/navigation']" (click)="closeMenu()" class="menu__caret">
+						<div class="menu__icon menu__icon--right"><fa-icon [icon]="faAngleDoubleRight"></fa-icon></div></a>
+					<a [routerLink]="['/navigation']" (click)="closeMenu()" class="menu__caret">
+						<div class="menu__icon menu__icon--down"><fa-icon [icon]="faAngleDoubleDown"></fa-icon></div></a>
+					<a [routerLink]="['/navigation/home']">
+						<div class="menu__icon" menu__icon--home><fa-icon [icon]="faHome" class="menu__icon--home"></fa-icon></div></a>
+					<a [routerLink]="['/navigation/classification']">
+						<div class="menu__icon"><fa-icon [icon]="faSearch" class="menu__icon--search"></fa-icon></div></a>
+					<a [routerLink]="['/navigation/inbox']">
+						<div class="menu__icon"><fa-icon [icon]="faEnvelope" class="menu__icon--inbox"></fa-icon></div></a>
+					<a [routerLink]="['/navigation/notifications']">
+						<div class="menu__icon"><fa-icon [icon]="faBell" class="menu__icon--notifications"></fa-icon></div></a>
+					<a [routerLink]="['/navigation/profile']">
+						<div class="menu__icon"><fa-icon [icon]="faUser" class="menu__icon--my-profile"></fa-icon></div></a>
+				</div>
+			</nav> 
+		</div>
+	</div>
+</div>
