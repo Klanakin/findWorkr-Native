@@ -35,6 +35,6 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {}
 
   closeMenu() {
-    document.getElementById("nav-toggle").checked = false;
+    (<HTMLInputElement>document.getElementById("nav-toggle")).checked = false;
   }
 }

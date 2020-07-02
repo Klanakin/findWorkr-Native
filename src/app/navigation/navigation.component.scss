@@ -95,13 +95,11 @@
             &__button {
                 background-color: transparent;
                 border-radius: 50%;
+                cursor: pointer;
 
                 // position: absolute;
                 // top: 5rem;
-                // left: 5rem; 
-
-                height: 4rem;
-                width: 4rem;
+                // left: 5rem;
                 z-index: 5; }
             &__background {
                 background-color: $color-white;
@@ -192,13 +190,12 @@
             &__button {
                 background-color: transparent;
                 border-radius: 50%;
+                cursor: pointer;
 
                 // position: absolute;
                 // top: 5rem;
                 // left: 5rem; 
 
-                height: 2.2rem;
-                width: 2.2rem;
                 z-index: 5; }
             &__background {
                 position: fixed;
