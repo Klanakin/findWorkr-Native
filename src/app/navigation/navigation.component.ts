@@ -29,11 +29,12 @@ export class NavigationComponent implements OnInit {
   faAngleDoubleRight = faAngleDoubleRight;
   faAngleDoubleDown = faAngleDoubleDown;
   
+
   constructor() {}
 
   ngOnInit(): void {}
 
   closeMenu() {
-    window.alert("This button activates toggleMenuBar()");
+    document.getElementById("nav-toggle").checked = false;
   }
 }

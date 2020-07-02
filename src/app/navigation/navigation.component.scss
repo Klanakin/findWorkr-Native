@@ -100,8 +100,8 @@
                 // top: 5rem;
                 // left: 5rem; 
 
-                height: 2.2rem;
-                width: 2.2rem;
+                height: 4rem;
+                width: 4rem;
                 z-index: 5; }
             &__background {
                 background-color: $color-white;
@@ -125,7 +125,11 @@
                         align-items: center;
                         justify-content: center;
                         &__caret {
-                            display: unset; }
+                            display: unset; } 
+                            // &:link {}
+                            // &:visited {}
+                            // &:hover {}
+                            // &:active {}
                         // &__hamburger {
                         //     display: unset; }
                         //     fa-icon {
@@ -141,11 +145,10 @@
                                 background-color: $color-primary; 
                                 color: white; }
                             &:focus {
-                                background-color: $color-primary;
-                                color: $color-white;
+                                background-color: transparent;
+                                color: $color-primary;
                                 outline: none; }
                             &:active {
-                                background-color: $color-white;
                                 color: $color-primary; } }
                         &__icon {
                             display: flex;
@@ -161,13 +164,13 @@
                                 height: 6rem;
                                 fa-icon {
                                     background-color: transparent;
-                                    color: $color-primary;
+                                    // color: $color-primary;
                                     font-size: 1.6rem; } }
                             &--down {
                                 width: 6rem;
                                 height: 6rem;
                                 fa-icon {
-                                    color: $color-primary;
+                                    // color: $color-primary;
                                     font-size: 1.6rem; } }
 } } } } } } }
 

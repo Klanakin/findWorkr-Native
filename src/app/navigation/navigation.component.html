@@ -2,16 +2,16 @@
 <div class="container">
 	<div class="navigation">
 		<input type="checkbox" class="navigation__checkbox" id="nav-toggle" checked>
-		<label for="nav-toggle" class="navigation__button" id="hamburger"><fa-icon [icon]="faBars"></fa-icon></label>
+	<label for="nav-toggle" class="navigation__button" id="hamburger"><fa-icon [icon]="faBars"></fa-icon></label>
 		<div class="navigation__background">
 			<nav class="navbar">
 				<div class="menu">
 					<!-- <a [routerLink]="['/navigation']" (click)="closeMenu()" class="menu__hamburger">
 						<div class="menu__icon"><fa-icon [icon]="faBars" class="menu__icon--hamburger"></fa-icon></div></a> -->
-					<a [routerLink]="['/navigation']" (click)="closeMenu()" class="menu__caret">
-						<div class="menu__icon menu__icon--right"><fa-icon [icon]="faAngleDoubleRight"></fa-icon></div></a>
-					<a [routerLink]="['/navigation']" (click)="closeMenu()" class="menu__caret">
-						<div class="menu__icon menu__icon--down"><fa-icon [icon]="faAngleDoubleDown"></fa-icon></div></a>
+					<a [routerLink]="" class="menu__caret">
+						<div (click)="closeMenu()" class="menu__icon menu__icon--right"><fa-icon [icon]="faAngleDoubleRight"></fa-icon></div></a>
+					<a [routerLink]="" class="menu__caret">
+						<div (click)="closeMenu()" class="menu__icon menu__icon--down"><fa-icon [icon]="faAngleDoubleDown"></fa-icon></div></a>
 					<a [routerLink]="['/navigation/home']">
 						<div class="menu__icon" menu__icon--home><fa-icon [icon]="faHome" class="menu__icon--home"></fa-icon></div></a>
 					<a [routerLink]="['/navigation/classification']">
