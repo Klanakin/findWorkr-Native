@@ -172,7 +172,108 @@
                                     font-size: 1.6rem; } }
 } } } } } } }
 
-@media (orientation: landscape) {
+@media (orientation: landscape)
+        and (max-height: 369px) {
+    #hamburger {
+        color: $color-primary-contrast;
+        font-size: 3rem; }
+    .container {
+        .navigation {
+            &__checkbox:checked ~ .navigation__background {
+                transform: translateX(-8rem); }
+            // &__checkbox:checked ~ &__background {
+            //     transform: scale(5); }
+            &__checkbox {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0; }
+            &__button {
+                background-color: transparent;
+                border-radius: 50%;
+                cursor: pointer;
+
+                // position: absolute;
+                // top: 5rem;
+                // left: 5rem; 
+
+                z-index: 5; }
+            &__background {
+                position: fixed;
+                top: 0;
+                left: calc(100% - 8rem);
+                // transform: translateX(8rem);
+                transition: all .4s ease-out;
+
+                height: 100vh;
+                width: 8rem;
+                .navbar {
+                    display: unset;
+                    background-color: rgba(#eee, $alpha: .85);
+                    position: fixed;
+                    top: 0;
+                    left: 100%;
+                    // left: calc(100% - 8rem);
+                    width: 8rem;
+                    .menu {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+
+                        margin: 0 auto;
+                        height: 100vh;
+                        &__caret {
+                            display: unset; }
+                        // &__hamburger {
+                        //     display: unset; }
+                        //     fa-icon {
+                        //         color: $color-primary-contrast;
+                        //         font-size: 2.2rem; }
+                        a {
+                            font-size: 1.6rem;
+                            transition: all .3s;
+                            &:link,
+                            &:visited {
+                                color: $color-primary-contrast; }
+                            &:hover {
+                                background-color: $color-primary; 
+                                color: white; }
+                            &:focus {
+                                background-color: $color-primary;
+                                color: $color-white;
+                                outline: none; }
+                            &:active {
+                                background-color: $color-white;
+                                color: $color-primary; } }
+                        &__icon {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+        
+                            width: 4.5rem;
+                            height: 4.5rem; 
+                            &--right {
+                                width: 4.5rem;
+                                height: 4.5rem;
+                                fa-icon {
+                                    background-color: transparent;
+                                    color: $color-primary;
+                                    font-size: 1.6rem; } }
+                            &--down {
+                                display: none;
+                                width: 4.5rem;
+                                height: 4.5rem;
+                                fa-icon {
+                                    background-color: transparent;
+                                    color: $color-primary;
+                                    font-size: 1.6rem; } }
+} } } } } } }
+
+
+@media (orientation: landscape)
+        and (min-height: 370px) {
     #hamburger {
         color: $color-primary-contrast;
         font-size: 3rem; }
