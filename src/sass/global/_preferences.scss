@@ -3,13 +3,11 @@
 *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
+    box-sizing: border-box; }
 
 html {
-    font-size: 62.5%; //iphone X
-    // font-size: 50%; // for phones smaller than iphone X
-}
+    font-size: 62.5%; } //iphone X
+    // font-size: 50%; // for phones smaller than iphone X }
 
 body {
     background-color: $color-grey-light-1;
@@ -19,13 +17,22 @@ body {
     font-size: 1.4rem;
     margin: 0;
     padding: 0;
-}
+
+    &::-webkit {
+      &-scrollbar {
+      width: 1.2rem;
+      &-track {
+        background: $color-grey-light-1; }
+      &-thumb {
+        background-color: $color-primary;
+        border-radius: 2rem;
+        border: .3rem solid $color-grey-light-1; }
+} } }
 
 h1 {
     color: $color-white;
     font-family: Helvetica;
-    font-size: 3.4rem;
-}
+    font-size: 3.4rem; }
 
 
 // OPTIMIZED FOR: portrait view
@@ -42,31 +49,31 @@ h1 {
         html {
             font-size: 50%; } }
 @media only screen
-    and (orientation: portrait) 
+    and (orientation: portrait)
     and (min-width: 375px)
     and (max-width: 410px) {
         html {
             font-size: 62.5%; } }
-@media only screen 
-    and (orientation: portrait) 
+@media only screen
+    and (orientation: portrait)
     and (min-width: 411px)
     and (max-width: 567px) {
         html {
             font-size: 62.5%; } }
 @media only screen
-    and (orientation: portrait) 
+    and (orientation: portrait)
     and (min-width: 568px)
     and (max-width: 767px) {
         html {
             font-size: 62.5%; } }
 @media only screen
-    and (orientation: portrait) 
+    and (orientation: portrait)
     and (min-width: 768px)
     and (max-width: 999px) {
         html {
             font-size: 62.5%; } }
 @media only screen
-    and (orientation: portrait) 
+    and (orientation: portrait)
     and (min-width: 1000px) {
         html {
             font-size: 62.5%; } }
