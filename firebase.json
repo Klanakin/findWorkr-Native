@@ -464,6 +464,36 @@
           "destination": "/index.html"
         }
       ]
+    },
+    {
+      "target": "findWorkr-Native",
+      "public": "dist/findWorkr-Native",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "findWorkr-Native",
+      "public": "dist/findWorkr-Native",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
     }
   ]
 }

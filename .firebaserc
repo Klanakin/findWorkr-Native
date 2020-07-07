@@ -6,6 +6,13 @@
           "findworkr-native"
         ]
       }
+    },
+    "dk-findworkr": {
+      "hosting": {
+        "findWorkr-Native": [
+          "dk-findworkr"
+        ]
+      }
     }
   }
 }
