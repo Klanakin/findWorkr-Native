@@ -1,82 +1,6 @@
 @import '../../sass/abstract/variables';
 @import '../../sass/global/media-queries';
 
-// @media (orientation: portrait) {
-//     #hamburger {
-//         color: $color-primary-contrast;
-//         font-size: 3rem; }
-//     .container {
-//         .navigation {
-//             &__checkbox:checked ~ &__background {
-//                 transform: translateX(0); }
-//             &__checkbox {
-//                 display: none; }
-//             &__button {
-//                 background-color: $color-white;
-//                 border-radius: 50%;
-
-//                 position: fixed;
-//                 top: 2.2rem;
-//                 right: 2.2rem; 
-
-//                 height: 4rem;
-//                 width: 4rem;
-//                 z-index: 5; }
-//             &__background {
-//                 background-color: $color-primary;
-//                 position: fixed;
-//                 top: 0;
-//                 left: calc(100% - 8rem);
-//                 transform: translateX(8rem);
-//                 transition: all .4s ease-out;
-
-//                 height: 100vh;
-//                 .navbar {
-//                     background-color: $color-white;
-//                     position: fixed;
-//                     bottom: 0;
-//                     left: 0;
-
-//                     height: 8rem;
-//                     width: 100%;
-//                     .menu {
-//                         display: flex;
-//                         flex-direction: row;
-//                         justify-content: space-evenly;
-//                         align-items: center;
-            
-//                         max-width: 768px;
-//                         height: 6rem;
-//                         margin: 0 auto;
-//                         // &__toggle { // lock icon
-//                         //     display: none; }
-//                         &__caret {
-//                             display: none; }
-//                         a {
-//                             font-size: 2.2rem;
-//                             transition: all .3s;
-//                             &:link,
-//                             &:visited {
-//                                 color: $color-primary-contrast; }
-//                             &:hover {
-//                                 background-color: $color-grey-light-2; }
-//                             &:focus {
-//                                 background-color: $color-white;
-//                                 color: $color-primary;
-//                                 outline: none; }
-//                             &:active {
-//                                 background-color: $color-white;
-//                                 color: $color-primary; } }
-//                         &__icon {
-//                             display: flex;
-//                             flex-direction: row;
-//                             align-items: center;
-//                             justify-content: center;
-            
-//                             width: 6rem;
-//                             height: 6rem; }
-// } } } } } }
-
 @media (orientation: portrait) {
     #hamburger {
         color: $color-primary-contrast;
@@ -172,7 +96,7 @@
                                     font-size: 1.6rem; } }
 } } } } } } }
 
-@media (orientation: landscape)
+@media  (orientation: landscape)
         and (max-height: 369px) {
     #hamburger {
         color: $color-primary-contrast;
@@ -272,8 +196,9 @@
 } } } } } } }
 
 
-@media (orientation: landscape)
-        and (min-height: 370px) {
+@media  (orientation: landscape)
+        and (min-height: 370px)
+        and (max-height: 767px) {
     #hamburger {
         color: $color-primary-contrast;
         font-size: 3rem; }
@@ -368,5 +293,101 @@
                                 fa-icon {
                                     background-color: transparent;
                                     color: $color-primary;
+                                    font-size: 1.6rem; } }
+} } } } } } }
+
+@media  (orientation: landscape)
+        and (min-height: 768px) {
+    #hamburger {
+        color: $color-primary-contrast;
+        font-size: 3rem; }
+    .container {
+        .navigation {
+            &__checkbox:checked ~ .navigation__background {
+                transform: translateY(-6rem); }
+            // &__checkbox:checked ~ &__background {
+            //     transform: scale(5); }
+            &__checkbox {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0; }
+            &__button {
+                background-color: transparent;
+                border-radius: 50%;
+                cursor: pointer;
+
+                // position: absolute;
+                // top: 5rem;
+                // left: 5rem;
+                z-index: 5; }
+            &__background {
+                background-color: $color-white;
+                position: fixed;
+                bottom: -6rem;
+                left: 0;
+                transition: all .4s ease-out;
+
+                width: 100%;
+                .navbar {
+                    display: unset;
+                    background-color: rgba(#eee, $alpha: .85);
+                    // position: fixed;
+                    // top: 0;
+                    // left: 100%;
+                    // left: calc(100% - 8rem);
+                    height: 6rem;
+                    .menu {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        &__caret {
+                            display: unset; } 
+                            // &:link {}
+                            // &:visited {}
+                            // &:hover {}
+                            // &:active {}
+                        // &__hamburger {
+                        //     display: unset; }
+                        //     fa-icon {
+                        //         color: $color-primary-contrast;
+                        //         font-size: 2.2rem; }
+                        a {
+                            font-size: 2.2rem;
+                            transition: all .3s;
+                            &:link,
+                            &:visited {
+                                color: $color-primary-contrast; }
+                            &:hover {
+                                background-color: $color-primary; 
+                                color: white; }
+                            &:focus {
+                                background-color: transparent;
+                                color: $color-primary;
+                                outline: none; }
+                            &:active {
+                                color: $color-primary; } }
+                        &__icon {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+        
+                            width: 6rem;
+                            height: 6rem; 
+                            &--right {
+                                display: none;
+                                width: 6rem;
+                                height: 6rem;
+                                fa-icon {
+                                    background-color: transparent;
+                                    // color: $color-primary;
+                                    font-size: 1.6rem; } }
+                            &--down {
+                                width: 6rem;
+                                height: 6rem;
+                                fa-icon {
+                                    // color: $color-primary;
                                     font-size: 1.6rem; } }
 } } } } } } }
