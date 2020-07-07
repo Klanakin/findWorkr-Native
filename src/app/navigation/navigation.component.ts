@@ -28,7 +28,6 @@ export class NavigationComponent implements OnInit {
   faBars = faBars;
   faAngleDoubleRight = faAngleDoubleRight;
   faAngleDoubleDown = faAngleDoubleDown;
-  
 
   constructor() {}
 

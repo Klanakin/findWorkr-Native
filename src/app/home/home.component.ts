@@ -15,5 +15,4 @@ faSearch = faSearch;
 
   ngOnInit(): void {
   }
-
 }

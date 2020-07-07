@@ -17,6 +17,7 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { InboxComponent } from './inbox/inbox.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ClassificationComponent } from './classification/classification.component';
+import { CategoriesComponent } from './categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ClassificationComponent } from './classification/classification.compone
     NotificationsComponent,
     InboxComponent,
     ProfileComponent,
-    ClassificationComponent
+    ClassificationComponent,
+    CategoriesComponent
   ],
   imports: [
     AppRoutingModule,

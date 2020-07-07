@@ -10,6 +10,7 @@ import { EmailConfirmationComponent } from './email-confirmation/email-confirmat
 
 import { NavigationComponent } from './navigation/navigation.component';
   import { HomeComponent} from './home/home.component';
+  import { CategoriesComponent} from './categories/categories.component';
   import { ClassificationComponent} from './classification/classification.component';
   import { InboxComponent} from './inbox/inbox.component';
   import { NotificationsComponent } from './notifications/notifications.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'navigation', component: NavigationComponent,
     children: [
       { path: 'home', component: HomeComponent },
+      { path: 'categories', component: CategoriesComponent },
       { path: 'classification', component: ClassificationComponent },
       { path: 'inbox', component: InboxComponent },
       { path: 'notifications', component: NotificationsComponent },
