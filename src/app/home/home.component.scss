@@ -66,7 +66,7 @@
             flex-grow: 1;
             &__card {
               text-decoration: none;
-              transition: all .2s; }
+              transition: all .4s; }
 
             &__card-box {
                 display: flex;
@@ -80,7 +80,7 @@
                         &--logo-animation {
                             background-image: url(../../assets/img/preview/card__logo-animation@3x.png); }
                         &--business-cards {
-                            background-image: url(../../assets/img/preview/card__business-card@3x.png); }
+                            background-image: url(../../assets/img/preview/card__business-card@3x.png);}
                         &--influencer-marketing {
                             background-image: url(../../assets/img/preview/card__influencer-marketing@3x.png); } } } }
             .see-all {
