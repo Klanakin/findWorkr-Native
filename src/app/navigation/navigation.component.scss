@@ -1,5 +1,6 @@
 @import '../../sass/abstract/variables';
 @import '../../sass/global/media-queries';
+@import '../../sass/abstract/mixins';
 
 @media (orientation: portrait) {
     #hamburger {
@@ -8,7 +9,7 @@
     .container {
         .navigation {
             &__checkbox:checked ~ .navigation__background {
-                transform: translateY(-6rem); }
+                transform: translateY(-10rem); }
             // &__checkbox:checked ~ &__background {
             //     transform: scale(5); }
             &__checkbox {
@@ -26,28 +27,37 @@
                 // left: 5rem;
                 z-index: 5; }
             &__background {
-                background-color: $color-white;
+                background-color: rgba($color-grey-light-1, $alpha: 1);
                 position: fixed;
-                bottom: -6rem;
+                bottom: -10rem;
                 left: 0;
                 transition: all .4s ease-out;
 
                 width: 100%;
                 .navbar {
                     display: unset;
-                    background-color: rgba(#eee, $alpha: .85);
                     // position: fixed;
                     // top: 0;
                     // left: 100%;
                     // left: calc(100% - 8rem);
                     height: 6rem;
+                    hr {
+                      border-color: rgba($color-white, $alpha: 0.4);
+                      border-width: .1rem;
+                      border-style: solid none none none;
+                      width: 95%;
+                      margin: .2rem auto 1.6rem auto; }
                     .menu {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
-                        justify-content: center;
+                        justify-content: space-evenly;
+
+                        margin: 0 auto 2rem auto;
+                        max-width: 60rem;
+
                         &__caret {
-                            display: unset; } 
+                            display: unset; }
                             // &:link {}
                             // &:visited {}
                             // &:hover {}
@@ -57,42 +67,52 @@
                         //     fa-icon {
                         //         color: $color-primary-contrast;
                         //         font-size: 2.2rem; }
-                        a {
-                            font-size: 2.2rem;
-                            transition: all .3s;
-                            &:link,
-                            &:visited {
-                                color: $color-primary-contrast; }
-                            &:hover {
-                                background-color: $color-primary; 
-                                color: white; }
-                            &:focus {
-                                background-color: transparent;
-                                color: $color-primary;
-                                outline: none; }
-                            &:active {
-                                color: $color-primary; } }
+                        // a {
+                        //     font-size: 2.2rem;
+                        //     transition: all .3s;
+                        //     &:link,
+                        //     &:visited {
+                        //         color: $color-primary-contrast; }
+                        //     &:hover {
+                        //         background-color: $color-primary;
+                        //         color: white; }
+                        //     &:focus {
+                        //         background-color: transparent;
+                        //         color: $color-primary;
+                        //         outline: none; }
+                        //     &:active {
+                        //         color: $color-primary; } }
                         &__icon {
+                            @include soft-ui__card;
+
                             display: flex;
                             flex-direction: row;
                             align-items: center;
                             justify-content: center;
-        
-                            width: 6rem;
-                            height: 6rem; 
+
+                            color: $color-primary-contrast;
+                            transition: all .2s;
+
+                            width: 4.8rem;
+                            height: 4.8rem;
+
+                            &:link, &:visited {
+                                @include soft-ui__card;
+                                color: $color-primary-contrast; }
+                            &:hover, &:focus {
+                                @include soft-ui__card--hover;
+                                color: $color-primary; }
+                            &:active {
+                                @include soft-ui__card--active;
+                                color: $color-primary; }
+
                             &--right {
                                 display: none;
-                                width: 6rem;
-                                height: 6rem;
                                 fa-icon {
                                     background-color: transparent;
-                                    // color: $color-primary;
                                     font-size: 1.6rem; } }
                             &--down {
-                                width: 6rem;
-                                height: 6rem;
                                 fa-icon {
-                                    // color: $color-primary;
                                     font-size: 1.6rem; } }
 } } } } } } }
 
@@ -119,7 +139,7 @@
 
                 // position: absolute;
                 // top: 5rem;
-                // left: 5rem; 
+                // left: 5rem;
 
                 z-index: 5; }
             &__background {
@@ -161,7 +181,7 @@
                             &:visited {
                                 color: $color-primary-contrast; }
                             &:hover {
-                                background-color: $color-primary; 
+                                background-color: $color-primary;
                                 color: white; }
                             &:focus {
                                 background-color: $color-primary;
@@ -175,9 +195,9 @@
                             flex-direction: row;
                             align-items: center;
                             justify-content: center;
-        
+
                             width: 4.5rem;
-                            height: 4.5rem; 
+                            height: 4.5rem;
                             &--right {
                                 width: 4.5rem;
                                 height: 4.5rem;
@@ -220,7 +240,7 @@
 
                 // position: absolute;
                 // top: 5rem;
-                // left: 5rem; 
+                // left: 5rem;
 
                 z-index: 5; }
             &__background {
@@ -262,7 +282,7 @@
                             &:visited {
                                 color: $color-primary-contrast; }
                             &:hover {
-                                background-color: $color-primary; 
+                                background-color: $color-primary;
                                 color: white; }
                             &:focus {
                                 background-color: $color-primary;
@@ -276,9 +296,9 @@
                             flex-direction: row;
                             align-items: center;
                             justify-content: center;
-        
+
                             width: 6rem;
-                            height: 6rem; 
+                            height: 6rem;
                             &--right {
                                 width: 6rem;
                                 height: 6rem;
@@ -343,7 +363,7 @@
                         align-items: center;
                         justify-content: center;
                         &__caret {
-                            display: unset; } 
+                            display: unset; }
                             // &:link {}
                             // &:visited {}
                             // &:hover {}
@@ -360,7 +380,7 @@
                             &:visited {
                                 color: $color-primary-contrast; }
                             &:hover {
-                                background-color: $color-primary; 
+                                background-color: $color-primary;
                                 color: white; }
                             &:focus {
                                 background-color: transparent;
@@ -373,9 +393,9 @@
                             flex-direction: row;
                             align-items: center;
                             justify-content: center;
-        
+
                             width: 6rem;
-                            height: 6rem; 
+                            height: 6rem;
                             &--right {
                                 display: none;
                                 width: 6rem;

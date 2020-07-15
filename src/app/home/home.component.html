@@ -6,18 +6,20 @@
         <div class="heading__search-box">
             <input type="text" placeholder="Search">
             <a [routerLink]="['/navigation/home']">
-            <fa-icon 
+            <fa-icon
                 [icon]="faSearch"
                 class="heading__search-box--icon"></fa-icon></a>
         </div>
     </div>
     <div class="contents util-center">
-        <div class="popular-services">         
+        <div class="popular-services">
             <div class="popular-services__card-box">
                 <h3>Popular Services</h3>
-                <div class="card">
+                <a [routerLink]="['/navigation/home']" class="card popular-services__card">
+                  <div>
                     <div class="card__preview card__preview--logo-design"></div>
                     <div class="card__title"><h4>Logo Design</h4></div></div>
+                </a>
                 <div class="card">
                     <div class="card__preview card__preview--logo-animation"></div>
                     <div class="card__title"><h4>Logo Animation</h4></div></div>
@@ -28,7 +30,7 @@
                     <div class="card__preview card__preview--influencer-marketing"></div>
                     <div class="card__title"><h4>Influencer Marketing</h4></div></div>
                 <div class="see-all"><a [routerLink]="['/navigation/home']">See all</a></div>
-            </div>          
+            </div>
         </div>
         <div class="recently-viewed">
             <div class="recently-viewed__card-box">

@@ -2,7 +2,13 @@
 	color: $color-primary;
 	font-family: 'Baloo Thambi 2', Helvetica, sans-serif;
 	font-size: 3rem;
-	font-weight: bold; 
-	text-decoration: none; }
-	// text-shadow: 0 .2rem .4rem rgba($color-black, 0.2); }
-	// text-shadow: 0 .2rem .6rem rgba(#00559F, 0.2); }
+	font-weight: bold;
+  text-decoration: none; }
+
+  // THEME: Soft-UI ##################################################
+  // -webkit-text-stroke: .05rem rgba($color: #dddddd, $alpha: 0.1);
+  // text-shadow:
+  //   -.1rem -.1rem .6rem rgba($color: #ffffff, $alpha: 0.6),
+  //   -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.6),
+  //   .1rem .1rem .2rem rgba($color: #000000, $alpha: 0.2),
+  //   -.1rem -.1rem .1rem rgba($color: #ffffff, $alpha: 1), }

@@ -1,5 +1,6 @@
 @import '../../sass/abstract/variables';
 @import '../../sass/global/media-queries';
+@import '../../sass/abstract/mixins';
 
 .stage {
     .heading {
@@ -15,26 +16,27 @@
             margin-bottom: $margin-bottom-s; }
         &__search-box {
             position: relative;
-            max-width: 60rem;
+            max-width: 50rem;
             width: 100%;
             input {
-                background-color: $color-white;
-                border-color: $color-grey-light-2;
-                // border-color: rgba($color-primary-contrast, $alpha: .3);
-                border-radius: .6rem;
-                border-style: solid;
-                border-width: .1rem;
-                box-shadow: 0 .3rem .6rem rgba($color-primary-contrast, $alpha: 0.2);
+                @include soft-ui__card;
+
                 color: $color-primary-contrast;
                 display: inline-block;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 overflow: hidden;
                 padding: .7rem 4rem .7rem 1rem;
 
                 width: 100%;
                 height: 4rem;
                 &:focus {
-                    outline: none; }
+                  background-color: $color-white;
+                  box-shadow:
+                    -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+                    -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+                    .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.2),
+                    inset .2rem .2rem 4rem rgba($color: #000000, $alpha: 0.1);
+                  outline: none; }
                 &::placeholder {
                     color: rgba($color-primary-contrast, $alpha: .8); } }
             a {
@@ -62,6 +64,10 @@
         .popular-services {
             // background-color: red;
             flex-grow: 1;
+            &__card {
+              text-decoration: none;
+              transition: all .2s; }
+
             &__card-box {
                 display: flex;
                 flex-direction: row;
