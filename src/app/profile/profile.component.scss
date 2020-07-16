@@ -18,7 +18,7 @@
             color: $color-primary-contrast;
             font-size: 3rem;
             font-weight: 500;
-            margin-bottom: $margin-bottom-xs;
+            margin-bottom: $margin-bottom-s;
             position: relative;
             width: 100%;
             fa-icon {
@@ -98,9 +98,8 @@
 
             .profile {
                 &__card {
-                    background-color: $color-white;
-                    border-radius: .8rem;
-                    box-shadow: .3rem .3rem .6rem rgba($color-primary-contrast, $alpha: .2);
+                    @include soft-ui__card;
+
                     padding: 3rem 2rem 2rem 2rem;
 
                     &:not(:first-child) {

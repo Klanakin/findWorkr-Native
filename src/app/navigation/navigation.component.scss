@@ -9,7 +9,7 @@
     .container {
         .navigation {
             &__checkbox:checked ~ .navigation__background {
-                transform: translateY(-10rem); }
+                transform: translateY(-9rem); }
             // &__checkbox:checked ~ &__background {
             //     transform: scale(5); }
             &__checkbox {
@@ -27,20 +27,15 @@
                 // left: 5rem;
                 z-index: 5; }
             &__background {
-                background-color: rgba($color-grey-light-1, $alpha: 1);
+                background-color: $color-grey-light-1;
                 position: fixed;
-                bottom: -10rem;
+                bottom: -9.2rem;
                 left: 0;
                 transition: all .4s ease-out;
 
                 width: 100%;
                 .navbar {
                     display: unset;
-                    // position: fixed;
-                    // top: 0;
-                    // left: 100%;
-                    // left: calc(100% - 8rem);
-                    height: 6rem;
                     hr {
                       border-color: rgba($color-white, $alpha: 0.4);
                       border-width: .1rem;

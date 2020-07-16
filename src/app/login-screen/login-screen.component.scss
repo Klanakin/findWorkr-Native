@@ -1,4 +1,5 @@
 @import '../../sass/abstract/variables';
+@import '../../sass/abstract/mixins';
 
 hr {
     border-color: $color-grey-light-2;
@@ -31,7 +32,7 @@ hr {
                 margin-top: $margin-top-l; }
             &--name {
                 font-size: 1.8rem;
-                font-weight: bold; 
+                font-weight: bold;
                 margin-bottom: $margin-bottom-xs; }
             &--terms {
                 width: 22rem;
@@ -48,8 +49,8 @@ hr {
                 margin-bottom: $margin-bottom-xs;
                 padding: 1.9rem;
                 text-align: center;
-                text-decoration: none; 
-            
+                text-decoration: none;
+
                 width: 28rem;
                 height: 5.6rem; } } }
 
@@ -59,7 +60,7 @@ hr {
                 width: 5rem;
                 margin-top: $margin-top-m; }
             &--choose-account {
-                font-size: 2rem; 
+                font-size: 2rem;
                 margin-bottom: calc(#{$margin-bottom-xxs} - .5rem); }
             &--continue {
                 font-size: 1.4rem;
@@ -85,7 +86,7 @@ hr {
                 .google--add {
                     height: 1.9rem;
                     width: 1.9rem;
-                    margin: 0 .8rem 0 1.8rem; 
+                    margin: 0 .8rem 0 1.8rem;
                     transform: translateX(-.3rem) translateY(.3rem); } }
             &--name {
                 font-size: 1.2rem;
@@ -156,7 +157,7 @@ hr {
 
         height: 50%;
         // padding: 0 4.5rem;
-        width: 28.5rem; 
+        width: 28.5rem;
         &--label {
             align-self: flex-start;
             text-transform: uppercase; }
@@ -165,7 +166,7 @@ hr {
     //     flex-direction: column;
     //     align-items: center;
     //     justify-content: center;
-        
+
     //     height: 50%;
     //     padding: 0 4.5rem;
     //     width: 100%;

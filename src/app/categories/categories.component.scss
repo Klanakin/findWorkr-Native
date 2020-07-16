@@ -26,18 +26,26 @@
 
         height: 75vh;
         .card {
-            @include soft-ui__card;
-
             display: flex;
             flex-direction: row;
             align-items: center;
             padding: 1rem;
+            text-decoration: none;
 
             width: 100%;
             height: 9.5rem;
 
+            &:hover, &:focus {
+              @include soft-ui__card--hover;
+              transform: translateY(.2rem);
+              h4 {
+                color: $color-primary;
+              } }
+            &:active {
+              @include soft-ui__card--active; }
+
             &:last-child {
-                margin-bottom: 9rem; }
+                margin-bottom: 12rem; }
 
             img {
                 border-style: none;
@@ -47,7 +55,7 @@
                 width: 10rem;
                 height: 6.6rem; }
             h4 {
-                color: $color-black;
+                color: $color-primary-contrast;
                 font-size: 1.6rem;
                 font-weight: bold;
                 padding: 0; }

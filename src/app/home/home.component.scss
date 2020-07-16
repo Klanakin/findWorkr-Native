@@ -65,8 +65,7 @@
             // background-color: red;
             flex-grow: 1;
             &__card {
-              text-decoration: none;
-              transition: all .4s; }
+              text-decoration: none; }
 
             &__card-box {
                 display: flex;
@@ -87,10 +86,13 @@
                 text-align: right;
                 width: 100%;
                 a {
-                    color: $color-primary; } } }
+                    color: $color-primary-shade;
+                    text-decoration: none; } } }
         .recently-viewed {
             // background-color: blue;
             flex-grow: 2;
+            &__card {
+              text-decoration: none; }
             &__card-box {
                 display: flex;
                 flex-direction: row;
@@ -100,4 +102,6 @@
                 text-align: right;
                 width: 100%;
                 a {
-                    color: $color-primary; } } } } }
+                    color: $color-primary-shade;
+                    text-decoration: none; }
+} } } }
