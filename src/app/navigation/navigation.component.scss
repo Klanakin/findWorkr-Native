@@ -10,8 +10,6 @@
         .navigation {
             &__checkbox:checked ~ .navigation__background {
                 transform: translateY(-9rem); }
-            // &__checkbox:checked ~ &__background {
-            //     transform: scale(5); }
             &__checkbox {
                 display: none;
                 position: absolute;
@@ -21,10 +19,6 @@
                 background-color: transparent;
                 border-radius: 50%;
                 cursor: pointer;
-
-                // position: absolute;
-                // top: 5rem;
-                // left: 5rem;
                 z-index: 5; }
             &__background {
                 background-color: $color-grey-light-1;
@@ -51,42 +45,13 @@
                         margin: 0 auto 2rem auto;
                         max-width: 60rem;
 
-                        &__caret {
-                            display: unset; }
-                            // &:link {}
-                            // &:visited {}
-                            // &:hover {}
-                            // &:active {}
-                        // &__hamburger {
-                        //     display: unset; }
-                        //     fa-icon {
-                        //         color: $color-primary-contrast;
-                        //         font-size: 2.2rem; }
-                        // a {
-                        //     font-size: 2.2rem;
-                        //     transition: all .3s;
-                        //     &:link,
-                        //     &:visited {
-                        //         color: $color-primary-contrast; }
-                        //     &:hover {
-                        //         background-color: $color-primary;
-                        //         color: white; }
-                        //     &:focus {
-                        //         background-color: transparent;
-                        //         color: $color-primary;
-                        //         outline: none; }
-                        //     &:active {
-                        //         color: $color-primary; } }
                         &__icon {
-                            @include soft-ui__card;
-
                             display: flex;
                             flex-direction: row;
                             align-items: center;
                             justify-content: center;
 
                             color: $color-primary-contrast;
-                            transition: all .2s;
 
                             width: 4.8rem;
                             height: 4.8rem;
@@ -100,309 +65,82 @@
                             &:active {
                                 @include soft-ui__card--active;
                                 color: $color-primary; }
-
-                            &--right {
-                                display: none;
-                                fa-icon {
-                                    background-color: transparent;
-                                    font-size: 1.6rem; } }
-                            &--down {
-                                fa-icon {
-                                    font-size: 1.6rem; } }
 } } } } } } }
 
-@media  (orientation: landscape)
-        and (max-height: 369px) {
-    #hamburger {
-        color: $color-primary-contrast;
-        font-size: 3rem; }
-    .container {
-        .navigation {
-            &__checkbox:checked ~ .navigation__background {
-                transform: translateX(-8rem); }
-            // &__checkbox:checked ~ &__background {
-            //     transform: scale(5); }
-            &__checkbox {
-                display: none;
-                position: absolute;
-                top: 0;
-                left: 0; }
-            &__button {
-                background-color: transparent;
-                border-radius: 50%;
-                cursor: pointer;
+@media (orientation: landscape) {
+  #hamburger {
+      color: $color-primary-contrast;
+      font-size: 3rem; }
+  .container {
+      .navigation {
+          &__checkbox:checked ~ .navigation__background {
+              transform: translateY(-9rem); }
+          &__checkbox {
+              display: none;
+              position: absolute;
+              top: 0;
+              left: 0; }
+          &__button {
+              background-color: transparent;
+              border-radius: 50%;
+              cursor: pointer;
+              z-index: 5; }
+          &__background {
+              background-color: $color-grey-light-1;
+              position: fixed;
+              bottom: -9.2rem;
+              left: 0;
+              transition: all .4s ease-out;
 
-                // position: absolute;
-                // top: 5rem;
-                // left: 5rem;
+              width: 100%;
+              .navbar {
+                  display: unset;
+                  hr {
+                    border-color: rgba($color-white, $alpha: 0.4);
+                    border-width: .1rem;
+                    border-style: solid none none none;
+                    width: 95%;
+                    margin: .2rem auto 1.6rem auto; }
+                  .menu {
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: space-evenly;
 
-                z-index: 5; }
-            &__background {
-                position: fixed;
-                top: 0;
-                left: calc(100% - 8rem);
-                // transform: translateX(8rem);
-                transition: all .4s ease-out;
+                      margin: 0 auto 2rem auto;
+                      max-width: 60rem;
 
-                height: 100vh;
-                width: 8rem;
-                .navbar {
-                    display: unset;
-                    background-color: rgba(#eee, $alpha: .85);
-                    position: fixed;
-                    top: 0;
-                    left: 100%;
-                    // left: calc(100% - 8rem);
-                    width: 8rem;
-                    .menu {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
+                      &__icon {
+                          @include soft-ui__card;
 
-                        margin: 0 auto;
-                        height: 100vh;
-                        &__caret {
-                            display: unset; }
-                        // &__hamburger {
-                        //     display: unset; }
-                        //     fa-icon {
-                        //         color: $color-primary-contrast;
-                        //         font-size: 2.2rem; }
-                        a {
-                            font-size: 1.6rem;
-                            transition: all .3s;
-                            &:link,
-                            &:visited {
-                                color: $color-primary-contrast; }
-                            &:hover {
-                                background-color: $color-primary;
-                                color: white; }
-                            &:focus {
-                                background-color: $color-primary;
-                                color: $color-white;
-                                outline: none; }
-                            &:active {
-                                background-color: $color-white;
-                                color: $color-primary; } }
-                        &__icon {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
+                          display: flex;
+                          flex-direction: row;
+                          align-items: center;
+                          justify-content: center;
 
-                            width: 4.5rem;
-                            height: 4.5rem;
-                            &--right {
-                                width: 4.5rem;
-                                height: 4.5rem;
-                                fa-icon {
-                                    background-color: transparent;
-                                    color: $color-primary;
-                                    font-size: 1.6rem; } }
-                            &--down {
-                                display: none;
-                                width: 4.5rem;
-                                height: 4.5rem;
-                                fa-icon {
-                                    background-color: transparent;
-                                    color: $color-primary;
-                                    font-size: 1.6rem; } }
+                          color: $color-primary-contrast;
+
+                          width: 4.8rem;
+                          height: 4.8rem;
+
+                          &:link, &:visited {
+                              @include soft-ui__card;
+                              color: $color-primary-contrast; }
+                          &:hover, &:focus {
+                              @include soft-ui__card--hover;
+                              color: $color-primary; }
+                          &:active {
+                              @include soft-ui__card--active;
+                              color: $color-primary; }
 } } } } } } }
 
+// @media  (orientation: landscape)
+//         and (max-height: 369px) {}
 
-@media  (orientation: landscape)
-        and (min-height: 370px)
-        and (max-height: 767px) {
-    #hamburger {
-        color: $color-primary-contrast;
-        font-size: 3rem; }
-    .container {
-        .navigation {
-            &__checkbox:checked ~ .navigation__background {
-                transform: translateX(-8rem); }
-            // &__checkbox:checked ~ &__background {
-            //     transform: scale(5); }
-            &__checkbox {
-                display: none;
-                position: absolute;
-                top: 0;
-                left: 0; }
-            &__button {
-                background-color: transparent;
-                border-radius: 50%;
-                cursor: pointer;
 
-                // position: absolute;
-                // top: 5rem;
-                // left: 5rem;
+// @media  (orientation: landscape)
+//         and (min-height: 370px)
+//         and (max-height: 767px) {}
 
-                z-index: 5; }
-            &__background {
-                position: fixed;
-                top: 0;
-                left: calc(100% - 8rem);
-                // transform: translateX(8rem);
-                transition: all .4s ease-out;
-
-                height: 100vh;
-                width: 8rem;
-                .navbar {
-                    display: unset;
-                    background-color: rgba(#eee, $alpha: .85);
-                    position: fixed;
-                    top: 0;
-                    left: 100%;
-                    // left: calc(100% - 8rem);
-                    width: 8rem;
-                    .menu {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: flex-start;
-
-                        margin: 0 auto;
-                        height: 100vh;
-                        &__caret {
-                            display: unset; }
-                        // &__hamburger {
-                        //     display: unset; }
-                        //     fa-icon {
-                        //         color: $color-primary-contrast;
-                        //         font-size: 2.2rem; }
-                        a {
-                            font-size: 2.2rem;
-                            transition: all .3s;
-                            &:link,
-                            &:visited {
-                                color: $color-primary-contrast; }
-                            &:hover {
-                                background-color: $color-primary;
-                                color: white; }
-                            &:focus {
-                                background-color: $color-primary;
-                                color: $color-white;
-                                outline: none; }
-                            &:active {
-                                background-color: $color-white;
-                                color: $color-primary; } }
-                        &__icon {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
-
-                            width: 6rem;
-                            height: 6rem;
-                            &--right {
-                                width: 6rem;
-                                height: 6rem;
-                                fa-icon {
-                                    background-color: transparent;
-                                    color: $color-primary;
-                                    font-size: 1.6rem; } }
-                            &--down {
-                                display: none;
-                                width: 6rem;
-                                height: 6rem;
-                                fa-icon {
-                                    background-color: transparent;
-                                    color: $color-primary;
-                                    font-size: 1.6rem; } }
-} } } } } } }
-
-@media  (orientation: landscape)
-        and (min-height: 768px) {
-    #hamburger {
-        color: $color-primary-contrast;
-        font-size: 3rem; }
-    .container {
-        .navigation {
-            &__checkbox:checked ~ .navigation__background {
-                transform: translateY(-6rem); }
-            // &__checkbox:checked ~ &__background {
-            //     transform: scale(5); }
-            &__checkbox {
-                display: none;
-                position: absolute;
-                top: 0;
-                left: 0; }
-            &__button {
-                background-color: transparent;
-                border-radius: 50%;
-                cursor: pointer;
-
-                // position: absolute;
-                // top: 5rem;
-                // left: 5rem;
-                z-index: 5; }
-            &__background {
-                background-color: $color-white;
-                position: fixed;
-                bottom: -6rem;
-                left: 0;
-                transition: all .4s ease-out;
-
-                width: 100%;
-                .navbar {
-                    display: unset;
-                    background-color: rgba(#eee, $alpha: .85);
-                    // position: fixed;
-                    // top: 0;
-                    // left: 100%;
-                    // left: calc(100% - 8rem);
-                    height: 6rem;
-                    .menu {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: center;
-                        &__caret {
-                            display: unset; }
-                            // &:link {}
-                            // &:visited {}
-                            // &:hover {}
-                            // &:active {}
-                        // &__hamburger {
-                        //     display: unset; }
-                        //     fa-icon {
-                        //         color: $color-primary-contrast;
-                        //         font-size: 2.2rem; }
-                        a {
-                            font-size: 2.2rem;
-                            transition: all .3s;
-                            &:link,
-                            &:visited {
-                                color: $color-primary-contrast; }
-                            &:hover {
-                                background-color: $color-primary;
-                                color: white; }
-                            &:focus {
-                                background-color: transparent;
-                                color: $color-primary;
-                                outline: none; }
-                            &:active {
-                                color: $color-primary; } }
-                        &__icon {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
-
-                            width: 6rem;
-                            height: 6rem;
-                            &--right {
-                                display: none;
-                                width: 6rem;
-                                height: 6rem;
-                                fa-icon {
-                                    background-color: transparent;
-                                    // color: $color-primary;
-                                    font-size: 1.6rem; } }
-                            &--down {
-                                width: 6rem;
-                                height: 6rem;
-                                fa-icon {
-                                    // color: $color-primary;
-                                    font-size: 1.6rem; } }
-} } } } } } }
+// @media  (orientation: landscape)
+//         and (min-height: 768px) {}

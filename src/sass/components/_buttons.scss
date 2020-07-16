@@ -84,7 +84,7 @@
             position: relative;
             padding-left: 5rem;
             padding-top: 2.3rem;
-            &::before { 
+            &::before {
                 content: url(/assets/img/facebook-color-original.svg);
                 position: absolute;
                 top: 1.7rem;
@@ -101,4 +101,21 @@
                 content: url(/assets/img/google-color-original.svg);
                 position: absolute;
                 top: 1.7rem;
-                left: 3rem; } } } }
+                left: 3rem; } } }
+
+    &__soft-ui {
+        &--inset {
+            color: $color-primary-contrast;
+            font-size: 1.2rem;
+
+            width: 3rem;
+            height: 3rem;
+
+            &:link, &:visited {
+                @include soft-ui__btn-inset; }
+            &:hover, &:focus {
+                @include soft-ui__btn-inset--hover; }
+            &:active {
+                @include soft-ui__btn-inset--active; }
+        } }
+}

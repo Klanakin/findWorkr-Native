@@ -8,19 +8,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
+
         width: 100%;
         &__title {
             color: $color-primary;
             font-size: 3rem;
             font-weight: 500;
-            margin-bottom: $margin-bottom-s;
-            fa-icon {
-                color: $color-primary-contrast;
-                font-size: 2rem;
-                position: absolute;
-                top: 1rem;
-                right: 0; } } }
+            margin-bottom: $margin-bottom-s; } }
     .content {
         @include soft-ui__card;
 
@@ -29,18 +23,46 @@
         align-items: center;
         justify-content: center;
 
+        position: relative;
         height: 75vh;
         ul {
             font-size: 1.4rem;
             line-height: 3rem;
             list-style-type: none;
             text-align: center; }
-            a {
-                color: $color-primary;
-                text-decoration: none; }
+        .btn {
+            &--filter {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+
+                color: $color-primary-contrast;
+                font-size: 1.2rem;
+
+                position: absolute;
+                right: 2rem;
+                top: 2rem;
+
+                width: 3rem;
+                height: 3rem;
+                &:link, &:visited {
+                    @include soft-ui__btn-inset;
+                    color: $color-primary-contrast; }
+                &:hover {
+                    @include soft-ui__btn-inset--hover;
+                    color: $color-primary; }
+                &:active {
+                    @include soft-ui__btn-inset--active;
+                    color: $color-primary;
+                    transform: translateY(0); } } }
+
         &__icon {
-            font-size: 8rem;
-            margin-bottom: $margin-bottom-s; } } }
+            &--envelop {
+                font-size: 8rem;
+                margin-bottom: $margin-bottom-s; }
+        }
+} }
 
 @media  (orientation: landscape)
     and (max-height: 414px) {

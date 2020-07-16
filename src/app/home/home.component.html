@@ -5,10 +5,8 @@
         </div>
         <div class="heading__search-box">
             <input type="text" placeholder="Search">
-            <a [routerLink]="['/navigation/home']">
-            <fa-icon
-                [icon]="faSearch"
-                class="heading__search-box--icon"></fa-icon></a>
+            <a [routerLink]="['/navigation/home']" class="btn--search">
+                <fa-icon [icon]="faSearch"></fa-icon></a>
         </div>
     </div>
     <div class="contents util-center">

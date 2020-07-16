@@ -1,8 +1,8 @@
 import { Component, OnInit} from '@angular/core';
-import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
+// import { BehaviorSubject } from 'rxjs/internal/BehaviorSubject';
 
 import {
-  faBell, 
+  faBell,
   faEnvelope,
   faHome,
   faSearch,
@@ -26,7 +26,6 @@ export class NavigationComponent implements OnInit {
   faUser = faUser;
   faCaretRight = faCaretRight;
   faBars = faBars;
-  faAngleDoubleRight = faAngleDoubleRight;
   faAngleDoubleDown = faAngleDoubleDown;
 
   constructor() {}

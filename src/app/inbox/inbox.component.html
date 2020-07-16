@@ -2,15 +2,16 @@
     <div class="heading">
         <div class="heading__title">
             <a [routerLink]="['/navigation/home']" class="findworkr-logo"><p >findWorkr</p></a>
-            <fa-icon [icon]="faFilter" class="heading__icon"></fa-icon>
         </div>
     </div>
     <div class="content">
+        <a [routerLink]="" class="btn--filter">
+            <div><fa-icon [icon]="faFilter"></fa-icon></div></a>
         <ul>
-            <li><fa-icon [icon]="faEnvelope" class="content__icon"></fa-icon></li>
+            <li><fa-icon [icon]="faEnvelope" class="content__icon--envelop"></fa-icon></li>
             <li><h3>Welcome to your message</h3></li>
             <li>Looks like you don't have any messages.</li>
-            <li><a [routerLink]="">Browse</a> or <a [routerLink]=""> post a project.</a></li>
+            <li><a [routerLink]="" class="util-link-blue">Browse</a> or <a [routerLink]="" class="util-link-blue"> post a project.</a></li>
         </ul>
     </div>
 </div>
