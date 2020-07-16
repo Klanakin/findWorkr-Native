@@ -1,0 +1,216 @@
+[33mcommit a3f99195d5ec235702d1cdb5d36a29dcfa3b57cd[m[33m ([m[1;36mHEAD -> [m[1;32msoft-ui[m[33m, [m[1;31morigin/soft-ui[m[33m)[m
+Author: DK <don.klanakin@hotmail.com>
+Date:   Thu Jul 16 09:57:39 2020 +0700
+
+    Refactored codes
+
+[33mcommit 78dc2e2de0c5330f3b24aee0cb3a3f1ef731f883[m
+Author: DK <don.klanakin@hotmail.com>
+Date:   Wed Jul 15 17:48:44 2020 +0700
+
+    Refactored code
+
+[33mcommit 3956b5cbb3ffac67330dfc142f7f006380d9fb6d[m
+Author: DK <don.klanakin@hotmail.com>
+Date:   Wed Jul 15 16:37:17 2020 +0700
+
+    Added the Soft-UI theme
+
+[33mcommit 8d3126ffc92c8b4d5bd3a9a83bd6ce3591afb89e[m[33m ([m[1;32mmaster[m[33m)[m
+Author: DK <don.klanakin@hotmail.com>
+Date:   Wed Jul 15 00:35:49 2020 +0700
+
+    Restructured scss files
+
+[33mcommit 109a230ce6b206c62583bcd17b1a1332fa9716f8[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: DK <don.klanakin@hotmail.com>
+Date:   Wed Jul 15 00:28:18 2020 +0700
+
+    CHECKPOINT: Flat theme
+
+[33mcommit cce48e9ddbd26d558aef999d1359c78668ec18f6[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Tue Jul 7 19:04:56 2020 +0700
+
+    Created new Firebase entry
+
+[33mcommit 0c6c70a1adeafe51d6692065616b8ab30b16fde9[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Tue Jul 7 17:00:17 2020 +0700
+
+    Added the Categories page
+
+[33mcommit f838a747bc65f7f93e37da1babe0aae89d0702ca[m
+Merge: d2c69bb ffd8428
+Author: DK <don.klanakin@gmail.com>
+Date:   Tue Jul 7 10:22:45 2020 +0700
+
+    Added the inbox section
+
+[33mcommit d2c69bb1f39f05229a2566dedb632c516311aa97[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Tue Jul 7 10:17:09 2020 +0700
+
+    Added the inbox page
+
+[33mcommit ffd8428c2d6c362f9e147fe30379cf423e48d226[m
+Author: DK <don.klanakin@hotmail.com>
+Date:   Mon Jul 6 20:18:02 2020 +0700
+
+    Modified the scrollbar
+
+[33mcommit ce16e96d58e4496b9327e758cc820b33de0b36c9[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Thu Jul 2 12:53:40 2020 +0700
+
+    Modified media queries
+
+[33mcommit 62ffedcd385066136698d0378e87c8a139caf220[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Thu Jul 2 12:33:08 2020 +0700
+
+    Modified style.scss
+
+[33mcommit 16c96be3a64ad9f79fab27808a8acaa468f33008[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Thu Jul 2 12:06:21 2020 +0700
+
+    Modified css templates
+
+[33mcommit fb1de98e6b0c39fecd3fc3373f2a7454d0c09aa6[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Thu Jul 2 03:18:38 2020 +0700
+
+    Refactoring code
+
+[33mcommit 36cd2e2a7f084e2b8b4dbd88514986cc9e0ea84f[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Tue Jun 30 10:13:57 2020 +0700
+
+    Modified profile page's layout
+
+[33mcommit b8a5964ac19d252d018c4ac926d0e502b6263372[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Tue Jun 30 02:49:10 2020 +0700
+
+    Added the profile page
+
+[33mcommit 543e742fdf14c2ec89166ad37f6b7ea8478d1a68[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Tue Jun 30 00:21:13 2020 +0700
+
+    Added the notification page
+
+[33mcommit cc0205d52aa9261880fb837281b1105a5410db39[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Mon Jun 29 11:48:48 2020 +0700
+
+    Adjusted media queries for portrait mode
+
+[33mcommit a98983403b57acb275a4f202bd6440e6c0b79917[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sun Jun 28 23:37:53 2020 +0700
+
+    Modified media queries settings
+
+[33mcommit 62ccd23c7fb895b8a9068c6d505e3bf288d39c03[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sun Jun 28 21:34:00 2020 +0700
+
+    Added navigation icons
+
+[33mcommit 0a1326fbfee0b0c74ac0268b4d8b8e44d18ab468[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sun Jun 28 18:57:43 2020 +0700
+
+    Added the navigation page
+
+[33mcommit 2fd33f94b8f472a355c451ed470e3f5bad74ae9d[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sun Jun 28 11:23:59 2020 +0700
+
+    Added the home page
+
+[33mcommit 5946f01ff8f9c1245942e4329dce05b52b362bac[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sat Jun 27 21:03:50 2020 +0700
+
+    Modified the email activation page
+
+[33mcommit 0f956f709f0b1dff571764e8458aba678163333e[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sat Jun 27 20:56:43 2020 +0700
+
+    Added email validation page
+
+[33mcommit ffefde1f11868ac0a1f62bdf915fed0ea83c4eee[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sat Jun 27 14:03:37 2020 +0700
+
+    Changing an icon's size
+
+[33mcommit 6e78a8dac9020f605428bbcc15d4189359e7bb94[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sat Jun 27 12:22:15 2020 +0700
+
+    Added login options
+
+[33mcommit 717058a852c1cab7cf3d28a819e8fc9dd3e63ae4[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sat Jun 27 00:32:08 2020 +0700
+
+    Added facebook login page
+
+[33mcommit 46bfc250377bf3f740a866951cc1292b1f02cec6[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Fri Jun 26 18:54:18 2020 +0700
+
+    Added popups
+
+[33mcommit 073428edfb5295f94d84091ce459bd2b48c009cd[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Thu Jun 25 12:51:58 2020 +0700
+
+    Modified the under construction page
+
+[33mcommit 29a9dc00e0b3f1cadf6a58b7bdfeac7ba771e435[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Thu Jun 25 12:45:19 2020 +0700
+
+    Added the under construction section
+
+[33mcommit 32ea7d727887a169162073ffbd00275c9a3444e8[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Thu Jun 25 12:03:22 2020 +0700
+
+    Added functionalities to forms
+
+[33mcommit 4b09d36734fa319c15839e041411987b7a295ed0[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Wed Jun 24 18:37:13 2020 +0700
+
+    Adding pseudo-links
+
+[33mcommit bf1890ec4bbb2205e2521979791c5d0dba9c75d6[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Wed Jun 24 14:49:21 2020 +0700
+
+    Added SVG icons
+
+[33mcommit 076642fe1bd44235cb0b81098d3857a4fd01d5b9[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Tue Jun 23 18:19:47 2020 +0700
+
+    Added the registration page
+
+[33mcommit 1f55bec4160ac34d48feb6d912a90cead1ac2401[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Tue Jun 23 17:46:09 2020 +0700
+
+    Added Angular Routing
+
+[33mcommit 3a01588d689a6f29fda9bbb4adb556beb914a494[m
+Author: DK <don.klanakin@gmail.com>
+Date:   Sun Jun 21 13:23:44 2020 +0700
+
+    Initial commit
