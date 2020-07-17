@@ -17,31 +17,33 @@
         &__search-box {
             position: relative;
             max-width: 50rem;
-            width: 100%;
+            width: calc(100% - 1rem);
 
             input[type=text] {
                 @include soft-ui__card;
 
-                border-bottom: .3rem solid rgba($color: white, $alpha: 0);
+                border: .2rem solid rgba($color-white, $alpha: 0);
                 color: $color-primary-contrast;
                 display: inline-block;
                 font-size: 1.8rem;
                 overflow: hidden;
                 padding: .7rem 7rem .7rem 1.7rem;
-                transition: all .4s;
+                transition: all 1s;
 
                 width: 100%;
                 height: 4rem;
+                &:focus ~ .btn--search {
+                    @include soft-ui__card;
+                    color: $color-white;
+                    transition: all .4s;
+                    &:hover {
+                      color: $color-primary;
+                    } }
                 &:focus {
-                  @include soft-ui__card;
-
-                  box-shadow:
-                      -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
-                      -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
-                      .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
-                      inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
-                    border-bottom: .25rem solid rgba($color: white, $alpha: 0.4);
-                    outline: none; }
+                    @include soft-ui__card--hover;
+                    border: .2rem solid rgba($color-white, $alpha: 0.5);
+                    outline: none;
+                    transform: translateY(0); }
                 &::placeholder {
                     color: rgba($color-primary-contrast, $alpha: .8); } }
             a {
@@ -87,7 +89,7 @@
         h3 {
             font-size: 2rem;
             font-weight: 400;
-            margin: 1.8rem auto 1rem auto;
+            margin: 1.8rem auto 1rem .5rem;
             width: 100%; }
         .popular-services {
             // background-color: red;

@@ -15,20 +15,24 @@
             font-weight: 500;
             margin-bottom: $margin-bottom-s; } }
     .content {
-        @include soft-ui__card;
+      .container {
+          @include soft-ui__card;
 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
 
-        height: 75vh;
-        p {
-            color: $color-primary-contrast;
-            font-size: 1.6rem; }
-        &__icon {
-            font-size: 8rem;
-            margin-bottom: $margin-bottom-s; } } }
+          margin: 0 auto;
+          padding-bottom: 5rem;
+          width: calc(100% - .5rem);
+          height: 75vh;
+          p {
+              color: $color-primary-contrast;
+              font-size: 1.4rem; }
+          .watermark__notification {
+              font-size: 8rem;
+              margin-bottom: $margin-bottom-s; } } } }
 
 @media  (orientation: landscape)
     and (max-height: 414px) {

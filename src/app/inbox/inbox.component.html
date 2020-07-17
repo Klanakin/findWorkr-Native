@@ -5,14 +5,16 @@
         </div>
     </div>
     <div class="content">
-        <a [routerLink]="" class="btn__inbox--icon">
-            <div><fa-icon [icon]="faFilter"></fa-icon></div>
-            <div class="btn__inbox--name">Filter</div></a>
-        <ul>
-            <li><fa-icon [icon]="faEnvelope" class="content__icon--envelop"></fa-icon></li>
-            <li><h3>Welcome to your message</h3></li>
-            <li>Looks like you don't have any messages.</li>
-            <li><a [routerLink]="" class="util-link-blue">Browse</a> or <a [routerLink]="" class="util-link-blue"> post a project.</a></li>
-        </ul>
+        <div class="container">
+            <a [routerLink]="" class="btn__inbox--icon">
+              <div><fa-icon [icon]="faFilter"></fa-icon></div>
+              <div class="btn__inbox--name">Filter</div></a>
+            <ul>
+                <li><fa-icon [icon]="faEnvelope" class="watermark__envelop"></fa-icon></li>
+                <li><h3>Welcome to your message</h3></li>
+                <li>Looks like you don't have any messages.</li>
+                <li><a [routerLink]="" class="util-link-blue">Browse</a> or <a [routerLink]="" class="util-link-blue"> post a project.</a></li>
+            </ul>
+        </div>
     </div>
 </div>
