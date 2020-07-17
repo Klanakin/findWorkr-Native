@@ -1,25 +1,25 @@
 <router-outlet></router-outlet>
 <div class="container">
 	<div class="navigation">
-      <!-- <a [routerLink]="['/navigation']" (click)="closeMenu()" class="menu__hamburger">
-		      <div class="menu__icon"><fa-icon [icon]="faBars" class="menu__icon--hamburger"></fa-icon></div></a> -->
-		<input type="checkbox" class="navigation__checkbox" id="nav-toggle" checked>
-		<label for="nav-toggle" class="navigation__button" id="hamburger"><fa-icon [icon]="faBars"></fa-icon></label>
-		<div class="navigation__background">
+      <a [routerLink]="['/navigation/home']" (click)="toggleMenu()" class="menu__icon" id="hamburger">
+		      <div class="menu__icon"><fa-icon [icon]="faBars" class="navigation__hamburger--icon"></fa-icon></div></a>
+		<!-- <input type="checkbox" class="navigation__checkbox" id="nav-toggle" checked>
+		<label for="nav-toggle" class="navigation__button" id="hamburger"><fa-icon [icon]="faBars"></fa-icon></label> -->
+		<div class="navigation__bar navigation__bar--active" id="nav-bar">
 			<nav class="navbar">
         <hr>
 				<div class="menu">
-					<a [routerLink]="" class="menu__icon">
-						<div (click)="closeMenu()"><fa-icon [icon]="faAngleDoubleDown"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/home']" class="menu__icon">
+					<a [routerLink]="" (click)="toggleMenu()" class="menu__icon">
+						<div><fa-icon [icon]="faAngleDoubleDown"></fa-icon></div></a>
+					<a [routerLink]="['/navigation/home']" routerLinkActive="active" class="menu__icon">
 						<div><fa-icon [icon]="faHome"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/categories']" class="menu__icon">
+					<a [routerLink]="['/navigation/categories']" routerLinkActive="active" class="menu__icon">
 						<div><fa-icon [icon]="faSearch"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/inbox']" class="menu__icon">
+					<a [routerLink]="['/navigation/inbox']" routerLinkActive="active" class="menu__icon">
 						<div><fa-icon [icon]="faEnvelope"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/notifications']" class="menu__icon">
+					<a [routerLink]="['/navigation/notifications']" routerLinkActive="active" class="menu__icon">
 						<div><fa-icon [icon]="faBell"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/profile']" class="menu__icon">
+					<a [routerLink]="['/navigation/profile']" routerLinkActive="active" class="menu__icon">
 						<div><fa-icon [icon]="faUser"></fa-icon></div></a>
 				</div>
 			</nav>

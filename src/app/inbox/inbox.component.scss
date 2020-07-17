@@ -31,31 +31,34 @@
             list-style-type: none;
             text-align: center; }
         .btn {
-            &--filter {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
+            &__inbox {
+                &--icon {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
 
-                color: $color-primary-contrast;
-                font-size: 1.2rem;
+                    color: $color-primary-contrast;
+                    font-size: 1.2rem;
 
-                position: absolute;
-                right: 2rem;
-                top: 2rem;
+                    position: absolute;
+                    right: 2rem;
+                    top: 2rem;
 
-                width: 3rem;
-                height: 3rem;
-                &:link, &:visited {
-                    @include soft-ui__btn-inset;
-                    color: $color-primary-contrast; }
-                &:hover {
-                    @include soft-ui__btn-inset--hover;
-                    color: $color-primary; }
-                &:active {
-                    @include soft-ui__btn-inset--active;
-                    color: $color-primary;
-                    transform: translateY(0); } } }
+                    width: 8rem;
+                    height: 3rem;
+                    &:link, &:visited {
+                        @include soft-ui__btn-inset;
+                        color: $color-primary-contrast; }
+                    &:hover {
+                        @include soft-ui__btn-inset--hover;
+                        color: $color-primary; }
+                    &:active {
+                        @include soft-ui__btn-inset--active;
+                        color: $color-primary;
+                        transform: translateY(0); } }
+                &--name {
+                    margin-left: .2rem; } } }
 
         &__icon {
             &--envelop {

@@ -28,11 +28,23 @@ export class NavigationComponent implements OnInit {
   faBars = faBars;
   faAngleDoubleDown = faAngleDoubleDown;
 
+  isActive: boolean = true;
+
   constructor() {}
 
   ngOnInit(): void {}
 
-  closeMenu() {
-    (<HTMLInputElement>document.getElementById("nav-toggle")).checked = false;
+  // closeMenu() {
+  //   (<HTMLInputElement>document.getElementById("nav-toggle")).checked = false;
+  // }
+
+  toggleMenu(): void {
+    if (!this.isActive) {
+      (<HTMLInputElement>document.getElementById("nav-bar")).className = "navigation__bar navigation__bar--active";
+    }
+    else {
+      (<HTMLInputElement>document.getElementById("nav-bar")).className = "navigation__bar";
+    }
+    this.isActive = !this.isActive;
   }
 }
