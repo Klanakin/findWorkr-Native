@@ -57,8 +57,6 @@
                             align-items: center;
                             justify-content: center;
 
-                            color: $color-primary-contrast;
-
                             width: 4.8rem;
                             height: 4.8rem;
 
@@ -70,7 +68,8 @@
                                 color: $color-primary; }
                             &:active {
                                 @include soft-ui__card--active;
-                                color: $color-primary; }
+                                color: $color-primary;
+                                transform: translateY(.4rem); }
 } } } } } } }
 
 @media (orientation: landscape) {

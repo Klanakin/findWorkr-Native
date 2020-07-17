@@ -75,12 +75,12 @@
     height: 19rem;
 
     &:link, &:visited {
-      @include soft-ui__card;
-      color: $color-primary-contrast; }
+        @include soft-ui__card;
+        color: $color-primary-contrast; }
     &:hover, &:focus {
-      @include soft-ui__card--hover; }
+        @include soft-ui__card--hover; }
     &:active {
-      @include soft-ui__card--active; }
+        @include soft-ui__card--active; }
 
     // img {
     //     border-color: white;
