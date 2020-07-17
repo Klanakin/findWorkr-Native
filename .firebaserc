@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "findworkr-soft-ui": {
+      "hosting": {
+        "findWorkr-Native": [
+          "findworkr-soft-ui"
+        ]
+      }
+    }
+  }
+}
