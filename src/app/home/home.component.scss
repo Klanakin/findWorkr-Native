@@ -94,7 +94,7 @@
             margin: 1.8rem auto 1rem .5rem;
             width: 100%; }
         .popular-services {
-            background-color: goldenrod;
+            // background-color: goldenrod;
             flex-grow: 1;
             &__card {
               text-decoration: none; }
@@ -104,7 +104,7 @@
                 flex-wrap: wrap;
                 justify-content: space-between;
 
-                background-color: goldenrod;
+                // background-color: goldenrod;
                 .card {
                     &__preview {
                         &--logo-design {
@@ -131,7 +131,7 @@
                 flex-wrap: wrap;
                 justify-content: space-between; }
 
-                background-color: goldenrod;
+                // background-color: goldenrod;
             .see-all {
                 text-align: right;
                 width: 100%;

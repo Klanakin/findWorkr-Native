@@ -3,28 +3,9 @@
 @import '../../sass/abstract/mixins';
 
 @media (orientation: portrait) {
-    #hamburger {
-        color: $color-primary-contrast;
-        font-size: 3rem; }
     .container {
         .navigation {
-            // &__checkbox:checked ~ .navigation__background {
-            //     transform: translateY(-9rem); }
             z-index: 5;
-            &__hamburger {
-                position: absolute;
-                left: 0;
-                top: 0; }
-            // &__checkbox {
-            //     display: none;
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0; }
-            // &__button {
-            //     background-color: transparent;
-            //     border-radius: 50%;
-            //     cursor: pointer;
-            //     z-index: 5; }
             &__bar {
                 background-color: $color-grey-light-1;
                 position: fixed;
@@ -44,7 +25,7 @@
                       border-style: solid none none none;
                       width: 95%;
                       margin: .2rem auto 1.6rem auto; }
-                    .menu {
+                    &__icon-tray {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
@@ -52,99 +33,41 @@
 
                         margin: 0 auto 2rem auto;
                         max-width: 60rem;
-
-                        &__icon {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
-
-                            width: 4.8rem;
-                            height: 4.8rem;
-
-                            &:link, &:visited {
-                                @include soft-ui__card;
-                                color: $color-primary-contrast; }
-                            &:hover, &:focus {
-                                @include soft-ui__card--hover;
-                                color: $color-primary; }
-                            &:active {
-                                @include soft-ui__card--active;
-                                color: $color-primary;
-                                transform: translateY(.4rem); }
-} } } } } } }
+} } } } } }
 
 @media (orientation: landscape) {
-    #hamburger {
-        color: $color-primary-contrast;
-        font-size: 3rem; }
-    .container {
-        .navigation {
-            // &__checkbox:checked ~ .navigation__background {
-            //     transform: translateY(-9rem); }
-            &__hamburger {
-                position: absolute;
-                left: 0;
-                top: 0; }
-            // &__checkbox {
-            //     display: none;
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0; }
-            // &__button {
-            //     background-color: transparent;
-            //     border-radius: 50%;
-            //     cursor: pointer;
-            //     z-index: 5; }
-            &__bar {
-                background-color: $color-grey-light-1;
-                position: fixed;
-                bottom: -9.2rem;
-                left: 0;
-                transition: all .4s ease-out;
+  #hamburger {
+      font-size: 1.8rem; }
+  .container {
+      .navigation {
+          z-index: 5;
+          &__bar {
+              background-color: $color-grey-light-1;
+              position: fixed;
+              bottom: -9.2rem;
+              left: 0;
+              transition: all .4s ease-out;
 
-                width: 100%;
-                z-index: 5;
-                &--active {
-                    transform: translateY(-9rem); }
-                .navbar {
-                    display: unset;
-                    hr {
-                      border-color: rgba($color-white, $alpha: 0.4);
-                      border-width: .1rem;
-                      border-style: solid none none none;
-                      width: 95%;
-                      margin: .2rem auto 1.6rem auto; }
-                    .menu {
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                        justify-content: space-evenly;
+              width: 100%;
+              z-index: 10;
+              &--active {
+                  transform: translateY(-9rem); }
+              .navbar {
+                  display: unset;
+                  hr {
+                    border-color: rgba($color-white, $alpha: 0.4);
+                    border-width: .1rem;
+                    border-style: solid none none none;
+                    width: 95%;
+                    margin: .2rem auto 1.6rem auto; }
+                  &__icon-tray {
+                      display: flex;
+                      flex-direction: row;
+                      align-items: center;
+                      justify-content: space-evenly;
 
-                        margin: 0 auto 2rem auto;
-                        max-width: 60rem;
-
-                        &__icon {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            justify-content: center;
-
-                            color: $color-primary-contrast;
-
-                            width: 4.8rem;
-                            height: 4.8rem;
-
-                            &:link, &:visited {
-                                @include soft-ui__card;
-                                color: $color-primary-contrast; }
-                            &:hover, &:focus {
-                                @include soft-ui__card--hover;
-                                color: $color-primary; }
-                            &:active {
-                                @include soft-ui__card--active;
-                                color: $color-primary; }
-} } } } } } }
+                      margin: 0 auto 2rem auto;
+                      max-width: 60rem; } } } } } }
 
 // @media  (orientation: landscape)
 //         and (max-height: 369px) {}

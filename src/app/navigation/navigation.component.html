@@ -1,28 +1,30 @@
 <router-outlet></router-outlet>
 <div class="container">
 	<div class="navigation">
-      <a [routerLink]="" (click)="toggleMenu()" class="menu__icon" id="hamburger">
-		      <div class="menu__icon"><fa-icon [icon]="faBars" class="navigation__hamburger--icon"></fa-icon></div></a>
-		<!-- <input type="checkbox" class="navigation__checkbox" id="nav-toggle" checked>
-		<label for="nav-toggle" class="navigation__button" id="hamburger"><fa-icon [icon]="faBars"></fa-icon></label> -->
-		<div class="navigation__bar navigation__bar--active" id="nav-bar">
-			<nav class="navbar">
-        <hr>
-				<div class="menu">
-					<a [routerLink]="" (click)="toggleMenu()" class="menu__icon">
-						<div><fa-icon [icon]="faAngleDoubleDown"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/home']" routerLinkActive="active" class="menu__icon">
-						<div><fa-icon [icon]="faHome"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/categories']" routerLinkActive="active" class="menu__icon">
-						<div><fa-icon [icon]="faSearch"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/inbox']" routerLinkActive="active" class="menu__icon">
-						<div><fa-icon [icon]="faEnvelope"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/notifications']" routerLinkActive="active" class="menu__icon">
-						<div><fa-icon [icon]="faBell"></fa-icon></div></a>
-					<a [routerLink]="['/navigation/profile']" routerLinkActive="active" class="menu__icon">
-						<div><fa-icon [icon]="faUser"></fa-icon></div></a>
-				</div>
-			</nav>
-		</div>
+      <a [routerLink]="" (click)="toggleMenu()" class="btn__master" id="hamburger">
+		      <div><fa-icon [icon]="faBars"></fa-icon></div></a>
+      <a *ngIf="isVisible" [routerLink]="" (click)="enterFullScreen()" class="btn__master" id="window">
+		      <div><fa-icon [icon]="faExpandAlt"></fa-icon></div></a>
+      <a *ngIf="!isVisible" [routerLink]="" (click)="exitFullScreen()" class="btn__master" id="window">
+		      <div><fa-icon [icon]="faCompressAlt"></fa-icon></div></a>
+		  <div class="navigation__bar navigation__bar--active" id="nav-bar">
+			    <nav class="navbar">
+              <hr>
+				      <div class="navbar__icon-tray">
+					        <a [routerLink]="" (click)="toggleMenu()" class="btn__soft-ui--emboss">
+						          <div><fa-icon [icon]="faAngleDoubleDown"></fa-icon></div></a>
+					        <a [routerLink]="['/navigation/home']" routerLinkActive="active" class="btn__soft-ui--emboss">
+						          <div><fa-icon [icon]="faHome"></fa-icon></div></a>
+					        <a [routerLink]="['/navigation/categories']" routerLinkActive="active" class="btn__soft-ui--emboss">
+						          <div><fa-icon [icon]="faSearch"></fa-icon></div></a>
+					        <a [routerLink]="['/navigation/inbox']" routerLinkActive="active" class="btn__soft-ui--emboss">
+						          <div><fa-icon [icon]="faEnvelope"></fa-icon></div></a>
+					        <a [routerLink]="['/navigation/notifications']" routerLinkActive="active" class="btn__soft-ui--emboss">
+						          <div><fa-icon [icon]="faBell"></fa-icon></div></a>
+					        <a [routerLink]="['/navigation/profile']" routerLinkActive="active" class="btn__soft-ui--emboss">
+						          <div><fa-icon [icon]="faUser"></fa-icon></div></a>
+				      </div>
+			    </nav>
+		  </div>
 	</div>
 </div>

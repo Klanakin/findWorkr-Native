@@ -9,8 +9,9 @@ import {
   faUser,
   faCaretRight,
   faBars,
-  faAngleDoubleRight,
-  faAngleDoubleDown
+  faAngleDoubleDown,
+  faCompressAlt,
+  faExpandAlt
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -27,8 +28,11 @@ export class NavigationComponent implements OnInit {
   faCaretRight = faCaretRight;
   faBars = faBars;
   faAngleDoubleDown = faAngleDoubleDown;
+  faCompressAlt = faCompressAlt;
+  faExpandAlt = faExpandAlt;
 
   isActive: boolean = true;
+  isVisible: boolean = true;
 
   constructor() {}
 
@@ -46,5 +50,15 @@ export class NavigationComponent implements OnInit {
       (<HTMLInputElement>document.getElementById("nav-bar")).className = "navigation__bar";
     }
     this.isActive = !this.isActive;
+  }
+
+  enterFullScreen(): void {
+    document.documentElement.requestFullscreen();
+    this.isVisible = !this.isVisible;
+  }
+
+  exitFullScreen(): void {
+    document.exitFullscreen();
+    this.isVisible = !this.isVisible;
   }
 }

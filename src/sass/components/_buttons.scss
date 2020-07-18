@@ -4,6 +4,26 @@
     text-decoration: none;
     overflow: hidden;
 
+    &__master {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        color: $color-primary-contrast;
+        font-size: 1.6rem;
+
+        width: 3.5rem;
+        height: 3.5rem;
+
+        &:link, &:visited {
+            @include soft-ui__btn-emboss; }
+        &:hover, &:focus {
+            @include soft-ui__btn-emboss; }
+        &:active {
+            @include soft-ui__btn-emboss--active;
+            transform: translateY(.4rem); } }
+
     &__capsule-blue {
         background-color: $color-primary;
         box-shadow: .3rem .3rem .6rem rgba($color-primary, $alpha: 0.5);
@@ -13,16 +33,15 @@
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;
-        &:link,
-            &:visited {
-                transition: all .2s; }
-            &:hover, &:focus {
-                box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
-                transform: translateY(-.4rem); }
-            &:active {
-                box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
-                transform: translateY(0);
-                transition: all .2s; }
+        &:link, &:visited {
+            transition: all .2s; }
+        &:hover, &:focus {
+            box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
+            transform: translateY(-.4rem); }
+        &:active {
+            box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
+            transform: translateY(0);
+            transition: all .2s; }
         &--login {
             color: $color-white;
             font-size: 2.3rem;
@@ -37,16 +56,15 @@
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;
-        &:link,
-            &:visited {
-                transition: all .2s; }
-            &:hover, &:focus {
-                box-shadow: .3rem .3rem .8rem rgba($color-primary-contrast, $alpha: 0.5);
-                transform: translateY(-.4rem); }
-            &:active {
-                box-shadow: .2rem .2rem .4rem rgba($color-primary-contrast, $alpha: 0.8);
-                transform: translateY(0);
-                transition: all .2s; }
+        &:link, &:visited {
+            transition: all .2s; }
+        &:hover, &:focus {
+            box-shadow: .3rem .3rem .8rem rgba($color-primary-contrast, $alpha: 0.5);
+            transform: translateY(-.4rem); }
+        &:active {
+            box-shadow: .2rem .2rem .4rem rgba($color-primary-contrast, $alpha: 0.8);
+            transform: translateY(0);
+            transition: all .2s; }
         &--inactive {
             color: $color-grey-light-3;
             font-size: 2.3rem;
@@ -63,16 +81,15 @@
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;
-        &:link,
-            &:visited {
-                transition: all .2s; }
-            &:hover, &:focus {
-                box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
-                transform: translateY(-.4rem); }
-            &:active {
-                box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
-                transform: translateY(0);
-                transition: all .2s; }
+        &:link, &:visited {
+            transition: all .2s; }
+        &:hover, &:focus {
+            box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
+            transform: translateY(-.4rem); }
+        &:active {
+            box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
+            transform: translateY(0);
+            transition: all .2s; }
         &--register {
             border-style: none;
             color: $color-primary;
@@ -88,8 +105,7 @@
                 content: url(/assets/img/facebook-color-original.svg);
                 position: absolute;
                 top: 1.7rem;
-                left: 3rem;
-            } }
+                left: 3rem; } }
         &--google {
             box-shadow: .3rem .3rem .6rem rgba(#060807, $alpha: .1);
             color: $color-primary;
@@ -116,6 +132,25 @@
             &:hover, &:focus {
                 @include soft-ui__btn-inset--hover; }
             &:active {
-                @include soft-ui__btn-inset--active; }
-        } }
-}
+                @include soft-ui__btn-inset--active; } }
+
+        &--emboss {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            width: 4.8rem;
+            height: 4.8rem;
+
+            &:link, &:visited {
+                @include soft-ui__btn-emboss;
+                color: $color-primary-contrast; }
+            &:hover, &:focus {
+                @include soft-ui__btn-emboss--hover;
+                color: $color-primary; }
+            &:active {
+                @include soft-ui__btn-emboss--active;
+                color: $color-primary;
+                transform: translateY(.4rem); } }
+} }
