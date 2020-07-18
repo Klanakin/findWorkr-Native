@@ -29,14 +29,14 @@
         align-items: center;
         justify-content: flex-start;
 
-        background-color: $color-grey-light-1;
+        background-color: $color-white-smoke;
         height: 80%;
         padding: 0 4.5rem;
         width: 100%;
         .forgot-pwd {
             color: $color-primary-contrast; } }
     .start-screen {
-     
+
         &__splash {
             &--logo {
                 animation: moveInFromTop 4s;
@@ -49,16 +49,16 @@
     0% {
         opacity: 100;
         transform: translateY(0); }
-    20% { 
+    20% {
         opacity: 100;
         transform: translateY(20rem); }
-    40% { 
+    40% {
         transform: translateY(12rem); }
-    80% { 
+    80% {
         transform: translateY(20rem); }
-    90% { 
+    90% {
         transform: translateY(-2rem); }
-    95% { 
+    95% {
         transform: translateY(2rem); }
     100% {
         opacity: 100;
@@ -68,7 +68,7 @@
     10% {
         opacity: 100;
         transform: translateY(0); }
-    40% { 
+    40% {
         transform: translateY(50rem); }
     90% {
         opacity: 100;
