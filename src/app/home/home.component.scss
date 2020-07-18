@@ -22,7 +22,7 @@
             input[type=text] {
                 @include soft-ui__card;
 
-                border: .2rem solid rgba($color-white, $alpha: 0);
+                border: .2rem solid rgba($color: #ffffff, $alpha: 0);
                 color: $color-primary-contrast;
                 display: inline-block;
                 font-size: 1.8rem;
@@ -34,14 +34,16 @@
                 height: 4rem;
                 &:focus ~ .btn--search {
                     @include soft-ui__card;
-                    color: $color-white;
+
+                    color: $color-primary;
                     transition: all .4s;
                     &:hover {
-                      color: $color-primary;
+                      color: $color-white;
                     } }
                 &:focus {
                     @include soft-ui__card--hover;
-                    border: .2rem solid rgba($color-white, $alpha: 0.5);
+
+                    border: .2rem solid rgba($color: #ffffff, $alpha: 0.6);
                     outline: none;
                     transform: translateY(0); }
                 &::placeholder {
@@ -78,7 +80,7 @@
                         inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1); }
                 &:active {
                     @include soft-ui__btn-inset--active;
-                    color: $color-primary;
+                    color: $color-primary-contrast;
                     transform: translateY(0); } } } } }
     .contents {
         display: flex;

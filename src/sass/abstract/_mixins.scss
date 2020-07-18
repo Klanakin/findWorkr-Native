@@ -13,9 +13,18 @@
         // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
         .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
         inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+
+    // Use filter on pseudo elements to eliminate unexpected issues
+    // -webkit-filter: drop-shadow(
+    //     -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+    //     .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
+    //     inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1) );
     transition: all .4s; }
 
 @mixin soft-ui__card--hover {
+    background-color: $color-grey-light-1;
+    border-radius: 2rem;
+    border-style: none;
     outline: none;
     box-shadow:
         inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
@@ -26,6 +35,8 @@
     transform: translateY(.2rem); }
 
 @mixin soft-ui__card--focus {
+    border-radius: 2rem;
+    border-style: none;
     background-color: white;
     box-shadow:
         -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
@@ -37,6 +48,9 @@
     transform: translateY(.2rem); }
 
 @mixin soft-ui__card--active {
+    background-color: $color-grey-light-1;
+    border-radius: 2rem;
+    border-style: none;
     box-shadow:
         inset -.4rem -.4rem 1rem rgba($color: #ffffff, $alpha: 0.8),
         // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
@@ -69,7 +83,8 @@
         inset .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
         inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
     text-decoration: none;
-    transition: all .4s; }
+    transition: all .4s;
+    -webkit-transition: all .4s; }
 
 @mixin soft-ui__btn-inset--hover {
     background-color: $color-grey-light-1;
@@ -111,7 +126,8 @@
         inset .2rem .2rem 1rem rgba($color: #000000, $alpha: 0.1),
         inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
     text-decoration: none;
-    transition: all .4s; }
+    transition: all .4s;
+    -webkit-transition: all .4s; }
 
 @mixin soft-ui__btn-emboss--hover {
     background-color: $color-grey-light-1;
