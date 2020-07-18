@@ -17,4 +17,12 @@ export class ProfileComponent implements OnInit {
 
   ngOnInit(): void {}
 
+  enterFullScreen(): void {
+    document.documentElement.requestFullscreen();
+  }
+
+  exitFullScreen(): void {
+    document.exitFullscreen();
+  }
+
 }
