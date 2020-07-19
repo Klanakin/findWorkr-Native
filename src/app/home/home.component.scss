@@ -19,9 +19,41 @@
             max-width: 50rem;
             width: calc(100% - 1rem);
 
+            // input[type=text] {
+            //     @include soft-ui__card--hover;
+            //         border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+            //         transform: translateY(0);
+
+            //     color: $color-primary-contrast;
+            //     display: inline-block;
+            //     font-size: 1.8rem;
+            //     overflow: hidden;
+            //     padding: .7rem 7rem .7rem 1.7rem;
+            //     transition: all 1s;
+
+            //     width: 100%;
+            //     height: 4rem;
+            //     &:focus ~ .btn--search {
+            //         @include soft-ui__card;
+            //             border: .1rem solid rgba($color-primary, $alpha: 1);
+
+            //         color: $color-primary;
+            //         transition: all .4s;
+            //         &:hover {
+            //           color: $color-white;
+            //         } }
+            //     &:focus {
+            //         @include soft-ui__card--hover;
+            //             border: .1rem solid rgba($color-primary, $alpha: 1);
+            //             transform: translateY(0);
+
+            //         outline: none; }
+            //     &::placeholder {
+            //         color: rgba($color-primary-contrast, $alpha: .8); } }
+
             input[type=text] {
-                @include soft-ui__card--hover;
-                    border: .1rem solid rgba($color-primary-contrast, $alpha: 0.2);
+                @include soft-ui__btn-emboss;
+                    border: .1rem solid rgba($color: #ffffff, $alpha: 0);
                     transform: translateY(0);
 
                 color: $color-primary-contrast;
@@ -34,16 +66,16 @@
                 width: 100%;
                 height: 4rem;
                 &:focus ~ .btn--search {
-                    @include soft-ui__card;
-
-                    color: $color-primary;
+                  @include soft-ui__btn-emboss;
+                      border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+                  color: $color-primary-contrast;
                     transition: all .4s;
                     &:hover {
                       color: $color-white;
                     } }
                 &:focus {
                     @include soft-ui__card--hover;
-                        border: .1rem solid rgba($color: #ffffff, $alpha: 0.6);
+                        border: .1rem solid rgba($color: #ffffff, $alpha: 1);
                         transform: translateY(0);
 
                     outline: none; }
@@ -65,21 +97,22 @@
                 position: absolute;
                 right: .5rem;
                 top: .5rem;
+                transition: all 1s;
 
                 width: 6rem;
                 height: 3rem;
                 &:link, &:visited {
                     @include soft-ui__btn-inset;
+                        border: .1rem solid rgba($color: #ffffff, $alpha: 0);
                     color: $color-primary-contrast; }
                 &:hover {
-                    @include soft-ui__btn-inset--hover;
-                        box-shadow:
-                            inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
-                            // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
-                            inset .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
-                            inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
-
-                    color: $color-primary; }
+                    @include soft-ui__btn-emboss;
+                        border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+                    color: $color-white; }
+                &:focus {
+                    @include soft-ui__btn-inset;
+                        border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+                    color: $color-primary-contrast; }
                 &:active {
                     @include soft-ui__btn-inset--active;
                         transform: translateY(0);
@@ -99,8 +132,6 @@
         .popular-services {
             // background-color: goldenrod;
             flex-grow: 1;
-            &__card {
-              text-decoration: none; }
             &__card-box {
                 display: flex;
                 flex-direction: row;
@@ -111,13 +142,18 @@
                 .card {
                     &__preview {
                         &--logo-design {
-                            background-image: url(../../assets/img/preview/card__logo-design@3x.png); }
+                            background-image: url(../../assets/img/preview/card__logo-design@3x.png);
+                            background-size: unset; }
                         &--logo-animation {
-                            background-image: url(../../assets/img/preview/card__logo-animation@3x.png); }
-                        &--business-cards {
-                            background-image: url(../../assets/img/preview/card__business-card@3x.png);}
+                            background-image: url(../../assets/img/preview/card__logo-animation@3x.png);
+                            background-size: unset; }
+                        &--printings {
+                            background-image: url(../../assets/img/preview/card__business-card@3x.png);
+                            background-size: unset; }
                         &--influencer-marketing {
-                            background-image: url(../../assets/img/preview/card__influencer-marketing@3x.png); } } } }
+                            background-image: url(../../assets/img/preview/card__influencer-marketing@3x.png);
+                            background-position: top;
+                            background-size: unset; } } } }
             .see-all {
                 text-align: right;
                 width: 100%;
@@ -126,8 +162,6 @@
                     text-decoration: none; } } }
         .recently-viewed {
             flex-grow: 2;
-            &__card {
-              text-decoration: none; }
             &__card-box {
                 display: flex;
                 flex-direction: row;
