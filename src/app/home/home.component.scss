@@ -20,9 +20,10 @@
             width: calc(100% - 1rem);
 
             input[type=text] {
-                @include soft-ui__card;
+                @include soft-ui__card--hover;
+                    border: .1rem solid rgba($color-primary-contrast, $alpha: 0.2);
+                    transform: translateY(0);
 
-                border: .2rem solid rgba($color: #ffffff, $alpha: 0);
                 color: $color-primary-contrast;
                 display: inline-block;
                 font-size: 1.8rem;
@@ -42,10 +43,10 @@
                     } }
                 &:focus {
                     @include soft-ui__card--hover;
+                        border: .1rem solid rgba($color: #ffffff, $alpha: 0.6);
+                        transform: translateY(0);
 
-                    border: .2rem solid rgba($color: #ffffff, $alpha: 0.6);
-                    outline: none;
-                    transform: translateY(0); }
+                    outline: none; }
                 &::placeholder {
                     color: rgba($color-primary-contrast, $alpha: .8); } }
             a {
@@ -72,16 +73,18 @@
                     color: $color-primary-contrast; }
                 &:hover {
                     @include soft-ui__btn-inset--hover;
-                    color: $color-primary;
-                    box-shadow:
-                        inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
-                        // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
-                        inset .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
-                        inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1); }
+                        box-shadow:
+                            inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+                            // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+                            inset .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
+                            inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+
+                    color: $color-primary; }
                 &:active {
                     @include soft-ui__btn-inset--active;
-                    color: $color-primary-contrast;
-                    transform: translateY(0); } } } } }
+                        transform: translateY(0);
+
+                    color: $color-primary-contrast; } } } } }
     .contents {
         display: flex;
         flex-direction: column;
