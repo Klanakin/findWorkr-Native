@@ -6,7 +6,7 @@
 
 @mixin soft-ui__card {
     background-color: $color-grey-light-1;
-    border-radius: 2rem;
+    border-radius: $border-radius-s;
     border-style: none;
     box-shadow:
         -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
@@ -23,7 +23,7 @@
 
 @mixin soft-ui__card--hover {
     background-color: $color-grey-light-1;
-    border-radius: 2rem;
+    border-radius: $border-radius-s;
     border-style: none;
     outline: none;
     box-shadow:
@@ -35,7 +35,7 @@
     transform: translateY(.2rem); }
 
 @mixin soft-ui__card--focus {
-    border-radius: 2rem;
+    border-radius: $border-radius-s;
     border-style: none;
     background-color: white;
     box-shadow:
@@ -49,7 +49,7 @@
 
 @mixin soft-ui__card--active {
     background-color: $color-grey-light-1;
-    border-radius: 2rem;
+    border-radius: $border-radius-s;
     border-style: none;
     box-shadow:
         inset -.4rem -.4rem 1rem rgba($color: #ffffff, $alpha: 0.8),
@@ -75,7 +75,7 @@
 //
 @mixin soft-ui__btn-inset {
     background-color: $color-grey-light-1;
-    border-radius: 2rem;
+    border-radius: $border-radius-s;
     border-style: none;
     box-shadow:
         inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
@@ -118,7 +118,7 @@
 //
 @mixin soft-ui__btn-emboss {
   background-color: $color-grey-light-1;
-  border-radius: 2rem;
+  border-radius: $border-radius-s;
   border-style: none;
   box-shadow:
       -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
@@ -135,7 +135,7 @@
 
 @mixin soft-ui__btn-emboss--hover {
   background-color: $color-grey-light-1;
-  border-radius: 2rem;
+  border-radius: $border-radius-s;
   border-style: none;
   outline: none;
   box-shadow:
@@ -147,7 +147,7 @@
   transform: translateY(.2rem); }
 
 @mixin soft-ui__btn-emboss--focus {
-  border-radius: 2rem;
+  border-radius: $border-radius-s;
   border-style: none;
   background-color: white;
   box-shadow:
@@ -161,7 +161,7 @@
 
 @mixin soft-ui__btn-emboss--active {
   background-color: $color-grey-light-1;
-  border-radius: 2rem;
+  border-radius: $border-radius-s;
   border-style: none;
   box-shadow:
       inset -.4rem -.4rem 1rem rgba($color: #ffffff, $alpha: 0.8),
