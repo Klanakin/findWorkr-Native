@@ -24,12 +24,41 @@
             @include soft-ui__btn-emboss--active;
             transform: translateY(.4rem); } }
 
+    &__block {
+        flex-basis: 40rem;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+
+        &:link, &:visited {
+            @include soft-ui__card;
+                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+            color: white; }
+        &:focus {
+            @include soft-ui__card;
+                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+            color: white; }
+        &:hover {
+            @include soft-ui__card;
+                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+            color: white; }
+        &:active {
+            @include soft-ui__card;
+                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+            color: white;
+            transform: translateY(.2rem); } }
+
     &__capsule-blue {
         background-color: $color-primary;
         box-shadow: .3rem .3rem .6rem rgba($color-primary, $alpha: 0.5);
         padding: 2rem;
         outline: none;
         text-align: center;
+        text-decoration: none;
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;

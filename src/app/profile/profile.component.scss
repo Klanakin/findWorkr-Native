@@ -47,7 +47,6 @@
             p {
                 color: $color-primary;
                 font-size: 1.6rem; }
-
             .profile {
                 &__card {
                     @include soft-ui__card;
