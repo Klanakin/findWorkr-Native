@@ -49,6 +49,8 @@
                 font-size: 1.6rem; }
             .profile {
                 &__card {
+                    @include soft-ui__card;
+
                     padding: 3rem 2rem 2rem 2rem;
                     &:not(:first-child) {
                         margin-top: $margin-top-xxs; }
