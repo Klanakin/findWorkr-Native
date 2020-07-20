@@ -1,9 +1,9 @@
 {
   "targets": {
-    "findworkr-soft-ui": {
+    "findworkr-light": {
       "hosting": {
         "findWorkr-Native": [
-          "findworkr-soft-ui"
+          "findworkr-light"
         ]
       }
     }

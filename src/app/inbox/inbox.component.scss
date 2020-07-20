@@ -49,18 +49,28 @@
                         right: 2rem;
                         top: 2rem;
 
-                        width: 8rem;
-                        height: 3rem;
+                        width: 6rem;
+                        height: 2rem;
                         &:link, &:visited {
-                            @include soft-ui__btn-inset;
+                            background-color: $color-grey-light-1;
+                            border-radius: .6rem;
+                            border: .1rem solid $color-grey-light-3;
+                            box-shadow: unset;
+                            text-decoration: none;
+                            transition: all .4s;
+                            -webkit-transition: all .4s;
                             color: $color-primary-contrast; }
+                        &:focus {
+                            background-color: inherit }
                         &:hover {
-                            @include soft-ui__btn-inset--hover;
-                            color: $color-primary; }
+                            border: .1rem solid $color-grey-light-2;
+                            background-color: $color-grey-light-2; }
                         &:active {
-                            @include soft-ui__btn-inset--active;
-                            color: $color-primary;
-                            transform: translateY(0); } }
+                            border: .1rem solid $color-grey-light-3;
+                            background-color: $color-grey-light-3; }
+                        img {
+                            height: 1.2rem;
+                            width: 1.2rem; } }
                     &--name {
                         margin-left: .2rem; } } }
 
