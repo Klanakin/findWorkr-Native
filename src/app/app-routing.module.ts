@@ -11,6 +11,8 @@ import { EmailConfirmationComponent } from './email-confirmation/email-confirmat
 import { NavigationComponent } from './navigation/navigation.component';
   import { HomeComponent} from './home/home.component';
   import { CategoriesComponent} from './categories/categories.component';
+    import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
+      import { LogoDesignComponent } from './logo-design/logo-design.component';
   import { ClassificationComponent} from './classification/classification.component';
   import { InboxComponent} from './inbox/inbox.component';
   import { NotificationsComponent } from './notifications/notifications.component';
@@ -27,11 +29,13 @@ const routes: Routes = [
     children: [
       { path: 'home', component: HomeComponent },
       { path: 'categories', component: CategoriesComponent },
+        { path: 'graphic-design', component: GraphicDesignComponent },
+          { path: 'logo-design', component: LogoDesignComponent },
       { path: 'classification', component: ClassificationComponent },
       { path: 'inbox', component: InboxComponent },
       { path: 'notifications', component: NotificationsComponent },
       { path: 'profile', component: ProfileComponent }
-    ]}
+    ]},
 ];
 
 @NgModule({
