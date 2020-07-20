@@ -25,30 +25,41 @@
             transform: translateY(.4rem); } }
 
     &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
         flex-basis: 40rem;
         margin: 0 auto;
         padding: 1rem;
         text-align: center;
+        text-transform: uppercase;
+        height: 4rem;
 
         &:link, &:visited {
             @include soft-ui__card;
                 background-image: linear-gradient(45deg, $color-primary,  #5290CE );
-                border: .1rem solid rgba($color: #ffffff, $alpha: 0);
-            color: white; }
-        &:focus {
-            @include soft-ui__card;
-                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
-                border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+                border: none;
             color: white; }
         &:hover {
             @include soft-ui__card;
                 background-image: linear-gradient(45deg, $color-primary,  #5290CE );
-                border: .1rem solid rgba($color: #ffffff, $alpha: 1);
-            color: white; }
+                border: none;
+                box-shadow: unset;
+            color: white;
+            transform: translateY(0); }
+        &:focus {
+            @include soft-ui__card;
+                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                border: none;
+            color: white;
+            outline: none;
+            transform: translateY(.2rem); }
         &:active {
             @include soft-ui__card;
                 background-image: linear-gradient(45deg, $color-primary,  #5290CE );
-                border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+                border: none;
+                box-shadow: unset;
             color: white;
             transform: translateY(.2rem); } }
 
@@ -62,6 +73,7 @@
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;
+
         &:link, &:visited {
             transition: all .2s; }
         &:hover, &:focus {
@@ -85,6 +97,7 @@
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;
+
         &:link, &:visited {
             transition: all .2s; }
         &:hover, &:focus {
@@ -110,6 +123,7 @@
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;
+
         &:link, &:visited {
             transition: all .2s; }
         &:hover, &:focus {
