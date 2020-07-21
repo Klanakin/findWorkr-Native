@@ -51,6 +51,7 @@
                 &__card {
                     @include soft-ui__card;
 
+                    font-size: 1.6rem;
                     padding: 3rem 2rem 2rem 2rem;
                     &:not(:first-child) {
                         margin-top: $margin-top-xxs; }

@@ -2,7 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 import {
   faCog,
-  faAngleRight } from '@fortawesome/free-solid-svg-icons';
+  faAngleRight,
+  faArrowLeft
+} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-graphic-design',
@@ -12,6 +14,7 @@ import {
 export class GraphicDesignComponent implements OnInit {
   faCog = faCog;
   faAngleRight = faAngleRight;
+  faArrowLeft = faArrowLeft;
 
   constructor() { }
 

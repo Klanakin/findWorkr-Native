@@ -24,11 +24,23 @@
             @include soft-ui__btn-emboss--active;
             transform: translateY(.4rem); } }
 
+    &__arrow--left {
+        a {
+            div::after {
+                content: url(/assets/img/arrow-left-solid.svg);
+                position: absolute;
+                pointer-events: all;
+                height: 2rem;
+                width: 2rem;
+                top: 4rem;
+                left: 1.5rem; } } }
+
     &__block {
         display: flex;
         flex-direction: column;
         justify-content: center;
 
+        font-weight: 400;
         flex-basis: 40rem;
         margin: 0 auto;
         padding: 1rem;

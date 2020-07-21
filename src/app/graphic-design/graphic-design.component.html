@@ -9,6 +9,8 @@
   <div class="contents">
       <div class="card-box">
           <div class="contents__title">
+              <a [routerLink]="['../categories']" class="contents__icon--arrow-left">
+                  <div><fa-icon [icon]="faArrowLeft"></fa-icon></div></a>
               <img src="../../assets/img/preview/graphics_design/23053@3x.png" alt="Graphics & Designs" class="contents__title--thumbnail">
               <h3>Graphics & Design</h3>
               <span class="contents__title--description">Logo & Brand Identity | Art & Illustration</span>
@@ -195,6 +197,9 @@
                           <fa-icon [icon]="faAngleRight"></fa-icon></a></li>
               </ul>
           </div>
+          <a [routerLink]="['../categories']" class="btn__block util-margin-top-s">
+              <span>Back</span>
+          </a>
       </div>
   </div>
 </div>
