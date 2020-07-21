@@ -54,6 +54,7 @@
                     align-items: center;
                     justify-content: center;
 
+                    font-size: 1.6rem;
                     margin: 0 auto;
                     &--thumbnail {
                         margin-bottom: .6rem;
@@ -65,6 +66,7 @@
             .profile {
                 &__card {
                     @include soft-ui__card;
+                    font-size: 1.6rem;
 
                     padding: 3rem 2rem 2rem 2rem;
                     &:not(:first-child) {
@@ -112,52 +114,52 @@
 
 } } } } } }
 
-@media only screen
-    // and (orientation: portrait)
-    and (min-width: 567px) {
+// @media only screen
+//     // and (orientation: portrait)
+//     and (min-width: 567px) {
 
-        .stage .contents .card-box {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
+//         .stage .contents .card-box {
+//             display: flex;
+//             flex-direction: row;
+//             flex-wrap: wrap;
+//             justify-content: space-between;
 
-            margin: 0 auto;
-            padding-bottom: 5rem;
-            width: calc(100% - .5rem);
-            p {
-                color: $color-primary;
-                font-size: 1.6rem; }
+//             margin: 0 auto;
+//             padding-bottom: 5rem;
+//             width: calc(100% - .5rem);
+//             p {
+//                 color: $color-primary;
+//                 font-size: 1.6rem; }
 
-            .profile {
-                &__card {
-                    @include soft-ui__card;
+//             .profile {
+//                 &__card {
+//                     @include soft-ui__card;
 
-                    padding: 3rem 2rem 2rem 2rem;
-                    &:not(:first-child) {
-                        margin-top: $margin-top-xxs; }
+//                     padding: 3rem 2rem 2rem 2rem;
+//                     &:not(:first-child) {
+//                         margin-top: $margin-top-xxs; }
 
-                    // &:last-child {
-                    //     margin-bottom: $margin-bottom-xxl; }
+//                     // &:last-child {
+//                     //     margin-bottom: $margin-bottom-xxl; }
 
-                    &--user {
-                        flex-basis: 100%;
+//                     &--user {
+//                         flex-basis: 100%;
 
-                        color: $color-primary;
-                        img {
-                            transform: translateX(-1rem);
-                            width: 8rem;
-                            height: 8rem; } }
-                    &--my-findworkr {
-                        flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
-                    &--selling {
-                        flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
-                    &--buying {
-                        flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
-                    &--general {
-                        flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
-                    ul {
-                        list-style-type: none;
-                        li:not(:first-child) {
-                            margin: 1rem 0; } }
-} } } }
+//                         color: $color-primary;
+//                         img {
+//                             transform: translateX(-1rem);
+//                             width: 8rem;
+//                             height: 8rem; } }
+//                     &--my-findworkr {
+//                         flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
+//                     &--selling {
+//                         flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
+//                     &--buying {
+//                         flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
+//                     &--general {
+//                         flex-basis: calc(50% - (#{$margin-top-xxs}/2)); }
+//                     ul {
+//                         list-style-type: none;
+//                         li:not(:first-child) {
+//                             margin: 1rem 0; } }
+// } } } }

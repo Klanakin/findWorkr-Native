@@ -169,32 +169,27 @@
           align-items: center;
           justify-content: space-between;
 
-          padding: 0 1rem;
+          padding: 0 .5rem;
           text-decoration: none;
           transition: all .4s;
 
           width: 100%;
 
           &:link, &:visited {
-              background-color: inherit;
               color: $color-primary-contrast;
               fa-icon {
                   transform: translateX(0);
-                  transition: all .4s ease-in-out; } }
+                  transition: all .4s} }
           &:focus {
-              background-color: inherit;
-              color: $color-white;
               fa-icon {
                   transform: translateX(0);
-                  transition: all .4s ease-in-out; } }
+                  transition: all .4s} }
           &:hover {
-              background-color: $color-grey-light-5;
-              color: $color-white;
+              color: $color-primary;
               fa-icon {
                   transform: translateX(.6rem);
-                  transition: all .4s ease-in-out; } }
+                  transition: all .4s} }
           &:active {
-              background-color: $color-grey-light-3;
               color: $color-white; } } }
 
     &__soft-ui {
