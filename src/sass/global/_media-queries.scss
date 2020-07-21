@@ -2,6 +2,28 @@
 //
 @media only screen
     and (orientation: portrait)
+    and (max-width: 299px) {
+        #hamburger {
+            position: absolute;
+            top: 4rem;
+            left: 3.5rem; }
+        #window {
+            position: absolute;
+            top: 4rem;
+            right: 3.5rem; }
+        .stage {
+            padding: 3rem 3rem 9rem 3rem; }
+        .card {
+        width: 16rem; // Originally 14rem
+        height: 19rem; // Originally 17rem
+            &__preview {
+                height: 13rem; } // Originally 11rem
+            &__title {
+                height: 6rem; } } } // Originally 6rem
+
+@media only screen
+    and (orientation: portrait)
+    and (min-width: 300px)
     and (max-width: 359px) {
         #hamburger {
             position: absolute;
@@ -14,12 +36,12 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 14rem;
-        height: 17rem;
+        width: 18rem; // Originally 14rem
+        height: 21rem; // Originally 17rem
             &__preview {
-                height: 11rem; }
+                height: 15rem; } // Originally 11rem
             &__title {
-                height: 6rem; } } }
+                height: 6rem; } } } // Originally 6rem
 @media only screen
     and (orientation: portrait)
     and (min-width: 360px)
@@ -65,7 +87,7 @@
 @media only screen
     and (orientation: portrait)
     and (min-width: 411px)
-    and (max-width: 567px) {
+    and (max-width: 445px) {
         #hamburger {
             position: absolute;
             top: 4rem;
@@ -81,6 +103,50 @@
         height: 19rem;
             &__preview {
                 height: 13rem; }
+            &__title {
+                height: 6rem; } } }
+@media only screen
+    and (orientation: portrait)
+    and (min-width: 446px)
+    and (max-width: 499px) {
+        #hamburger {
+            position: absolute;
+            top: 4rem;
+            left: 3.5rem; }
+        #window {
+            position: absolute;
+            top: 4rem;
+            right: 3.5rem; }
+        .stage {
+            padding: 3rem 3rem 9rem 3rem; }
+        .card {
+        width: 18rem;
+        height: 21rem;
+            &__preview {
+                height: 15rem; }
+            &__title {
+                height: 6rem; } } }
+@media only screen
+    and (orientation: portrait)
+    and (min-width: 500px)
+    and (max-width: 567px) {
+        #hamburger {
+            position: absolute;
+            top: 4rem;
+            left: 3.5rem; }
+        #window {
+            position: absolute;
+            top: 4rem;
+            right: 3.5rem; }
+        .stage {
+            padding: 3rem 3rem 9rem 3rem; }
+        .card {
+            width: 13rem;
+            height: 16rem;
+            h4 {
+                font-size: 1.4rem;            }
+            &__preview {
+                height: 11rem; }
             &__title {
                 height: 6rem; } } }
 @media only screen
