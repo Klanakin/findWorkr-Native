@@ -22,7 +22,7 @@
             <a (click)="openPopup('facebook')" [routerLink]="['/login-screen']" class="btn btn__capsule-white btn__capsule-white--facebook"
                 id="btn-facebook">Continue with Facebook</a></div>
         <div class="util-margin-top-s">
-            <a (click)="openPopup('google')" [routerLink]="['/login-screen']" class="btn btn__capsule-white btn__capsule-white--google 
+            <a (click)="openPopup('google')" [routerLink]="['/login-screen']" class="btn btn__capsule-white btn__capsule-white--google
                 util-margin-horizontal-s" id="btn-google">Continue with Google</a></div>
         <div class="util-margin-vertical-m">
             <a [routerLink]="['/registration-page']" class="sign-up">Don't have an account? <span style="text-decoration: underline;">Sign up</span></a></div></div>
@@ -31,20 +31,20 @@
 <div *ngIf="popupVisible" class="popup">
     <div *ngIf="credentialPlatform === 'facebook'" class="popup__content">
         <a (click)="closePopup()" [routerLink]="['/login-screen']" class="popup__close">&times;</a>
-        <div> 
+        <div>
             <img src="/assets/img/facebook-color-original-square-transparent.svg" alt="facebook-logo" class="facebook--logo"></div>
         <div>
-            <img src="/assets/img/Cool-Male-Avatars-03_34322@3x.png" alt="facebook-avatar" class="facebook--avatar"></div>
-            <p class="facebook--name">Adam</p>
+            <img src="../../assets/img/Male-Avatar-Cool-Cap-icon.png" alt="facebook-avatar" class="facebook--avatar"></div>
+            <p class="facebook--name">Don Klanakin</p>
         <div class="facebook--terms">
             <p>Findworkr.com will have access to name, email address and other public info.</p></div>
         <div class="facebook--edit-profile">
             <a [routerLink]="['/login-screen']">Edit the info you provide</a></div>
         <div>
-            <a [routerLink]="['/navigation/home']" class="btn facebook--login-button">Continue as Adam</a></div>
+            <a [routerLink]="['/navigation/home']" class="btn facebook--login-button">Continue as Don Klanakin</a></div>
         <div class="facebook--privacy-policy">
             <p>Findworkr.com's <a [routerLink]="['/login-screen']">Privacy Policy and Terms</a></p></div>
-    </div>        
+    </div>
 
     <div  *ngIf="credentialPlatform === 'google'" class="popup__content">
         <a (click)="closePopup()" [routerLink]="['/login-screen']" class="popup__close">&times;</a>
@@ -53,10 +53,10 @@
         <div><p class="google--choose-account">Choose an account</p></div>
         <div><p class="google--continue">To continue to Freelancer - Findworkr</p></div>
         <div class="google--user-account">
-            <img src="/assets/img/Cool-Male-Avatars-03_34322@3x.png" alt="google-avatar" class="google--avatar">
+            <img src="../../assets/img/Male-Avatar-Cool-Cap-icon.png" alt="google-avatar" class="google--avatar">
             <a [routerLink]="['/navigation/home']"><ul style="list-style-type:none;">
-                <li><div class="google--name">Adam Cray</div></li>
-                <li>adamcray@gmail.com</li>
+                <li><div class="google--name">Don Klanakin</div></li>
+                <li>don.klanakin@gmail.com</li>
             </ul></a></div>
         <hr>
         <div class="google--add-account">
@@ -66,5 +66,5 @@
         <hr>
         <div>
             <p class="google--privacy-policy">To continue, google will share your name, email address, and profile picture with freelancer - Findwork. Before using this app, review it’s <a [routerLink]="['/login-screen']">privacy policy and terms of service</a>.</p></div>
-    </div>        
+    </div>
 </div>

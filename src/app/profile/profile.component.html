@@ -2,8 +2,8 @@
 <div class="stage">
     <div class="heading">
         <div class="heading__title">
-            <a [routerLink]="['/navigation/home']" class="findworkr-logo util-center"><p >findWorkr</p></a>
-            <fa-icon [icon]="faCog" class="heading__icon"></fa-icon>
+            <a [routerLink]="['../home']" class="findworkr-logo util-center"><p >findWorkr</p></a>
+            <!-- <a [routerLink]="" (click)="enterFullScreen()"><fa-icon [icon]="faCog" class="heading__icon"></fa-icon></a> -->
             <!-- <a [routerLink]="['/navigation/profile']" class="heading__icon--menu">
                 <fa-icon [icon]="faBars"></fa-icon>
             </a> -->
@@ -13,32 +13,28 @@
         <div class="card-box">
             <div class="profile__card profile__card--user">
                 <ul>
-                    <li><img src="../../assets/img/Cool-Male-Avatars-03_34322@3x.png" alt=""></li>
-                    <li><p style="font-size: 1.8rem;">Adam Cray</p></li>
-                    <li>My personal balance: THB0</li>
-                </ul>
-            </div>
+                    <li><img src="../../assets/img/Male-Avatar-Cool-Cap-icon.png" alt=""></li>
+                    <li><p style="font-size: 1.8rem;">Don Klanakin</p></li>
+                    <li>My personal balance: THB 10 million</li>
+                </ul></div>
             <div class="profile__card profile__card--my-findworkr">
                 <ul>
-                    <li><h3>My findworkr</h3></li>
+                    <li><h3>My findWorkr</h3></li>
                     <li>Saved gigs</li>
                     <li>My interests</li>
-                </ul>
-            </div>
+                </ul></div>
             <div class="profile__card profile__card--selling">
                 <ul>
                     <li><h3>Selling</h3></li>
                     <li>Post my work</li>
                     <li>My interests</li>
-                </ul>
-            </div>
+                </ul></div>
             <div class="profile__card profile__card--buying">
                 <ul>
                     <li><h3>Buying</h3></li>
                     <li>Manage orders</li>
                     <li>Post a request</li>
-                </ul>
-            </div>
+                </ul></div>
             <div class="profile__card profile__card--general">
                 <ul>
                     <li><h3>General</h3></li>
@@ -52,8 +48,10 @@
                     <li>Payments</li>
                     <li>Invite friends</li>
                     <li>Support</li>
-                </ul>        
-            </div>
+                </ul></div>
+            <a [routerLink]="" class="btn__block util-margin-top-s">
+                <span>Setting</span>
+            </a>
         </div>
     </div>
 </div>

@@ -18,6 +18,8 @@ import { InboxComponent } from './inbox/inbox.component';
 import { ProfileComponent } from './profile/profile.component';
 import { ClassificationComponent } from './classification/classification.component';
 import { CategoriesComponent } from './categories/categories.component';
+import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
+import { LogoDesignComponent } from './logo-design/logo-design.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { CategoriesComponent } from './categories/categories.component';
     InboxComponent,
     ProfileComponent,
     ClassificationComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    GraphicDesignComponent,
+    LogoDesignComponent
   ],
   imports: [
     AppRoutingModule,

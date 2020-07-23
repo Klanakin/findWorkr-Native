@@ -1,11 +1,13 @@
 <div class="stage">
     <div class="heading">
         <div class="heading__title">
-            <a [routerLink]="['/navigation/home']" class="findworkr-logo"><p >findWorkr</p></a>
+            <a [routerLink]="['../home']" class="findworkr-logo"><p >findWorkr</p></a>
         </div>
     </div>
     <div class="content">
-        <fa-icon [icon]="faBellSlash" class="content__icon"></fa-icon>
-        <p>You don't have any notifications yet</p>
+          <div class="container">
+              <p><fa-icon [icon]="faBellSlash" class="watermark__notification"></fa-icon></p>
+              <p>You don't have any notifications yet</p>
+          </div>
     </div>
 </div>

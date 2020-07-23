@@ -37,7 +37,7 @@
 .util-margin-horizontal-xl {
     margin: 0 6rem; }
 .util-margin-horizontal-xxl {
-    margin: 0 7rem; }    
+    margin: 0 7rem; }
 
 .util-margin-vertical-xxs {
     margin: 1rem 0; }
@@ -113,3 +113,7 @@
     margin-right: 6rem; }
 .util-margin-right-xxl {
     margin-right: 7rem; }
+
+.util-link-blue {
+    color: $color-primary;
+    text-decoration: none; }

@@ -1,5 +1,6 @@
 @import '../../sass/abstract/variables';
 @import '../../sass/global/media-queries';
+@import '../../sass/abstract/mixins';
 
 .stage {
     .heading {
@@ -14,22 +15,24 @@
             font-weight: 500;
             margin-bottom: $margin-bottom-s; } }
     .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      .container {
+          @include soft-ui__card;
 
-        background-color: $color-white;
-        box-shadow: .3rem .3rem .6rem rgba($color-primary-contrast, $alpha: 0.2);
-        border-radius: .8rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
 
-        height: 75vh;
-        p {
-            color: $color-primary-contrast;
-            font-size: 1.6rem; }
-        &__icon {
-            font-size: 8rem;
-            margin-bottom: $margin-bottom-s; } } }
+          // background-color: goldenrod;
+          margin: 0 auto;
+          width: calc(100% - .5rem);
+          height: calc(100vh - 20rem);
+          p {
+              color: $color-primary-contrast;
+              font-size: 1.4rem; }
+          .watermark__notification {
+              font-size: 8rem;
+              margin-bottom: $margin-bottom-s; } } } }
 
 @media  (orientation: landscape)
     and (max-height: 414px) {

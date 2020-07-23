@@ -1,11 +1,14 @@
 @import '../../sass/abstract/variables';
 @import '../../sass/global/media-queries';
+@import '../../sass/abstract/mixins';
 
 .stage {
     .heading {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        margin-bottom: $margin-bottom-s;
 
         width: 100%;
         &__title {
@@ -15,39 +18,108 @@
             margin-bottom: $margin-bottom-s; }
         &__search-box {
             position: relative;
-            max-width: 60rem;
-            width: 100%;
-            input {
-                background-color: $color-white;
-                border-color: $color-grey-light-2;
-                // border-color: rgba($color-primary-contrast, $alpha: .3);
-                border-radius: .6rem;
-                border-style: solid;
-                border-width: .1rem;
-                box-shadow: 0 .3rem .6rem rgba($color-primary-contrast, $alpha: 0.2);
+            max-width: 50rem;
+            width: calc(100% - 1rem);
+
+            // input[type=text] {
+            //     @include soft-ui__card--hover;
+            //         border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+            //         transform: translateY(0);
+
+            //     color: $color-primary-contrast;
+            //     display: inline-block;
+            //     font-size: 1.8rem;
+            //     overflow: hidden;
+            //     padding: .7rem 7rem .7rem 1.7rem;
+            //     transition: all 1s;
+
+            //     width: 100%;
+            //     height: 4rem;
+            //     &:focus ~ .btn--search {
+            //         @include soft-ui__card;
+            //             border: .1rem solid rgba($color-primary, $alpha: 1);
+
+            //         color: $color-primary;
+            //         transition: all .4s;
+            //         &:hover {
+            //           color: $color-white;
+            //         } }
+            //     &:focus {
+            //         @include soft-ui__card--hover;
+            //             border: .1rem solid rgba($color-primary, $alpha: 1);
+            //             transform: translateY(0);
+
+            //         outline: none; }
+            //     &::placeholder {
+            //         color: rgba($color-primary-contrast, $alpha: .8); } }
+
+            input[type=text] {
+                @include soft-ui__btn-emboss;
+                    border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+                    transform: translateY(0);
+
                 color: $color-primary-contrast;
                 display: inline-block;
-                font-size: 2rem;
+                font-size: 1.8rem;
                 overflow: hidden;
-                padding: .7rem 4rem .7rem 1rem;
+                padding: .7rem 7rem .7rem 1.7rem;
+                transition: all 1s;
 
                 width: 100%;
                 height: 4rem;
+                &:focus ~ .btn--search {
+                  @include soft-ui__btn-emboss;
+                      border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+                  color: $color-primary-contrast;
+                    transition: all .4s;
+                    &:hover {
+                      color: $color-white;
+                    } }
                 &:focus {
+                    @include soft-ui__card--hover;
+                        border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+                        transform: translateY(0);
+
                     outline: none; }
                 &::placeholder {
                     color: rgba($color-primary-contrast, $alpha: .8); } }
             a {
                 color: $color-primary-contrast;
                 text-decoration: none; }
-            &--icon {
-                font-size: 2rem;
-                position: absolute;
-                top: 1rem;
-                right: 1rem;
+            .btn {
+            &--search {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
 
-                width: 2.3rem;
-                height: 2.3rem; } } }
+                color: $color-primary-contrast;
+                font-size: 1.4rem;
+
+                position: absolute;
+                right: .5rem;
+                top: .5rem;
+                transition: all 1s;
+
+                width: 6rem;
+                height: 3rem;
+                &:link, &:visited {
+                    @include soft-ui__btn-inset;
+                        border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+                    color: $color-primary-contrast; }
+                &:hover {
+                    @include soft-ui__btn-emboss;
+                        border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+                    color: $color-white; }
+                &:focus {
+                    @include soft-ui__btn-inset;
+                        border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+                    color: $color-primary-contrast; }
+                &:active {
+                    @include soft-ui__btn-inset--active;
+                        transform: translateY(0);
+
+                    color: $color-primary-contrast; } } } } }
     .contents {
         display: flex;
         flex-direction: column;
@@ -57,41 +129,52 @@
         h3 {
             font-size: 2rem;
             font-weight: 400;
-            margin: 1.8rem auto 1rem auto;
+            margin: 1.8rem auto 1rem .5rem;
             width: 100%; }
         .popular-services {
-            // background-color: red;
+            // background-color: goldenrod;
             flex-grow: 1;
             &__card-box {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
+
+                // background-color: goldenrod;
                 .card {
                     &__preview {
                         &--logo-design {
-                            background-image: url(../../assets/img/preview/card__logo-design@3x.png); }
+                            background-image: url(../../assets/img/preview/card__logo-design@3x.png);
+                            background-size: unset; }
                         &--logo-animation {
-                            background-image: url(../../assets/img/preview/card__logo-animation@3x.png); }
-                        &--business-cards {
-                            background-image: url(../../assets/img/preview/card__business-card@3x.png); }
+                            background-image: url(../../assets/img/preview/card__logo-animation@3x.png);
+                            background-size: unset; }
+                        &--printings {
+                            background-image: url(../../assets/img/preview/card__business-card@3x.png);
+                            background-size: unset; }
                         &--influencer-marketing {
-                            background-image: url(../../assets/img/preview/card__influencer-marketing@3x.png); } } } }
+                            background-image: url(../../assets/img/preview/card__influencer-marketing@3x.png);
+                            background-position: top;
+                            background-size: unset; } } } }
             .see-all {
                 text-align: right;
                 width: 100%;
                 a {
-                    color: $color-primary; } } }
+                    color: $color-primary-shade;
+                    text-decoration: none; } } }
         .recently-viewed {
-            // background-color: blue;
             flex-grow: 2;
             &__card-box {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between; }
+
+                // background-color: goldenrod;
             .see-all {
                 text-align: right;
                 width: 100%;
                 a {
-                    color: $color-primary; } } } } }
+                    color: $color-primary-shade;
+                    text-decoration: none; }
+} } } }

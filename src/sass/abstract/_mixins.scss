@@ -2,5 +2,217 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-}
+    transform: translate(-50%, -50%); }
+
+
+// UI THEME: CARD: Minimalistic ########################################################
+@mixin soft-ui__card {
+    background-color: $color-grey-light-1;
+    background-image: linear-gradient(135deg, whitesmoke, $color-grey-light-1);
+    border-radius: $border-radius-s;
+    border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+    box-shadow:
+        .2rem .2rem 1.2rem rgba($color: #000000, $alpha: 0.1);
+
+    // Use filter on pseudo elements to eliminate unexpected issues
+    // -webkit-filter: drop-shadow(
+    //     -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+    //     .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
+    //     inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1) );
+    text-decoration: none;
+    transition: all .4s; }
+
+@mixin soft-ui__card--hover {
+    background-color: $color-grey-light-1;
+    border-radius: $border-radius-s;
+    border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+    outline: none;
+    box-shadow:
+        inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+        // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+        inset .2rem .2rem 1rem rgba($color: #000000, $alpha: 0.1),
+        inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+    text-decoration: none;
+    transform: translateY(.2rem); }
+
+@mixin soft-ui__card--focus {
+    border-radius: $border-radius-s;
+    border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+    box-shadow:
+        inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+        inset .2rem .2rem 1rem rgba($color: #000000, $alpha: 0.1),
+        inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+    outline: none;
+    text-decoration: none;
+    transform: translateY(.2rem); }
+
+@mixin soft-ui__card--active {
+    background-color: $color-grey-light-1;
+    border-radius: $border-radius-s;
+    border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+    box-shadow:
+        inset -.4rem -.4rem 1rem rgba($color: #ffffff, $alpha: 0.8),
+        // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+        inset .4rem .4rem 1rem rgba($color: #000000, $alpha: 0.1),
+        inset .4rem .4rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+    text-decoration: none;
+    transform: translateY(.2rem); }
+
+
+// UI THEME: CARD: Emboss ########################################################
+// @mixin soft-ui__card {
+//     background-color: $color-grey-light-1;
+//     border-radius: $border-radius-s;
+//     border-style: none;
+//     box-shadow:
+//         -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+//         // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+//         .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
+//         inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+
+//     // Use filter on pseudo elements to eliminate unexpected issues
+//     // -webkit-filter: drop-shadow(
+//     //     -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+//     //     .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
+//     //     inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1) );
+//     transition: all .4s; }
+
+// @mixin soft-ui__card--hover {
+//     background-color: $color-grey-light-1;
+//     border-radius: $border-radius-s;
+//     border-style: none;
+//     outline: none;
+//     box-shadow:
+//         inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+//         // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+//         inset .2rem .2rem 1rem rgba($color: #000000, $alpha: 0.1),
+//         inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+//     text-decoration: none;
+//     transform: translateY(.2rem); }
+
+// @mixin soft-ui__card--focus {
+//     border-radius: $border-radius-s;
+//     border-style: none;
+//     background-color: white;
+//     box-shadow:
+//         -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+//         -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+//         .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.2),
+//         inset .2rem .2rem 4rem rgba($color: #000000, $alpha: 0.1);
+//     outline: none;
+//     text-decoration: none;
+//     transform: translateY(.2rem); }
+
+// @mixin soft-ui__card--active {
+//     background-color: $color-grey-light-1;
+//     border-radius: $border-radius-s;
+//     border-style: none;
+//     box-shadow:
+//         inset -.4rem -.4rem 1rem rgba($color: #ffffff, $alpha: 0.8),
+//         // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+//         inset .4rem .4rem 1rem rgba($color: #000000, $alpha: 0.1),
+//         inset .4rem .4rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+//     text-decoration: none;
+//     transform: translateY(.2rem); }
+
+
+// UI THEME: BUTTON: Inset ########################################################
+@mixin soft-ui__btn-inset {
+    background-color: $color-grey-light-1;
+    border-radius: $border-radius-s;
+    border-style: none;
+    box-shadow:
+        inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+        // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+        inset .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
+        inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+    text-decoration: none;
+    transition: all .4s;
+    -webkit-transition: all .4s; }
+
+@mixin soft-ui__btn-inset--hover {
+    background-color: $color-grey-light-1;
+    box-shadow:
+        inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+        // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+        inset .2rem .2rem 1rem rgba($color: #000000, $alpha: 0.1),
+        inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+    outline: none;
+    text-decoration: none; }
+
+@mixin soft-ui__btn-inset--focus {
+    background-color: $color-grey-light-1;
+    box-shadow:
+        -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+        // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+        .2rem .2rem 1rem rgba($color: #000000, $alpha: 0.1),
+        .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+    outline: none;
+    text-decoration: none; }
+
+@mixin soft-ui__btn-inset--active {
+    box-shadow:
+        inset -.4rem -.4rem 1rem rgba($color: #ffffff, $alpha: 0.8),
+        // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+        inset .4rem .4rem 1rem rgba($color: #000000, $alpha: 0.1),
+        inset .4rem .4rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+    text-decoration: none;
+    transform: translateY(.2rem); }
+
+
+// UI THEME: BUTTON: Emboss ########################################################
+@mixin soft-ui__btn-emboss {
+  background-color: $color-grey-light-1;
+  border-radius: $border-radius-s;
+  border-style: none;
+  box-shadow:
+      -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+      // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+      .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
+      inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+
+  // Use filter on pseudo elements to eliminate unexpected issues
+  // -webkit-filter: drop-shadow(
+  //     -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+  //     .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.1),
+  //     inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1) );
+  text-decoration: none;
+  transition: all .4s; }
+
+@mixin soft-ui__btn-emboss--hover {
+  background-color: $color-grey-light-1;
+  border-radius: $border-radius-s;
+  border-style: none;
+  outline: none;
+  box-shadow:
+      inset -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+      // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+      inset .2rem .2rem 1rem rgba($color: #000000, $alpha: 0.1),
+      inset .2rem .2rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+  text-decoration: none;
+  transform: translateY(.2rem); }
+
+@mixin soft-ui__btn-emboss--focus {
+  border-radius: $border-radius-s;
+  border-style: none;
+  background-color: white;
+  box-shadow:
+      -.2rem -.2rem .8rem rgba($color: #ffffff, $alpha: 0.8),
+      -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+      .2rem .2rem .6rem rgba($color: #000000, $alpha: 0.2),
+      inset .2rem .2rem 4rem rgba($color: #000000, $alpha: 0.1);
+  outline: none;
+  text-decoration: none;
+  transform: translateY(.2rem); }
+
+@mixin soft-ui__btn-emboss--active {
+  background-color: $color-grey-light-1;
+  border-radius: $border-radius-s;
+  border-style: none;
+  box-shadow:
+      inset -.4rem -.4rem 1rem rgba($color: #ffffff, $alpha: 0.8),
+      // -.2rem -.2rem .12rem rgba($color: #ffffff, $alpha: 0.6),
+      inset .4rem .4rem 1rem rgba($color: #000000, $alpha: 0.1),
+      inset .4rem .4rem 20rem rgba($color: #ffffff, $alpha: 0.1);
+  text-decoration: none;
+  transform: translateY(.2rem); }

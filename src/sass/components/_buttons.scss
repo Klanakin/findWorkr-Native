@@ -4,25 +4,97 @@
     text-decoration: none;
     overflow: hidden;
 
+    &__master {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        color: $color-primary-contrast;
+        font-size: 1.6rem;
+
+        width: 3.5rem;
+        height: 3.5rem;
+
+        &:link, &:visited {
+            @include soft-ui__btn-emboss; }
+        &:hover, &:focus {
+            @include soft-ui__btn-emboss; }
+        &:active {
+            @include soft-ui__btn-emboss--active;
+            transform: translateY(.4rem); } }
+
+    &__arrow--left {
+        a {
+            div::after {
+                content: url(/assets/img/arrow-left-solid.svg);
+                position: absolute;
+                pointer-events: all;
+                height: 2rem;
+                width: 2rem;
+                top: 4rem;
+                left: 1.5rem; } } }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        font-weight: 400;
+        flex-basis: 40rem;
+        margin: 0 auto;
+        padding: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        height: 4rem;
+
+        &:link, &:visited {
+            @include soft-ui__card;
+                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                border: none;
+            color: white; }
+        &:hover {
+            @include soft-ui__card;
+                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                border: none;
+                box-shadow: unset;
+            color: white;
+            transform: translateY(0); }
+        &:focus {
+            @include soft-ui__card;
+                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                border: none;
+            color: white;
+            outline: none;
+            transform: translateY(.2rem); }
+        &:active {
+            @include soft-ui__card;
+                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                border: none;
+                box-shadow: unset;
+            color: white;
+            transform: translateY(.2rem); } }
+
     &__capsule-blue {
         background-color: $color-primary;
         box-shadow: .3rem .3rem .6rem rgba($color-primary, $alpha: 0.5);
         padding: 2rem;
         outline: none;
         text-align: center;
+        text-decoration: none;
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;
-        &:link,
-            &:visited {
-                transition: all .2s; }
-            &:hover, &:focus {
-                box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
-                transform: translateY(-.4rem); }
-            &:active {
-                box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
-                transform: translateY(0);
-                transition: all .2s; }
+
+        &:link, &:visited {
+            transition: all .2s; }
+        &:hover, &:focus {
+            box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
+            transform: translateY(-.4rem); }
+        &:active {
+            box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
+            transform: translateY(0);
+            transition: all .2s; }
         &--login {
             color: $color-white;
             font-size: 2.3rem;
@@ -37,16 +109,16 @@
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;
-        &:link,
-            &:visited {
-                transition: all .2s; }
-            &:hover, &:focus {
-                box-shadow: .3rem .3rem .8rem rgba($color-primary-contrast, $alpha: 0.5);
-                transform: translateY(-.4rem); }
-            &:active {
-                box-shadow: .2rem .2rem .4rem rgba($color-primary-contrast, $alpha: 0.8);
-                transform: translateY(0);
-                transition: all .2s; }
+
+        &:link, &:visited {
+            transition: all .2s; }
+        &:hover, &:focus {
+            box-shadow: .3rem .3rem .8rem rgba($color-primary-contrast, $alpha: 0.5);
+            transform: translateY(-.4rem); }
+        &:active {
+            box-shadow: .2rem .2rem .4rem rgba($color-primary-contrast, $alpha: 0.8);
+            transform: translateY(0);
+            transition: all .2s; }
         &--inactive {
             color: $color-grey-light-3;
             font-size: 2.3rem;
@@ -63,16 +135,16 @@
         text-transform: uppercase;
         width: 28.5rem;
         height: 6rem;
-        &:link,
-            &:visited {
-                transition: all .2s; }
-            &:hover, &:focus {
-                box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
-                transform: translateY(-.4rem); }
-            &:active {
-                box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
-                transform: translateY(0);
-                transition: all .2s; }
+
+        &:link, &:visited {
+            transition: all .2s; }
+        &:hover, &:focus {
+            box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
+            transform: translateY(-.4rem); }
+        &:active {
+            box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
+            transform: translateY(0);
+            transition: all .2s; }
         &--register {
             border-style: none;
             color: $color-primary;
@@ -84,12 +156,11 @@
             position: relative;
             padding-left: 5rem;
             padding-top: 2.3rem;
-            &::before { 
+            &::before {
                 content: url(/assets/img/facebook-color-original.svg);
                 position: absolute;
                 top: 1.7rem;
-                left: 3rem;
-            } }
+                left: 3rem; } }
         &--google {
             box-shadow: .3rem .3rem .6rem rgba(#060807, $alpha: .1);
             color: $color-primary;
@@ -101,4 +172,68 @@
                 content: url(/assets/img/google-color-original.svg);
                 position: absolute;
                 top: 1.7rem;
-                left: 3rem; } } } }
+                left: 3rem; } } }
+
+    &__selection {
+      &--arrow {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+
+          text-decoration: none;
+          transition: all .4s;
+
+          width: 100%;
+
+          &:link, &:visited {
+              color: $color-primary-contrast;
+              fa-icon {
+                  transform: translateX(0);
+                  transition: all .4s} }
+          &:focus {
+              fa-icon {
+                  transform: translateX(0);
+                  transition: all .4s} }
+          &:hover {
+              color: $color-primary;
+              fa-icon {
+                  transform: translateX(.6rem);
+                  transition: all .4s} }
+          &:active {
+              color: $color-white; } } }
+
+    &__soft-ui {
+        &--inset {
+            color: $color-primary-contrast;
+            font-size: 1.2rem;
+
+            width: 3rem;
+            height: 3rem;
+
+            &:link, &:visited {
+                @include soft-ui__btn-inset; }
+            &:hover, &:focus {
+                @include soft-ui__btn-inset--hover; }
+            &:active {
+                @include soft-ui__btn-inset--active; } }
+
+        &--emboss {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            width: 4.8rem;
+            height: 4.8rem;
+
+            &:link, &:visited {
+                @include soft-ui__btn-emboss;
+                color: $color-primary-contrast; }
+            &:hover, &:focus {
+                @include soft-ui__btn-emboss--hover;
+                color: $color-primary; }
+            &:active {
+                @include soft-ui__btn-emboss--active;
+                color: $color-primary;
+                transform: translateY(.4rem); } } } }

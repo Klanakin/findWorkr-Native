@@ -1,16 +1,9 @@
 {
   "targets": {
-    "findworkr-native": {
+    "findworkr-light": {
       "hosting": {
         "findWorkr-Native": [
-          "findworkr-native"
-        ]
-      }
-    },
-    "dk-findworkr": {
-      "hosting": {
-        "findWorkr-Native": [
-          "dk-findworkr"
+          "findworkr-light"
         ]
       }
     }

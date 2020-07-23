@@ -1,0 +1,10 @@
+@import '../../sass/abstract/variables';
+@import '../../sass/global/media-queries';
+@import '../../sass/abstract/mixins';
+
+.findworkr {
+    &__banner {
+        background-color: $color-primary;
+            .findworkr-logo {
+                color: white; } }
+}

@@ -1,5 +1,6 @@
 @import '../../sass/abstract/variables';
 @import '../../sass/global/media-queries';
+@import '../../sass/abstract/mixins';
 
 .stage {
     .heading {
@@ -17,27 +18,30 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        align-content: flex-start;
         justify-content: space-between;
 
-        background-color: $color-grey-light-1;
+        // background-color: goldenrod;
         // box-shadow: .3rem .3rem .6rem rgba($color-primary-contrast, $alpha: 0.2);
         // border-radius: .8rem;
 
-        height: 75vh;
+        height: 100vh;
         .card {
             display: flex;
             flex-direction: row;
             align-items: center;
             padding: 1rem;
-
-            box-shadow: .3rem .3rem .6rem rgba($color-primary-contrast, $alpha: 0.2);
-            border-radius: .8rem;
+            text-decoration: none;
 
             width: 100%;
             height: 9.5rem;
 
+            &:focus {
+                h4 {
+                    color: $color-primary; } }
+
             &:last-child {
-                margin-bottom: 9rem; }
+                margin-bottom: 12rem; }
 
             img {
                 border-style: none;
@@ -47,10 +51,11 @@
                 width: 10rem;
                 height: 6.6rem; }
             h4 {
-                color: $color-black;
+                color: $color-primary-contrast;
                 font-size: 1.6rem;
                 font-weight: bold;
-                padding: 0; }
+                padding: 0;
+                position: relative; }
             ul {
                 font-size: 1rem;
                 flex-grow: 2;
@@ -73,12 +78,10 @@
                 // }
 } } }
 
-@media  (orientation: landscape)
-    and (max-height: 414px) {
+@media  (orientation: landscape) {
     .stage .content {
-        height: 70vh;
-    }
+        height: 70vh; }
     .card {
-        max-width: 30rem;
-    }
+        // max-width: 30rem; }
+        max-width: calc((100% /2) - 1.5rem ); }
 }
