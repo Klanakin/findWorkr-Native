@@ -4,7 +4,12 @@
 
 .findworkr {
     &__banner {
-        background-color: $color-primary;
+        height: 10rem;
+        // background-image: linear-gradient(45deg, dodgerblue, darken(dodgerblue, 20%));
+        background: rgb(32,47,161);
+        background: linear-gradient(71deg, rgba(32,47,161,1) 0%, rgba(9,36,121,1) 50%, rgba(53,7,112,1) 100%);
             .findworkr-logo {
-                color: white; } }
-}
+                color: white;
+                padding-top: $margin-top-s;
+                text-align: center; }
+} }
