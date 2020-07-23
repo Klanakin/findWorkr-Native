@@ -1,11 +1,11 @@
 <router-outlet></router-outlet>
 <div class="container">
 	<div class="navigation">
-      <a [routerLink]="" (click)="toggleMenu()" class="btn__master" id="hamburger">
+      <a *ngIf="!isFindworkrBannerPresent" [routerLink]="" (click)="toggleMenu()" class="btn__master" id="hamburger">
 		      <div><fa-icon [icon]="faBars"></fa-icon></div></a>
-      <a *ngIf="isVisible" [routerLink]="" (click)="enterFullScreen()" class="btn__master" id="window">
+      <a *ngIf="!isFullscreen && !isFindworkrBannerPresent" [routerLink]="" (click)="toggleFullscreen()" class="btn__master" id="window">
 		      <div><fa-icon [icon]="faExpandAlt"></fa-icon></div></a>
-      <a *ngIf="!isVisible" [routerLink]="" (click)="exitFullScreen()" class="btn__master" id="window">
+      <a *ngIf="isFullscreen && !isFindworkrBannerPresent" [routerLink]="" (click)="toggleFullscreen()" class="btn__master" id="window">
 		      <div><fa-icon [icon]="faCompressAlt"></fa-icon></div></a>
 		  <div class="navigation__bar navigation__bar--active" id="nav-bar">
 			    <nav class="navbar">

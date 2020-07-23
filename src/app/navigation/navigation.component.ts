@@ -11,6 +11,7 @@ import {
   faBars,
   faAngleDoubleDown,
   faCompressAlt,
+  faExpand,
   faExpandAlt
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -29,10 +30,12 @@ export class NavigationComponent implements OnInit {
   faBars = faBars;
   faAngleDoubleDown = faAngleDoubleDown;
   faCompressAlt = faCompressAlt;
+  faExpand = faExpand;
   faExpandAlt = faExpandAlt;
 
   isActive: boolean = true;
-  isVisible: boolean = true;
+  isFindworkrBannerPresent = false;
+  isFullscreen: boolean;
 
   constructor() {}
 
@@ -52,13 +55,20 @@ export class NavigationComponent implements OnInit {
     this.isActive = !this.isActive;
   }
 
-  enterFullScreen(): void {
-    document.documentElement.requestFullscreen();
-    this.isVisible = !this.isVisible;
+  toggleFullscreen(): void {
+    window.addEventListener("resize", ()=> {
+      this.isFullscreen = (window.innerHeight == screen.height);
+    });
+
+    if (!this.isFullscreen) {
+      document.documentElement.requestFullscreen();
+    }
+    else {
+      document.exitFullscreen();
+    }
   }
 
-  exitFullScreen(): void {
-    document.exitFullscreen();
-    this.isVisible = !this.isVisible;
+  switchToFindworkrBanner() {
+
   }
 }

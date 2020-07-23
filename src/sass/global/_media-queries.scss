@@ -20,7 +20,6 @@
                 height: 13rem; } // Originally 11rem
             &__title {
                 height: 6rem; } } } // Originally 6rem
-
 @media only screen
     and (orientation: portrait)
     and (min-width: 300px)
@@ -278,7 +277,6 @@
                 height: 17rem; }
             &__title {
                 height: 7rem; } } }
-
 @media only screen
     and (orientation: landscape)
     and (min-width: 1024px)
@@ -300,7 +298,6 @@
                 height: 17rem; }
             &__title {
                 height: 7rem; } } }
-
 @media only screen
     and (orientation: landscape)
     and (min-height: 769px) {
