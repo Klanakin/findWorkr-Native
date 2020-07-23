@@ -7,7 +7,9 @@
         .navigation {
             z-index: 5;
             &__bar {
-                background-color: $color-grey-light-1;
+                background: rgb(32,47,161);
+                background: linear-gradient(71deg, rgba(32,47,161,1) 0%, rgba(53,7,112,1) 100%, rgba(9,36,121,1) 50%);
+                box-shadow: 0 -.4rem 4rem rgba($color: #000000, $alpha: 0.6);
                 position: fixed;
                 bottom: -9.2rem;
                 left: 0;
@@ -20,10 +22,9 @@
                 .navbar {
                     display: unset;
                     hr {
-                      border-color: rgba($color-white, $alpha: 0.4);
+                      border-color: rgba($color-black, $alpha: 0.8);
                       border-width: .1rem;
-                      border-style: solid none none none;
-                      width: 95%;
+                      border-style: dashed none none none;
                       margin: .2rem auto 1.6rem auto; }
                     &__icon-tray {
                         display: flex;
