@@ -34,7 +34,6 @@ export class NavigationComponent implements OnInit {
   faExpandAlt = faExpandAlt;
 
   isActive: boolean = true;
-  isFindworkrBannerPresent = false;
   isFullscreen: boolean;
 
   constructor() {}
@@ -66,9 +65,5 @@ export class NavigationComponent implements OnInit {
     else {
       document.exitFullscreen();
     }
-  }
-
-  switchToFindworkrBanner() {
-
   }
 }
