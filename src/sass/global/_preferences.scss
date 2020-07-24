@@ -17,7 +17,8 @@ html {
     font-size: 62.5%; }
 
 body {
-    background-color: #222831;
+    // background-color: #222831;
+    background-color: $color-grey-light-1;
     color: $color-primary-contrast;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;

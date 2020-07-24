@@ -216,3 +216,34 @@
       inset .4rem .4rem 20rem rgba($color: #ffffff, $alpha: 0.1);
   text-decoration: none;
   transform: translateY(.2rem); }
+
+
+
+@mixin summer-sky-gradient-1 { // Top area
+    background: rgb(70,153,226);
+    background: linear-gradient(56deg, rgba(70,153,226,1) 0%, rgba(104,144,231,1) 38%, rgba(59,145,224,1) 62%, rgba(64,91,223,1) 100%);
+    // background: rgb(27,113,255);
+    // background: linear-gradient(42deg, rgba(27,113,255,1) 0%, rgba(27,50,255,1) 38%, rgba(17,53,203,1) 62%, rgba(24,33,222,1) 100%);
+    // box-shadow:
+    //     0 .4rem 6rem rgba($color: #000000, $alpha: 0.4),
+    //     0 .4rem .4rem rgba($color: #000000, $alpha: 0.2)
+}
+
+@mixin summer-sky-gradient-2 { // Bottom area
+    background: rgb(70,153,226);
+    background: linear-gradient(117deg, rgba(70,153,226,1) 0%, rgba(104,144,231,1) 38%, rgba(59,145,224,1) 62%, rgba(64,91,223,1) 100%);
+    // background: rgb(27,113,255);
+    // background: linear-gradient(153deg, rgba(27,113,255,1) 0%, rgba(27,50,255,1) 38%, rgba(17,53,203,1) 62%, rgba(24,33,222,1) 100%);
+    // box-shadow:
+    //     0 -.4rem 6rem rgba($color-primary, $alpha: 0.6),
+    //     0 -.4rem .4rem rgba($color-primary, $alpha: 0.2)
+}
+
+@mixin summer-sky-gradient-grey-1 {
+    background-image: linear-gradient(135deg, whitesmoke, $color-grey-light-1);
+}
+
+@mixin summer-sky-gradient-grey-2 {
+  background: rgb(216,216,216);
+  background: linear-gradient(48deg, rgba(216,216,216,1) 0%, rgba(212,212,212,1) 31%, rgba(190,190,190,1) 66%, rgba(200,200,200,1) 100%);
+}

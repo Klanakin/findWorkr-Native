@@ -7,9 +7,10 @@
         .navigation {
             z-index: 5;
             &__bar {
-                background: rgb(32,47,161);
-                background: linear-gradient(71deg, rgba(32,47,161,1) 0%, rgba(53,7,112,1) 100%, rgba(9,36,121,1) 50%);
-                box-shadow: 0 -.4rem 4rem rgba($color: #000000, $alpha: 0.6);
+                @include summer-sky-gradient-2;
+
+                border-top-left-radius: $border-radius-m;
+                border-top-right-radius: $border-radius-m;
                 position: fixed;
                 bottom: -9.2rem;
                 left: 0;
@@ -18,14 +19,9 @@
                 width: 100%;
                 z-index: 10;
                 &--active {
-                    transform: translateY(-9rem); }
+                    transform: translateY(-7rem); }
                 .navbar {
                     display: unset;
-                    hr {
-                      border-color: rgba($color-black, $alpha: 0.8);
-                      border-width: .1rem;
-                      border-style: dashed none none none;
-                      margin: .2rem auto 1.6rem auto; }
                     &__icon-tray {
                         display: flex;
                         flex-direction: row;
@@ -37,13 +33,14 @@
 } } } } } }
 
 @media (orientation: landscape) {
-  #hamburger {
-      font-size: 1.8rem; }
   .container {
       .navigation {
           z-index: 5;
           &__bar {
-              background-color: $color-grey-light-1;
+              @include summer-sky-gradient-2;
+
+              border-top-left-radius: $border-radius-m;
+              border-top-right-radius: $border-radius-m;
               position: fixed;
               bottom: -9.2rem;
               left: 0;
@@ -52,15 +49,9 @@
               width: 100%;
               z-index: 10;
               &--active {
-                  transform: translateY(-9rem); }
+                  transform: translateY(-7rem); }
               .navbar {
                   display: unset;
-                  hr {
-                    border-color: rgba($color-white, $alpha: 0.4);
-                    border-width: .1rem;
-                    border-style: solid none none none;
-                    width: 95%;
-                    margin: .2rem auto 1.6rem auto; }
                   &__icon-tray {
                       display: flex;
                       flex-direction: row;
@@ -68,7 +59,8 @@
                       justify-content: space-evenly;
 
                       margin: 0 auto 2rem auto;
-                      max-width: 60rem; } } } } } }
+                      max-width: 60rem;
+} } } } } }
 
 // @media  (orientation: landscape)
 //         and (max-height: 369px) {}

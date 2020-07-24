@@ -10,8 +10,9 @@
         align-items: center;
         justify-content: center;
 
-        color: $color-grey-light-1;
-        font-size: 2.4rem;
+        color: $color-primary;
+        font-size: 2rem;
+        transition: all .4s;
 
         width: 3.5rem;
         height: 3.5rem;
@@ -19,9 +20,9 @@
         &:link, &:visited {
             background-color: inherit; }
         &:hover, &:focus {
-          background-color: inherit; }
+            background-color: inherit; }
         &:active {
-          background-color: inherit;
+            background-color: inherit;
             transform: translateY(.4rem); } }
 
     &__arrow--left {
@@ -50,26 +51,30 @@
 
         &:link, &:visited {
             @include soft-ui__card;
-                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                background: rgb(70,153,226);
+                background: linear-gradient(117deg, rgba(70,153,226,1) 0%, rgba(104,144,231,1) 38%, rgba(59,145,224,1) 62%, rgba(64,91,223,1) 100%);
                 border: none;
             color: white; }
         &:hover {
             @include soft-ui__card;
-                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                background: rgb(70,153,226);
+                background: linear-gradient(117deg, rgba(70,153,226,1) 0%, rgba(104,144,231,1) 38%, rgba(59,145,224,1) 62%, rgba(64,91,223,1) 100%);
                 border: none;
                 box-shadow: unset;
             color: white;
             transform: translateY(0); }
         &:focus {
             @include soft-ui__card;
-                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                background: rgb(70,153,226);
+                background: linear-gradient(117deg, rgba(70,153,226,1) 0%, rgba(104,144,231,1) 38%, rgba(59,145,224,1) 62%, rgba(64,91,223,1) 100%);
                 border: none;
             color: white;
             outline: none;
             transform: translateY(.2rem); }
         &:active {
             @include soft-ui__card;
-                background-image: linear-gradient(45deg, $color-primary,  #5290CE );
+                background: rgb(70,153,226);
+                background: linear-gradient(117deg, rgba(70,153,226,1) 0%, rgba(104,144,231,1) 38%, rgba(59,145,224,1) 62%, rgba(64,91,223,1) 100%);
                 border: none;
                 box-shadow: unset;
             color: white;
@@ -260,9 +265,10 @@
             justify-content: center;
 
             color: $color-white;
-            font-size: 2rem;
+            font-size: 1.6rem;
             width: 4.8rem;
             height: 4.8rem;
+            transition: all .4s;
 
             &:link, &:visited {
                 color: white; }

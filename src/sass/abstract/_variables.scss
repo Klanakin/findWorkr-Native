@@ -7,6 +7,7 @@ $gap-y: 1rem;
 
 $border-radius-xs: .2rem;
 $border-radius-s: 1rem;
+$border-radius-m: 2rem;
 $border-radius-l: 4rem;
 
 // Spacers
@@ -107,14 +108,14 @@ $margin-right-xxl: 7rem;
 // $color-primary-tint: #8fbee8;
 
 // COLOR THEME: Soft-UI ##################
-$color-white: white;
-$color-white-smoke: whitesmoke;
-$color-black: black;
+// $color-white: white;
+// $color-white-smoke: whitesmoke;
+// $color-black: black;
 
-$color-grey-light-1: #e8e8e8;
-$color-grey-light-2: #d8d8d8;
-$color-grey-light-3: #c8c8c8;
-$color-grey-light-5: #888888;
+// $color-grey-light-1: #e8e8e8;
+// $color-grey-light-2: #d8d8d8;
+// $color-grey-light-3: #c8c8c8;
+// $color-grey-light-5: #888888;
 
 $color-primary: #4db2ec;
 $color-primary-rgb: rgb(77, 178, 236);
@@ -123,3 +124,13 @@ $color-primary-rgb: rgb(77, 178, 236);
 $color-primary-contrast: #505050;
 $color-primary-shade: #72a1ca;
 $color-primary-tint: #8fbee8;
+
+// COLOR THEME: Summer-Sky
+$color-white: white;
+$color-white-smoke: whitesmoke;
+$color-black: black;
+
+$color-grey-light-1: #e8e8e8;
+$color-grey-light-2: #d4d4d4;
+$color-grey-light-3: #c8c8c8;
+$color-grey-light-5: #888888;

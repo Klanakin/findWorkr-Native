@@ -4,16 +4,22 @@
 
 .findworkr {
     &__banner {
+        @include summer-sky-gradient-1;
         height: 10rem;
-        // background-image: linear-gradient(45deg, #1e90ff, darken(#1e90ff, 20%));
-        background: rgb(32,47,161);
-        background: linear-gradient(71deg, rgba(32,47,161,1) 0%, rgba(9,36,121,1) 50%, rgba(53,7,112,1) 100%);
-        box-shadow:
-            0 .4rem 6rem rgba(#000000, 0.4),
-            0 .4rem .4rem rgba(#000000, 0.2)
         ;
             .findworkr-logo {
                 color: white;
                 padding-top: $margin-top-s;
-                text-align: center; }
+                text-align: center;
+            }
+
+            hr {
+                border-color: rgba($color-black, $alpha: 0.2);
+                border-width: .5rem;
+                border-style: solid none none none;
+                position: absolute;
+                top: 4.5rem;
+                left: 0;
+                width: 100%;
+                margin: 5rem auto 1.6rem auto; }
 } }

@@ -3,6 +3,7 @@
 @import '../../sass/abstract/mixins';
 
 .stage {
+    padding-bottom: 2rem;
     .heading {
         display: flex;
         flex-direction: column;
@@ -21,41 +22,10 @@
             max-width: 50rem;
             width: calc(100% - 1rem);
 
-            // input[type=text] {
-            //     @include soft-ui__card--hover;
-            //         border: .1rem solid rgba($color: #ffffff, $alpha: 1);
-            //         transform: translateY(0);
-
-            //     color: $color-primary-contrast;
-            //     display: inline-block;
-            //     font-size: 1.8rem;
-            //     overflow: hidden;
-            //     padding: .7rem 7rem .7rem 1.7rem;
-            //     transition: all 1s;
-
-            //     width: 100%;
-            //     height: 4rem;
-            //     &:focus ~ .btn--search {
-            //         @include soft-ui__card;
-            //             border: .1rem solid rgba($color-primary, $alpha: 1);
-
-            //         color: $color-primary;
-            //         transition: all .4s;
-            //         &:hover {
-            //           color: $color-white;
-            //         } }
-            //     &:focus {
-            //         @include soft-ui__card--hover;
-            //             border: .1rem solid rgba($color-primary, $alpha: 1);
-            //             transform: translateY(0);
-
-            //         outline: none; }
-            //     &::placeholder {
-            //         color: rgba($color-primary-contrast, $alpha: .8); } }
-
             input[type=text] {
                 @include soft-ui__btn-emboss;
                     border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+                    border-radius: 2rem;
                     transform: translateY(0);
 
                 color: $color-primary-contrast;
@@ -70,6 +40,7 @@
                 &:focus ~ .btn--search {
                   @include soft-ui__btn-emboss;
                       border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+                      border-radius: 2rem;
                   color: $color-primary-contrast;
                     transition: all .4s;
                     &:hover {
@@ -78,6 +49,7 @@
                 &:focus {
                     @include soft-ui__card--hover;
                         border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+                        border-radius: 2rem;
                         transform: translateY(0);
 
                     outline: none; }
@@ -106,20 +78,30 @@
                 &:link, &:visited {
                     @include soft-ui__btn-inset;
                         border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+                        border-radius: 2rem;
                     color: $color-primary-contrast; }
                 &:hover {
                     @include soft-ui__btn-emboss;
                         border: .1rem solid rgba($color: #ffffff, $alpha: 1);
+                        border-radius: 2rem;
                     color: $color-white; }
                 &:focus {
                     @include soft-ui__btn-inset;
                         border: .1rem solid rgba($color: #ffffff, $alpha: 0);
+                        border-radius: 2rem;
                     color: $color-primary-contrast; }
                 &:active {
                     @include soft-ui__btn-inset--active;
+                        border-radius: 2rem;
                         transform: translateY(0);
 
-                    color: $color-primary-contrast; } } } } }
+                    color: $color-primary-contrast; } } } } } }
+
+.section {
+    background-image: linear-gradient(to bottom, $color-grey-light-2, $color-grey-light-1);
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+
     .contents {
         display: flex;
         flex-direction: column;
@@ -129,8 +111,9 @@
         h3 {
             font-size: 2rem;
             font-weight: 400;
-            margin: 1.8rem auto 1rem .5rem;
+            margin: 1rem auto 2rem .5rem;
             width: 100%; }
+
         .popular-services {
             // background-color: goldenrod;
             flex-grow: 1;
@@ -162,6 +145,7 @@
                 a {
                     color: $color-primary-shade;
                     text-decoration: none; } } }
+
         .recently-viewed {
             flex-grow: 2;
             &__card-box {
@@ -177,4 +161,4 @@
                 a {
                     color: $color-primary-shade;
                     text-decoration: none; }
-} } } }
+  } } } }
