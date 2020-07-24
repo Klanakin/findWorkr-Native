@@ -101,6 +101,7 @@
     background-image: linear-gradient(to bottom, $color-grey-light-2, $color-grey-light-1);
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
+    box-shadow: 0 -.4rem .1rem rgba($color-grey-light-3, $alpha: 0.4);
 
     .contents {
         display: flex;

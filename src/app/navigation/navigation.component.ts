@@ -34,7 +34,7 @@ export class NavigationComponent implements OnInit {
   faExpandAlt = faExpandAlt;
 
   isActive: boolean = true;
-  isFullscreen: boolean;
+  isFullscreen: boolean = false;
 
   constructor() {}
 
