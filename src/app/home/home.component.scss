@@ -23,12 +23,12 @@
             width: calc(100% - 1rem);
 
             input[type=text] {
-                @include soft-ui__btn-emboss;
-                    border: .1rem solid rgba($color-grey-light-4, $alpha: 1);
+                @include soft-ui__card;
+                    border: .1rem solid rgba($color-white, $alpha: 1);
                     border-radius: 2rem;
-                    box-shadow: unset;
                     transform: translateY(0);
 
+                background-color: rgba($color-grey-light-2, $alpha: 1);
                 color: $color-primary-contrast;
                 display: inline-block;
                 font-size: 1.8rem;
@@ -77,7 +77,10 @@
                 width: 6rem;
                 height: 3rem;
                 &:link, &:visited {
-                    border: .1rem solid rgba($color-grey-light-4, $alpha: 1);
+                    @include soft-ui__btn-inset;
+                        box-shadow:
+                            inset 0 .4rem .1rem rgba($color: #000000, $alpha: 0.1);
+                    border: .1rem solid rgba($color-white, $alpha: .6);
                     border-radius: 2rem;
                     color: $color-grey-light-4; }
                 &:hover {
