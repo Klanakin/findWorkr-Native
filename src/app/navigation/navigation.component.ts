@@ -56,7 +56,7 @@ export class NavigationComponent implements OnInit {
 
   toggleFullscreen(): void {
     window.addEventListener("resize", ()=> {
-      this.isFullscreen = ((window.innerHeight == screen.height) || (window.innerHeight > screen.height - 50));
+      this.isFullscreen = (window.innerHeight == screen.height || window.innerHeight >= screen.height - 100);
     });
 
     if (!this.isFullscreen) {
