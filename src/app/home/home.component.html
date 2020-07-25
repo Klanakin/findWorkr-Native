@@ -41,8 +41,8 @@
                         <a *ngIf="wholeContentSection1" [routerLink]="['/navigation/home']" class="card"></a>
                         <a *ngIf="wholeContentSection1" [routerLink]="['/navigation/home']" class="card"></a>
 
-                    <div *ngIf="!wholeContentSection1" (click)="seeAll('section-1')" class="sizing"><a [routerLink]="['/navigation/home']">See all</a></div>
-                    <div *ngIf="wholeContentSection1" (click)="seeLess('section-1')" class="sizing"><a [routerLink]="['/navigation/home']">See less</a></div>
+                    <a *ngIf="!wholeContentSection1" [routerLink]="['/navigation/home']" (click)="seeAll('section-1')" class="sizing">See all</a>
+                    <a *ngIf="wholeContentSection1" [routerLink]="['/navigation/home']" (click)="seeLess('section-1')" class="sizing">See less</a>
                 </div>
             </div>
         </div>
@@ -67,8 +67,8 @@
                     <a *ngIf="wholeContentSection2" [routerLink]="['/navigation/home']" class="card"></a>
                     <a *ngIf="wholeContentSection2" [routerLink]="['/navigation/home']" class="card"></a>
 
-                <div *ngIf="!wholeContentSection2" (click)="seeAll('section-2')" class="sizing"><a [routerLink]="['/navigation/home']">See all</a></div>
-                <div *ngIf="wholeContentSection2" (click)="seeLess('section-2')" class="sizing"><a [routerLink]="['/navigation/home']">See less</a></div>
+                    <a *ngIf="!wholeContentSection2" [routerLink]="['/navigation/home']" (click)="seeAll('section-2')" class="sizing">See all</a>
+                    <a *ngIf="wholeContentSection2" [routerLink]="['/navigation/home']" (click)="seeLess('section-2')" class="sizing">See less</a>
                 </div>
             </div>
         </div>
