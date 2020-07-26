@@ -44,6 +44,12 @@ export class NavigationComponent implements OnInit {
   //   (<HTMLInputElement>document.getElementById("nav-toggle")).checked = false;
   // }
 
+  monitorScreenSize(): void {
+    window.addEventListener("resize", ()=> {
+      this.isFullscreen = (window.innerHeight == screen.height || window.innerHeight > screen.height - 80);
+    });
+  }
+
   toggleMenu(): void {
     if (!this.isActive) {
       (<HTMLInputElement>document.getElementById("nav-bar")).className = "navigation__bar navigation__bar--active";
@@ -55,9 +61,7 @@ export class NavigationComponent implements OnInit {
   }
 
   toggleFullscreen(): void {
-    window.addEventListener("resize", ()=> {
-      this.isFullscreen = (window.innerHeight == screen.height || window.innerHeight >= screen.height - 100);
-    });
+    this.monitorScreenSize();
 
     if (!this.isFullscreen) {
       document.documentElement.requestFullscreen();

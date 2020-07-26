@@ -8,4 +8,6 @@
     padding-top: .4rem;
     width: 100%;
     &:focus {
-        outline: none; } }
+        outline: none; }
+    &::-ms-reveal {
+      display: none; } }

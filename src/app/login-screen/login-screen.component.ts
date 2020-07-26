@@ -15,15 +15,15 @@ export class LoginEmailComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  private isFulfilled(): boolean {
+  private verifyFormInput(): boolean {
     return (
       document.querySelectorAll("input")[0].value !== "" &&
       document.querySelectorAll("input")[1].value !== ""
     );
   }
 
-  hasInput() {
-    let form = new UserInputControl(this.isFulfilled());
+  hasInput(): void {
+    let form = new UserInputControl(this.verifyFormInput());
     this.formCompleted = form.activateButton();
   }
 

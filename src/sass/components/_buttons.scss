@@ -81,25 +81,24 @@
             transform: translateY(.2rem); } }
 
     &__capsule-blue {
-        background-color: $color-primary;
-        box-shadow: .3rem .3rem .6rem rgba($color-primary, $alpha: 0.5);
         padding: 2rem;
         outline: none;
         text-align: center;
         text-decoration: none;
         text-transform: uppercase;
+        transition: all .4s;
         width: 28.5rem;
         height: 6rem;
 
         &:link, &:visited {
-            transition: all .2s; }
+            background-color: $color-primary;
+            box-shadow: 0 .4rem .0 rgba($color-primary, $alpha: 0.5); }
         &:hover, &:focus {
-            box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
-            transform: translateY(-.4rem); }
+            box-shadow: 0 .4rem .0 rgba($color-primary, $alpha: 0);
+            transform: translateY(.2rem); }
         &:active {
-            box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
-            transform: translateY(0);
-            transition: all .2s; }
+            box-shadow: 0 .4rem .0 rgba($color-primary, $alpha: 0);
+            transform: translateY(.4rem); }
         &--login {
             color: $color-white;
             font-size: 2.3rem;
@@ -107,55 +106,55 @@
 
     &__capsule-grey {
         background-color: $color-primary-contrast;
-        box-shadow: .3rem .3rem .6rem rgba($color-primary-contrast, $alpha: 0.5);
         padding: 2rem;
         outline: none;
         text-align: center;
         text-transform: uppercase;
+        transition: all .4s;
         width: 28.5rem;
         height: 6rem;
 
         &:link, &:visited {
-            transition: all .2s; }
+            box-shadow: 0 .4rem .0 rgba($color-primary-contrast, $alpha: 0.5); }
         &:hover, &:focus {
-            box-shadow: .3rem .3rem .8rem rgba($color-primary-contrast, $alpha: 0.5);
-            transform: translateY(-.4rem); }
+            box-shadow: 0 .4rem .0 rgba($color-primary-contrast, $alpha: 0);
+            transform: translateY(.2rem); }
         &:active {
-            box-shadow: .2rem .2rem .4rem rgba($color-primary-contrast, $alpha: 0.8);
-            transform: translateY(0);
-            transition: all .2s; }
+            box-shadow: 0 .4rem .0 rgba($color-primary-contrast, $alpha: 0);
+            transform: translateY(.4rem); }
         &--inactive {
+            background-color: $color-primary-contrast;
+            box-shadow: 0 .4rem .0 rgba($color-primary-contrast, $alpha: 0.5);
             color: $color-grey-light-3;
             font-size: 2.3rem;
             padding-top: 1.8rem;
             pointer-events: none; } }
 
     &__capsule-white {
-        background-color: $color-white;
-        box-shadow: .3rem .3rem .6rem rgba($color-primary, $alpha: 0.5);
         border-color: $color-primary;
         padding: 2rem;
         outline: none;
         text-align: center;
         text-transform: uppercase;
+        transition: all .4s;
         width: 28.5rem;
         height: 6rem;
 
         &:link, &:visited {
-            transition: all .2s; }
+            background-color: $color-white;
+            box-shadow: 0 .4rem .0 rgba($color-primary, $alpha: 0.5); }
         &:hover, &:focus {
-            box-shadow: .3rem .3rem .8rem rgba($color-primary, $alpha: 0.5);
-            transform: translateY(-.4rem); }
+            box-shadow: 0 .4rem .0 rgba($color-primary, $alpha: 0);
+            transform: translateY(.2rem); }
         &:active {
-            box-shadow: .2rem .2rem .4rem rgba($color-primary, $alpha: 0.8);
-            transform: translateY(0);
-            transition: all .2s; }
+            box-shadow: 0 .4rem .0 rgba($color-primary, $alpha: 0);
+            transform: translateY(.4rem); }
         &--register {
             border-style: none;
             color: $color-primary;
             font-size: 2.3rem; }
         &--facebook {
-            box-shadow: .3rem .3rem .6rem rgba(#060807, $alpha: .1);
+            box-shadow: 0 .4rem 0 rgba(#060807, $alpha: .1);
             color: $color-primary;
             font-size: 1.4rem;
             position: relative;
@@ -167,7 +166,7 @@
                 top: 1.7rem;
                 left: 3rem; } }
         &--google {
-            box-shadow: .3rem .3rem .6rem rgba(#060807, $alpha: .1);
+            box-shadow: 0 .4rem 0 rgba(#060807, $alpha: .1);
             color: $color-primary;
             font-size: 1.4rem;
             padding-left: 3.5rem;

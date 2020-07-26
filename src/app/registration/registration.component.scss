@@ -23,16 +23,6 @@
             font-size: 3.4rem;
             font-weight: bold;
             text-transform: uppercase; } }
-        // .btn__arrow--left {
-        //     a {
-        //         span::after {
-        //             content: url(/assets/img/arrow-left-solid.png);
-        //             position: absolute;
-        //             pointer-events: all;
-        //             height: 4rem;
-        //             width: 4rem;
-        //             top: 4rem;
-        //             left: 1.5rem; } } } }
     .login__input {
         display: flex;
         flex-direction: column;
@@ -42,17 +32,17 @@
         height: 50%;
         // padding: 0 4.5rem;
         width: 28.5rem;
-        
+
         &--label {
             align-self: flex-start;
             text-transform: uppercase; }
-            
+
     // .sign-in__option {
     //     display: flex;
     //     flex-direction: column;
     //     align-items: center;
     //     justify-content: center;
-        
+
     //     height: 50%;
     //     padding: 0 4.5rem;
     //     width: 100%;
@@ -92,7 +82,6 @@
             content: url(/assets/img/show-password-light.svg); } } }
 
 .pseudo-link__icon--arrow-left {
-    // position: relative; <-- relative positioning apllied to the parent element
     a {
         span::after {
             content: url(/assets/img/arrow-left-solid.svg);
@@ -102,4 +91,3 @@
             width: 2rem;
             top: 4rem;
             left: 1.5rem; } } }
-           
