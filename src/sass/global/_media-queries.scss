@@ -14,12 +14,12 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 16rem; // Originally 14rem
-        height: 19rem; // Originally 17rem
+            width: 16rem;
+            height: 20rem;
             &__preview {
-                height: 13rem; } // Originally 11rem
+                height: calc(16rem / 1.25); }
             &__title {
-                height: 6rem; } } } // Originally 6rem
+                height: calc(20rem - (16rem / 1.25)); } } }
 @media only screen
     and (orientation: portrait)
     and (min-width: 300px)
@@ -35,8 +35,8 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 18rem; // Originally 14rem
-        height: 21rem; // Originally 17rem
+            width: 18rem; // Originally 14rem
+            height: 21rem; // Originally 17rem
             &__preview {
                 height: 15rem; } // Originally 11rem
             &__title {
@@ -56,8 +56,8 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 18rem;
-        height: 21rem;
+            width: 18rem;
+            height: 21rem;
             &__preview {
                 height: 15rem; }
             &__title {
@@ -77,8 +77,8 @@
         .stage {
             padding: 2rem 1.6rem 12rem 1.6rem; }
         .card {
-        width: 16rem;
-        height: 19rem;
+            width: 16rem;
+            height: 19rem;
             &__preview {
                 height: 13rem; }
             &__title {
@@ -98,8 +98,8 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 16rem;
-        height: 19rem;
+            width: 16rem;
+            height: 19rem;
             &__preview {
                 height: 13rem; }
             &__title {
@@ -119,8 +119,8 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 18rem;
-        height: 21rem;
+            width: 18rem;
+            height: 21rem;
             &__preview {
                 height: 15rem; }
             &__title {
@@ -163,8 +163,8 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 14rem;
-        height: 17rem;
+            width: 14rem;
+            height: 17rem;
             &__preview {
                 height: 12rem; }
             &__title {
@@ -184,8 +184,8 @@
         .stage {
             padding: 5rem 5rem 11rem 5rem; }
         .card {
-        width: 20rem;
-        height: 24rem;
+            width: 20rem;
+            height: 24rem;
             &__preview {
                 height: 17rem; }
             &__title {
@@ -204,8 +204,8 @@
         .stage {
             padding: 5rem 5rem 11rem 5rem; }
         .card {
-        width: 22rem;
-        height: 26rem;
+            width: 22rem;
+            height: 26rem;
             &__preview {
                 height: 18rem; }
             &__title {
@@ -229,8 +229,8 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 20rem;
-        height: 24rem;
+            width: 20rem;
+            height: 24rem;
             &__preview {
                 height: 16rem; }
             &__title {
@@ -250,8 +250,8 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 14rem;
-        height: 17rem;
+            width: 14rem;
+            height: 17rem;
             &__preview {
                 height: 12rem; }
             &__title {
@@ -271,8 +271,8 @@
         .stage {
             padding: 6rem 6rem 12rem 6rem; }
         .card {
-        width: 20rem;
-        height: 24rem;
+            width: 20rem;
+            height: 24rem;
             &__preview {
                 height: 17rem; }
             &__title {
@@ -292,8 +292,8 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 20rem;
-        height: 24rem;
+            width: 20rem;
+            height: 24rem;
             &__preview {
                 height: 17rem; }
             &__title {
@@ -312,8 +312,8 @@
         .stage {
             padding: 3rem 3rem 9rem 3rem; }
         .card {
-        width: 20rem;
-        height: 24rem;
+            width: 20rem;
+            height: 24rem;
             &__preview {
                 height: 17rem; }
             &__title {
